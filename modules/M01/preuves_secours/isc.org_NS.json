@@ -1,0 +1,51 @@
+{
+  "collected_at_utc": "2026-11-02T20:12:41.876300+00:00",
+  "source_url": "https://dns.google/resolve?name=isc.org&type=NS",
+  "method": "Google Public DNS JSON API; observation de ce résolveur uniquement",
+  "response": {
+    "Status": 0,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": true,
+    "CD": false,
+    "Question": [
+      {
+        "name": "isc.org.",
+        "type": 2
+      }
+    ],
+    "Answer": [
+      {
+        "name": "isc.org.",
+        "type": 2,
+        "TTL": 7175,
+        "data": "ns3.isc.org."
+      },
+      {
+        "name": "isc.org.",
+        "type": 2,
+        "TTL": 7175,
+        "data": "nsp.dnsnode.net."
+      },
+      {
+        "name": "isc.org.",
+        "type": 2,
+        "TTL": 7175,
+        "data": "ns2.isc.org."
+      },
+      {
+        "name": "isc.org.",
+        "type": 2,
+        "TTL": 7175,
+        "data": "ns1.isc.org."
+      },
+      {
+        "name": "isc.org.",
+        "type": 2,
+        "TTL": 7175,
+        "data": "ns.isc.afilias-nst.info."
+      }
+    ]
+  }
+}

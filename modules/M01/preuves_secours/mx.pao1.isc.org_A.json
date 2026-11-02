@@ -1,0 +1,27 @@
+{
+  "collected_at_utc": "2026-11-02T20:15:48.616082+00:00",
+  "source_url": "https://dns.google/resolve?name=mx.pao1.isc.org&type=A",
+  "method": "API publique; résultat daté à interpréter dans son périmètre",
+  "response": {
+    "Status": 0,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": true,
+    "CD": false,
+    "Question": [
+      {
+        "name": "mx.pao1.isc.org.",
+        "type": 1
+      }
+    ],
+    "Answer": [
+      {
+        "name": "mx.pao1.isc.org.",
+        "type": 1,
+        "TTL": 3746,
+        "data": "149.20.2.50"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+# Le contexte Asteria
+
+Asteria Industrie est une entreprise fictive de 180 salariés, dont 15 dans une filiale commerciale en Estérie, pays fictif. Elle produit des capteurs industriels et doit maintenir commandes, fabrication et expéditions. Son équipe SI compte quatre personnes.
+
+Dans ce parcours technique, Asteria est votre cliente. Vous étudiez des services et des architectures pour lui expliquer les dépendances, les preuves disponibles et les options à envisager. Les domaines publics étudiés ne lui appartiennent pas et ne constituent pas une reproduction de son infrastructure.
+
+## Pourquoi ce travail relève de la géopolitique et de la stratégie SI
+
+Pour chaque investigation, cherchez à répondre à trois questions :
+
+1. Quel acteur contrôle une ressource nécessaire au service ?
+2. Comment un changement technique, économique ou international pourrait-il affecter cette dépendance ?
+3. Quelle décision l’entreprise peut-elle prendre, et quelles preuves lui manquent encore ?
+
+Une nationalité, un pays renseigné dans un registre ou une localisation annoncée ne suffit pas à établir les lieux de stockage, tous les intervenants du support ou une obligation juridique. Documentez séparément les différents aspects.
+
+## Évaluation
+
+M01 est formatif : vous recevrez un retour sur la qualité de vos preuves, votre interprétation et votre contribution individuelle. Il n’entre pas dans une note finale. Les modalités des modules évalués seront annoncées avant leur démarrage.

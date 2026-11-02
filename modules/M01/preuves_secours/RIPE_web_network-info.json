@@ -1,0 +1,27 @@
+{
+  "collected_at_utc": "2026-11-02T20:15:39.186893+00:00",
+  "source_url": "https://stat.ripe.net/data/network-info/data.json?resource=151.101.3.42",
+  "method": "API publique; résultat daté à interpréter dans son périmètre",
+  "response": {
+    "messages": [],
+    "see_also": [],
+    "version": "1.1",
+    "data_call_name": "network-info",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20261102201539-6bc5ca90-3903-4af7-8f54-6a5fdffa2359",
+    "process_time": 14,
+    "server_id": "app198",
+    "build_version": "v0.12.2-2026.10.23",
+    "pipeline": "1478200",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-11-02T20:15:39.104971",
+    "data": {
+      "asns": [
+        "54113"
+      ],
+      "prefix": "151.101.0.0/22"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collected_at_utc": "2026-11-02T20:12:42.012126+00:00",
+  "source_url": "https://dns.google/resolve?name=www.isc.org&type=CNAME",
+  "method": "Google Public DNS JSON API; observation de ce résolveur uniquement",
+  "response": {
+    "Status": 0,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": true,
+    "CD": false,
+    "Question": [
+      {
+        "name": "www.isc.org.",
+        "type": 5
+      }
+    ],
+    "Authority": [
+      {
+        "name": "isc.org.",
+        "type": 6,
+        "TTL": 1800,
+        "data": "ns-int.isc.org. hostmaster.isc.org. 2026102533 7200 3600 24796800 3600"
+      }
+    ],
+    "Comment": "Response from 51.75.79.143."
+  }
+}
