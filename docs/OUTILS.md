@@ -1,4 +1,4 @@
-# Outils et prérequis du M01
+# Outils et prérequis du parcours
 
 Prévoir un ordinateur par étudiant, un navigateur, un terminal et un éditeur de texte. Git et VS Code sont pratiques pour le rendu. L’enquête peut se faire avec les fichiers JSON de secours si les outils ou le réseau sont indisponibles.
 
@@ -10,7 +10,7 @@ Prévoir un ordinateur par étudiant, un navigateur, un terminal et un éditeur 
 | Windows avec PowerShell | `Resolve-DnsName`, navigateur | La syntaxe d’aide figure dans le module |
 | Sans outil DNS local ou hors ligne | Fichiers `modules/M01/preuves_secours` | Les requêtes et leur provenance sont enregistrées ; préciser que vous analysez une collecte antérieure |
 
-Pas besoin de Kali, de serveur ou de VM pour M01. Si un outil manque, employer un autre chemin plutôt que consacrer le TP à une installation. La consultation de RIPEstat en ligne et des documents officiels complète les résultats DNS lorsque le réseau est disponible.
+Pas besoin de Kali, de serveur ou de VM pour M01. Pour les modules M04–M06 et M08, préparer le [laboratoire Python local](../lab/README.md) avant la séance. Si un outil manque, employer un autre chemin plutôt que consacrer le TP à une installation. La consultation de RIPEstat en ligne et des documents officiels complète les résultats DNS lorsque le réseau est disponible.
 
 ## Documents de référence
 
@@ -24,3 +24,14 @@ Pas besoin de Kali, de serveur ou de VM pour M01. Si un outil manque, employer u
 - [Cloudflare : effet du proxy sur les réponses DNS](https://developers.cloudflare.com/dns/proxy-status/).
 
 Ces liens documentent les outils et les limites d’observation ; ils ne constituent pas des conclusions sur les domaines du TP.
+
+
+## Références M02–M08
+
+- [RIPE NCC — historique de routage](https://stat.ripe.net/docs/data-api/api-endpoints/routing-history).
+- [Python 3.12 — serveurs HTTP](https://docs.python.org/3.12/library/http.server.html).
+- [Python — urllib.request](https://docs.python.org/3/library/urllib.request.html).
+- [GitHub — collaborateurs d’un dépôt personnel](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository).
+- [Meta Engineering — détail de la panne du 4 octobre 2021](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/).
+
+Les pièces contractuelles et les publications des dossiers synthétiques sont fictives. Les références ci-dessus documentent les outils ou un incident réel distinct ; elles ne valident pas l’ensemble des affirmations du cas Asteria.

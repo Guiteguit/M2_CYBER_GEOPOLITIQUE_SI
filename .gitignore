@@ -6,3 +6,6 @@ Thumbs.db
 .env.*
 !.env.example
 __pycache__/
+lab/runtime/
+lab/runtime-*/
+*.pyc

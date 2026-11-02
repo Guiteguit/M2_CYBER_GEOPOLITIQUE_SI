@@ -1,0 +1,16 @@
+{
+  "base_port": 18180,
+  "disabled": [],
+  "routes": {
+    "portail": 18181,
+    "commandes": 18182
+  },
+  "auth_ports": {
+    "portail": [
+      18183
+    ],
+    "commandes": [
+      18183
+    ]
+  }
+}

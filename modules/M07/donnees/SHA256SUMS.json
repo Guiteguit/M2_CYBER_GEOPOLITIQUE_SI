@@ -1,0 +1,12 @@
+{
+  "nature": "manifeste_fourni_avec_dossier_synthetique_non_signe",
+  "algorithm": "SHA-256",
+  "files": {
+    "REPERES_REELS.md": "6d8b6992add14845caaf749d0d63c03cee0688e4af3ece65d92ccdcdd06208c0",
+    "affirmations.csv": "f05320828d1255a3ebce7b896451177bbbcd1ef5be221a40677e900ce1bf432c",
+    "note_operateur.md": "334775050eaf970b87f4df3579b95c03f9790d99fbab178e764a4e49e9d25bd4",
+    "publication_1.md": "54ce16c3e0f7771ff783f63de826d4d350fe2f61d6e610533a6313c007af81a5",
+    "reprise_2.md": "234202abfb11e98fd172a66f4f2278cf056a86d5db22d18a032c7e794346a876",
+    "reprise_3.md": "2fcccfb743e9940885e7230527f5362da1b57961fa4d9c19777285d369075313"
+  }
+}

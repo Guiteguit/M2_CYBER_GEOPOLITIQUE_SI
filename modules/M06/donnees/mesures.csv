@@ -1,0 +1,9 @@
+timestamp_utc,target,result,detail
+2030-04-10T09:00:00Z,edge/portail,200,parcours complet
+2030-04-10T09:00:00Z,edge/commandes,200,count=3;quantity_total=9
+2030-04-10T09:03:00Z,portail/health,200,listener disponible
+2030-04-10T09:03:00Z,commandes/health,200,listener disponible
+2030-04-10T09:03:00Z,idp:18183/validate,200,validation fictive disponible
+2030-04-10T09:03:00Z,port:18189,connection_refused,test direct local
+2030-04-10T09:03:01Z,edge/portail,503,identite_indisponible
+2030-04-10T09:03:01Z,edge/commandes,503,identite_indisponible

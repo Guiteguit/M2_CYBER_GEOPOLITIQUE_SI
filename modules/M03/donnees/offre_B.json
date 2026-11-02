@@ -1,0 +1,43 @@
+{
+  "nature": "offre_entierement_fictive",
+  "offre": "B",
+  "horizon_mois": 18,
+  "couts_eur": {
+    "mise_en_place": 23000,
+    "mensuel": 900
+  },
+  "charge_jours_equipe": 14,
+  "composants": [
+    {
+      "fonction": "applications",
+      "provider_id": "BorealCompute",
+      "hebergement_declare": "France"
+    },
+    {
+      "fonction": "dns",
+      "provider_id": "BorealDNS"
+    },
+    {
+      "fonction": "identite",
+      "provider_id": "AtlasID"
+    },
+    {
+      "fonction": "sauvegarde",
+      "provider_id": "BorealBackup",
+      "administration_federee": "compte_local_prevu_non_teste"
+    },
+    {
+      "fonction": "support",
+      "provider_id": "Nexora",
+      "pays_intervention": [
+        "France",
+        "Esterie"
+      ]
+    }
+  ],
+  "export": {
+    "format": "CSV et archives des documents",
+    "periodicite": "quotidienne",
+    "test_import_destination": false
+  }
+}

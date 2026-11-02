@@ -16,4 +16,4 @@ Une nationalité, un pays renseigné dans un registre ou une localisation annonc
 
 ## Évaluation
 
-M01 est formatif : vous recevrez un retour sur la qualité de vos preuves, votre interprétation et votre contribution individuelle. Il n’entre pas dans une note finale. Les modalités des modules évalués seront annoncées avant leur démarrage.
+M01 est formatif : vous recevrez un retour sur la qualité de vos preuves, votre interprétation et votre contribution individuelle. Il n’entre pas dans une note finale. M02–M03 sont également formatifs. Les modalités des modules évalués sont proposées dans le [barème](EVALUATION.md) et annoncées avant M04, après validation par l’école.

@@ -1,0 +1,43 @@
+{
+  "nature": "offre_entierement_fictive",
+  "offre": "A",
+  "horizon_mois": 18,
+  "couts_eur": {
+    "mise_en_place": 10000,
+    "mensuel": 600
+  },
+  "charge_jours_equipe": 6,
+  "composants": [
+    {
+      "fonction": "applications",
+      "provider_id": "AtlasCompute",
+      "hebergement_declare": "Norlande"
+    },
+    {
+      "fonction": "dns",
+      "provider_id": "AtlasDNS"
+    },
+    {
+      "fonction": "identite",
+      "provider_id": "AtlasID"
+    },
+    {
+      "fonction": "sauvegarde",
+      "provider_id": "AtlasBackup",
+      "administration_federee": "AtlasID"
+    },
+    {
+      "fonction": "support",
+      "provider_id": "Nexora",
+      "pays_intervention": [
+        "France",
+        "Esterie"
+      ]
+    }
+  ],
+  "export": {
+    "format": "CSV et archives des documents",
+    "periodicite": "hebdomadaire",
+    "test_import_destination": false
+  }
+}
