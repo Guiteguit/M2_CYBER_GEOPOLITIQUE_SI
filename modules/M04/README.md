@@ -1,5 +1,7 @@
 # M04 — Deux applications, une dépendance commune
 
+> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
+
 **90 min · Manipulation HTTP locale · Évaluation annoncée avant démarrage : voir [barème](../../docs/EVALUATION.md).** Prérequis : laboratoire installé et vérifié avant la séance, Python 3.10+, navigateur ou client HTTP. [Préparation et limites](../../lab/README.md).
 
 ## Mission
@@ -10,14 +12,14 @@ Le laboratoire représente deux applications et une validation d’identité fic
 
 ## Déroulé
 
-| Temps | Activité |
+| Minutes | Travail conduit par les étudiants |
 |---|---|
-| 0–10 | Hypothèse individuelle et prédiction de l’effet d’une panne |
-| 10–25 | [Notions](NOTIONS.md) : graphe de dépendances et santé locale/de bout en bout |
-| 25–40 | État initial, carte et preuves HTTP sur les deux parcours |
-| 40–60 | Injection M04, observations, explications concurrentes |
-| 60–75 | Comparer les trois diagnostics et envisager une amélioration |
-| 75–90 | Démontrer les résultats, compléter le rendu et le retour individuel |
+| 0–8 | Lire la mission, écrire une prédiction et répartir les rôles |
+| 8–20 | Lire les notions et reformuler la différence santé/usage |
+| 20–40 | Mesurer l’état initial et construire la carte |
+| 40–60 | Appliquer l’incident, tester et comparer les hypothèses |
+| 60–75 | Confronter les preuves et deux améliorations |
+| 75–90 | Présenter, auto-vérifier et enregistrer les rendus |
 
 ## Travail technique
 
@@ -36,3 +38,11 @@ Si deux fournisseurs ou deux régions partagent un service d’identité, dans q
 ## Livrables
 
 [Rendu M04](../../rendus/M04/SYNTHESE.md) : carte, tableau avant/pendant/après avec HTTP et effet métier, extrait de journal, deux améliorations comparées. La position individuelle de chacun est l’une des pièces de l’évaluation. Ne pas modifier le code du serveur pour faire disparaître un symptôme.
+
+## Points de décision à consigner
+
+- Avant l’incident : quelle dépendance commune prévoyez-vous de tester, et quels résultats l’infirmeraient ?
+- Après les observations : quelle couche fonctionne encore, quelle couche échoue et quelle preuve les distingue ?
+- Avant de recommander : quelle amélioration traite le scénario observé et quelle dépendance laisse-t-elle en place ?
+
+Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.

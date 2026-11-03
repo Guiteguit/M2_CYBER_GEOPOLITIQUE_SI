@@ -22,3 +22,12 @@ Date de copie, constat de perte, reprise vérifiée, limite RTO/RPO : …
 
 Deux exigences d’indépendance et moyens de les tester : …
 
+
+
+## Décision et accompagnement
+
+- Hypothèse avant intervention et résultat attendu :
+- Test effectué, observation et décision retenue (ou révisée) :
+- Aide déterminante reçue d’un pair ou du formateur, ou « aucune » :
+- Ce que j’ai / nous avons ensuite décidé et vérifié :
+- Incertitude à discuter à la restitution :

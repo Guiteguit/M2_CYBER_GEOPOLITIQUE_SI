@@ -1,5 +1,7 @@
 # M08 — Diagnostiquer, reprendre et défendre une stratégie
 
+> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
+
 **90 min · Épreuve finale technique et orale.** Prérequis : laboratoire préparé avant la séance, techniques M04–M07, Python 3.10+ et navigateur. [Barème commun](../../docs/EVALUATION.md). Aucun composant externe ni compte cloud requis.
 
 ## Mandat
@@ -20,15 +22,15 @@ Le formateur indique avant le départ si les trois étudiants travaillent sur un
 
 ## Déroulé — 90 minutes
 
-| Temps | Travail |
+| Minutes | Travail conduit par les étudiants |
 |---|---|
-| 0–10 | Lecture, rôles et hypothèses individuelles ; aucune nouvelle notion |
-| 10–20 | Constat initial, périmètre et sauvegarde des preuves |
-| 20–45 | Tests discriminants, décision et correction minimale |
-| 45–60 | Vérifications de reprise, contenu et non-régression |
-| 60–70 | Synthèse et feuille de route courte |
-| 70–85 | Présentation de six minutes puis neuf minutes de questions réparties |
-| 85–90 | Retour individuel sur une hypothèse révisée |
+| 0–10 | Lire le mandat, répartir les rôles et noter les hypothèses |
+| 10–20 | Constater l’état et préserver les preuves |
+| 20–45 | Choisir les tests, décider et corriger le périmètre touché |
+| 45–60 | Démontrer la reprise technique et métier |
+| 60–70 | Préparer la stratégie et auto-vérifier les preuves |
+| 70–85 | Restituer et défendre individuellement les décisions |
+| 85–90 | Enregistrer et écrire le retour individuel |
 
 ## Travaux attendus
 
@@ -44,3 +46,11 @@ Le formateur indique avant le départ si les trois étudiants travaillent sur un
 [Rendu M08](../../rendus/M08/SYNTHESE.md) : journal de cinq décisions maximum, hypothèses/test, correction, preuves de reprise, limites et feuille de route. Chaque étudiant explique une décision ou vérification dont il a la responsabilité. Conserver les fichiers individuels A/B/C pour distinguer les contributions.
 
 En cas d’impossibilité de lancer le serveur, prévenir immédiatement le formateur. La variante d’analyse de traces décrite dans [AIDE.md](AIDE.md) permet d’évaluer les raisonnements, mais doit être signalée comme telle : elle ne prouve pas une réparation exécutée.
+
+## Points de décision à consigner
+
+- Quels symptômes et quel test rendent une hypothèse plus plausible que l’autre ?
+- Quelle intervention minimale est justifiée et quelles preuves conserver avant elle ?
+- Quels critères permettent de déclarer la reprise métier et quelle limite demeure ?
+
+Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.

@@ -1,5 +1,7 @@
 # M07 — Vérifier une affirmation publique sur un incident
 
+> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
+
 **90 min · Analyse de preuves, intégrité et recherche de source · Évaluation collective.** Prérequis : dossier M06 ; Python 3.10+ ou outil de calcul d’empreinte. Le parcours de base fonctionne sans Internet.
 
 ## Mission
@@ -8,14 +10,14 @@ Une publication affirme que l’incident Asteria prouve une opération étatique
 
 ## Déroulé
 
-| Temps | Activité |
+| Minutes | Travail conduit par les étudiants |
 |---|---|
-| 0–10 | Chacun écrit ce qui serait nécessaire pour soutenir une attribution |
-| 10–25 | [Notions](NOTIONS.md) : intégrité, authenticité, indépendance et attribution |
-| 25–40 | Vérifier le manifeste et remonter les références entre publications |
-| 40–60 | Confronter cinq affirmations aux traces techniques |
-| 60–80 | Défendre puis critiquer une conclusion ; comparaison réelle facultative |
-| 80–90 | Message de situation et plan de vérification |
+| 0–8 | Formuler les preuves nécessaires à une attribution |
+| 8–20 | Lire les notions et distinguer les niveaux de preuve |
+| 20–40 | Vérifier les manifestes et tracer les citations |
+| 40–60 | Confronter les cinq affirmations aux pièces |
+| 60–78 | Discussion contradictoire et message de situation |
+| 78–90 | Auto-vérifier et enregistrer la synthèse |
 
 ## Travail technique et documentaire
 
@@ -38,3 +40,11 @@ Comment une accusation peut-elle influencer les choix de fournisseurs ou la comm
 ## Livrables
 
 [Rendu M07](../../rendus/M07/SYNTHESE.md) : résultat d’intégrité, graphe des sources, matrice des cinq affirmations, deux hypothèses et message final. Chacun défend une affirmation et une limite. Le retour juge la qualité de la preuve, pas l’adhésion à un récit politique.
+
+## Points de décision à consigner
+
+- Que vérifie l’empreinte et quelle confiance accordez-vous à sa référence ?
+- Combien d’origines indépendantes soutiennent réellement une affirmation ?
+- Quelle formulation permet d’informer la direction sans dépasser les preuves ?
+
+Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.

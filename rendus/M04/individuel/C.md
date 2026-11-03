@@ -21,3 +21,12 @@ Limite et autre explication possible : …
 Je maintiens ou révise mon hypothèse parce que : …
 
 Conséquence pour une décision SI et dépendance concernée : …
+
+
+## Décision et accompagnement
+
+- Hypothèse avant intervention et résultat attendu :
+- Test effectué, observation et décision retenue (ou révisée) :
+- Aide déterminante reçue d’un pair ou du formateur, ou « aucune » :
+- Ce que j’ai / nous avons ensuite décidé et vérifié :
+- Incertitude à discuter à la restitution :

@@ -30,3 +30,8 @@ Un HTTP 200 sans les données attendues ne vaut pas une reprise métier. Une pr�
 Le temps de réparation seul ne classe pas les étudiants. Les variantes M08 peuvent demander des opérations différentes ; noter la qualité du diagnostic, des preuves et de l’oral. Les désaccords argumentés sont recevables et une révision après un test n’est pas pénalisée.
 
 Si le formateur décide du mode secours pour un blocage matériel, il annonce les critères adaptés : qualité du diff proposé, des tests prévus et de l’argumentation. Votre rendu distingue ce qui a été exécuté et ce qui a seulement été conçu. Une prédiction ne constitue pas une preuve de repli ou de restauration.
+
+
+## Autonomie accompagnée et aide
+
+M04–M08 restent accompagnés et évalués par le formateur. Demander une aide n’entraîne pas automatiquement une pénalité. Consigner les aides déterminantes et distinguer ce qui a été suggéré, exécuté et expliqué par chaque étudiant. L’appréciation porte sur les critères annoncés, la compréhension et les vérifications propres ; une solution donnée ne devient pas à elle seule une démonstration individuelle. L’auto-vérification prépare la restitution et ne remplace pas l’évaluation, notamment en M08.

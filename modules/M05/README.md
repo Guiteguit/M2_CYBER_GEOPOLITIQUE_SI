@@ -1,5 +1,7 @@
 # M05 — Démontrer un repli et une restauration
 
+> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
+
 **90 min · Configuration, export et restauration locale · Évaluation collective.** Prérequis : laboratoire démarré, navigateur/HTTP et Python 3.10+. Ne pas réinstaller d’environnement. Les données sont fictives et les changements restent dans `lab/runtime`.
 
 ## Mission
@@ -8,14 +10,14 @@ Asteria demande deux preuves différentes : continuer à accéder aux applicatio
 
 ## Déroulé
 
-| Temps | Activité |
+| Minutes | Travail conduit par les étudiants |
 |---|---|
-| 0–10 | Prédire la différence entre disponibilité et récupération de données |
-| 10–25 | [Notions](NOTIONS.md) : bascule, intégrité, RTO/RPO et limites d’un essai |
-| 25–45 | Configurer et tester un chemin d’identité alternatif |
-| 45–65 | Exporter, provoquer une perte limitée aux données fictives et restaurer |
-| 65–80 | Contre-tests et discussion des dépendances restantes |
-| 80–90 | Tableau de preuves et recommandation de résilience |
+| 0–8 | Écrire l’objectif et préparer les preuves de référence |
+| 8–20 | Lire les notions ; prédire les critères de succès |
+| 20–42 | Configurer le repli et exécuter les contre-tests |
+| 42–65 | Exporter, simuler la perte puis restaurer et contrôler |
+| 65–78 | Confronter les résultats et les dépendances restantes |
+| 78–90 | Auto-vérifier, présenter et enregistrer |
 
 ## Partie A — Le repli d’accès
 
@@ -42,3 +44,11 @@ Votre seconde identité et votre copie sont sur le même ordinateur. Que se pass
 [Rendu M05](../../rendus/M05/SYNTHESE.md) : configuration avant/après, matrice de tests principal seul/secondaire/deux indisponibles, export et manifeste, contrôles de contenu et chronologie de reprise. Terminer par deux exigences pour une architecture réellement indépendante, avec un moyen de les vérifier.
 
 Le reset ne remplace pas la restauration : il recrée les données initiales et ne démontre pas l’usage de votre sauvegarde. Ne pas l’utiliser comme preuve de réussite de la partie B.
+
+## Points de décision à consigner
+
+- Avant le repli : quel ordre de dépendances proposez-vous et comment prouver qu’un contrôle reste actif ?
+- Avant de vider les lignes fictives : la copie et son manifeste sont-ils présents et vérifiés ? Sinon, ne pas provoquer la perte ; poursuivre la vérification ou solliciter une aide.
+- Après restauration : quel contrôle métier complète le HTTP 200 et quelles écritures ne sont pas démontrées récupérables ?
+
+Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.
