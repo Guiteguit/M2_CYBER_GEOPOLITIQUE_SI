@@ -22,7 +22,7 @@ Le laboratoire représente deux applications et une validation d’identité fic
 ## Travail technique
 
 1. Avant l’injection, vérifier les deux parcours utilisateur, les `/health` et la configuration. Conserver des preuves datées. Une capture de cinq statuts sans URL ne suffit pas.
-2. Dessiner les appels de chaque application. Prédire les effets d’une indisponibilité de l’identité principale puis lancer `scenario M04` selon l’[aide](AIDE.md).
+2. Dessiner les appels de chaque application. Prédire les effets d’une indisponibilité de l’identité principale puis appliquer le fichier d’incident remis au lancement de l’activité selon l’[aide](AIDE.md).
 3. Observer les codes, les réponses et `events.jsonl`. Localiser la couche qui échoue et une couche qui continue à répondre. Démontrer la différence entre disponibilité du processus HTTP et service utilisable.
 4. Proposer au moins deux améliorations, dont une conserve le composant commun mais réduit son risque. Expliquer les dépendances qu’une amélioration ne supprime pas.
 5. Conserver vos preuves avant de revenir à l’état initial pour la séance suivante. Le reset n’est pas une preuve de diagnostic ; il sert ici uniquement à ranger l’environnement après la démonstration.

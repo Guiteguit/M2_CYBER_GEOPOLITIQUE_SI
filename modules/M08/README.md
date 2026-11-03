@@ -6,7 +6,7 @@
 
 Une perturbation affecte le laboratoire Asteria. Vous devez établir les symptômes, proposer une correction minimale, démontrer le fonctionnement métier et défendre une évolution du SI. Le diagnostic porte sur le laboratoire, pas sur une panne réelle d’un pays ou d’un fournisseur.
 
-Le formateur choisit la graine de l’injection `scenario M08`. L’injecteur prépare un état initial et une copie préincident, puis une perturbation reproductible. Il ne s’agit pas d’un secret anti-triche : l’évaluation porte sur la méthode, les preuves et l’explication individuelle. Ne pas lire la sélection du scénario pour remplacer un diagnostic observé.
+Le fichier d’incident est remis au début de l’épreuve. Il contient l’état d’exercice et une copie préincident à appliquer une seule fois. L’évaluation porte sur la méthode, les preuves et l’explication individuelle ; constater les symptômes avant de proposer une correction.
 
 ## Critères de reprise annoncés
 

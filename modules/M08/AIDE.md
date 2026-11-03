@@ -1,13 +1,13 @@
 # M08 — Ressources autorisées
 
-Les modules précédents, la documentation du laboratoire et vos propres notes sont autorisés. Un seul injecteur est lancé au départ, avec la graine donnée par le formateur :
+Les modules précédents, la documentation du laboratoire et vos propres notes sont autorisés. Appliquer une seule fois le fichier d’incident reçu au départ, placé dans `incidents/m08.json` :
 
 ```bash
-python3 lab/asteria_lab.py scenario M08 --seed 27
+python3 lab/asteria_lab.py incident --from incidents/m08.json --confirm
 python3 lab/asteria_lab.py status
 ```
 
-Utiliser la graine attribuée, pas nécessairement 27. Si les ports de base diffèrent, les chemins sont ceux du [labo](../../lab/README.md). Le code de sortie de `status` porte sur les réponses HTTP, pas sur le contenu des commandes.
+Utiliser le fichier attribué pour votre exercice. Si les ports de base diffèrent, les chemins sont ceux du [labo](../../lab/README.md). Le code de sortie de `status` porte sur les réponses HTTP, pas sur le contenu des commandes.
 
 Le répertoire `lab/runtime/sauvegardes/` peut contenir une copie préincident ; vérifier sa provenance et sa validité avant de l’utiliser. L’import et une modification de configuration résolvent des classes de problèmes différentes. Conserver les preuves avant de choisir l’une de ces actions.
 

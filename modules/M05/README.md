@@ -19,7 +19,7 @@ Asteria demande deux preuves différentes : continuer à accéder aux applicatio
 
 ## Partie A — Le repli d’accès
 
-1. Sauvegarder votre configuration puis établir une référence saine. L’injection M04 permet de reproduire l’indisponibilité de l’identité principale.
+1. Sauvegarder votre configuration puis établir une référence saine. Le fichier d’incident fourni pour cette activité permet de reproduire l’indisponibilité de l’identité principale.
 2. Examiner le second service d’identité fourni dans le laboratoire. Modifier uniquement la configuration des applications pour disposer d’un second choix. Justifier l’ordre des essais.
 3. Avec la dépendance principale indisponible, démontrer les deux parcours HTTP et le fournisseur effectivement utilisé. Vérifier aussi l’échec lorsque les deux validations d’identité sont indisponibles : le modèle ne doit pas simplement ignorer ce contrôle.
 4. Rétablir une configuration fonctionnelle pour la partie B. Conserver les différences et les preuves, pas seulement une réponse finale HTTP 200.

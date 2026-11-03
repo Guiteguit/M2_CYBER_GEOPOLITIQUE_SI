@@ -47,30 +47,27 @@ Chaque composant expose `/health`, qui teste son propre état local et **ne test
 
 Les commandes sont dans `lab/runtime/commandes.csv`. Le journal append-only de l’exercice est `lab/runtime/events.jsonl` ; il n’est pas cryptographiquement protégé. Ses horodatages sont ceux de votre machine. Une configuration invalide provoque une erreur explicite ; conserver une copie avant de l’éditer.
 
-## Commandes de contrôle
+## Appliquer l’état d’un exercice
+
+Pour les activités avec incident, placer le JSON remis dans un dossier local `incidents/`, puis l’appliquer une seule fois au lancement de l’activité :
 
 ```bash
-# Injecteurs : chacun remet d’abord configuration et commandes à l’état initial.
-# Ils ne suppriment pas les journaux existants.
-python3 lab/asteria_lab.py scenario M04
-python3 lab/asteria_lab.py scenario M06
-python3 lab/asteria_lab.py scenario M08 --seed 27
+python3 lab/asteria_lab.py incident --from incidents/m04.json --confirm
+```
 
-# Export par le parcours HTTP réel du laboratoire, avec manifeste d’intégrité.
+Adapter le nom du fichier au module concerné. L’import valide le format et le port de base, puis remplace les données et la configuration fictives de travail ; les journaux existants restent conservés. Il ne lance aucun code reçu et n’accepte pas de chemin de sortie dans la capsule. Une capsule peut fournir une copie préincident sous `lab/runtime/sauvegardes/preincident.csv`, avec manifeste. Cette copie est fournie pour l’exercice, pas un export que vous auriez déjà démontré.
+
+Ne pas réappliquer le fichier après une correction pour faire disparaître une panne. Le choix des scénarios n’est pas dans ce dépôt.
+
+## Exporter, restaurer et réinitialiser
+
+```bash
 python3 lab/asteria_lab.py export --to lab/runtime/sauvegardes/mon_export.csv
-
-# Remplace les commandes du laboratoire après contrôle du format et,
-# lorsqu’il existe, du manifeste adjacent .csv.meta.json.
 python3 lab/asteria_lab.py restore --from lab/runtime/sauvegardes/mon_export.csv --confirm
-
-# Réinitialisation de démonstration : réservée au début/à la fin d’un exercice.
-# Elle réécrit configuration et commandes, conserve journaux et sauvegardes.
 python3 lab/asteria_lab.py reset --confirm
 ```
 
-Le scénario M08 prépare une copie `lab/runtime/sauvegardes/preincident.csv` et son manifeste avant l’incident. C’est une sauvegarde initiale de simulation fournie par l’injecteur, pas la preuve d’un export précédemment réalisé par l’étudiant. Une graine identique reproduit la même famille de panne. Les mécanismes restent inspectables dans le code : il s’agit d’une évaluation de diagnostic et de preuve, pas d’un secret anti-triche.
-
-Les chemins des options `--to` et `--from` sont des fichiers locaux. Éviter de sauvegarder sur le fichier de données courant. Exporter et restaurer ne répare ni une route ni l’accès à l’identité.
+Le reset réécrit configuration et commandes, conserve journaux et sauvegardes et sert uniquement à préparer ou ranger une démonstration. Il ne remplace pas une restauration depuis votre export. Les options `--to` et `--from` désignent des fichiers locaux. Éviter d’exporter sur le fichier de données courant. Une restauration ne répare ni une route ni l’accès à l’identité.
 
 ## Arrêter ou changer les ports
 
@@ -81,7 +78,7 @@ python3 lab/asteria_lab.py --state-dir lab/runtime-bis init --base-port 19180
 python3 lab/asteria_lab.py --state-dir lab/runtime-bis start
 ```
 
-Adapter ensuite les URL et ajouter `--state-dir lab/runtime-bis` **avant** les sous-commandes `status`, `scenario`, `export` et `restore`. Les scénarios calculent leurs ports depuis ce port de base ; un éventuel port de panne `base + 9` doit aussi être libre pour conserver un refus de connexion reproductible.
+Adapter ensuite les URL et ajouter `--state-dir lab/runtime-bis` **avant** les sous-commandes `status`, `incident`, `export` et `restore`. Demander une capsule préparée pour cette même base de ports. Le prévol examine aussi le port de réserve `base + 9` pour les exercices.
 
 ## Ce que le TP ne démontre pas
 

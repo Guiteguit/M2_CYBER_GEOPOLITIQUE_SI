@@ -4,7 +4,7 @@
 
 ## Démarrer
 
-- **Formateur et groupe :** [comment utiliser le dépôt en classe](docs/UTILISER_EN_CLASSE.md).
+- **Participer et rendre son travail :** [guide étudiant](docs/PARTICIPER.md).
 - **Étudiants :** [contexte Asteria](docs/CONTEXTE.md), [outils](docs/OUTILS.md), puis [M01](modules/M01/README.md).
 - **Avant les manipulations locales :** [préparer le laboratoire](lab/README.md).
 - **Avant M04 :** prendre connaissance du [barème proposé](docs/EVALUATION.md).
@@ -34,8 +34,8 @@ Il s’agit d’un modèle d’applications et d’identité fictive, pas d’un
 
 Douze heures effectives, hors pauses et préparation des postes. Conserver des hypothèses individuelles, des preuves datées et une synthèse argumentée. Chaque conclusion relie un acteur, une dépendance et une décision pour Asteria. Les pays et offres du cas sont fictifs ; les observations réelles sont explicitement séparées des traces simulées.
 
-M01–M03 sont formatifs. Le [barème](docs/EVALUATION.md) propose 12 points individuels et 8 collectifs à valider par l’école. Les notes nominatives et corrections restent hors de ce dépôt partagé. Une branche « formateur » ne fournit pas de confidentialité.
+M01–M03 sont formatifs. Les [critères d’évaluation](docs/EVALUATION.md) distinguent 12 points individuels et 8 collectifs. Les modalités applicables sont précisées avant M04.
 
 ## Travailler ensemble
 
-Utiliser une branche par contribution puis une branche de synthèse. Le [guide Git](docs/GIT.md) présente le principe et le [guide de classe](docs/UTILISER_EN_CLASSE.md) détaille accès, rôles, pull requests, revues et intégration. Les comptes étudiants doivent être invités et les droits vérifiés avant le cours ; aucune invitation n’a été envoyée automatiquement.
+Utiliser une branche par contribution puis une branche de synthèse. Le [guide Git](docs/GIT.md) et le [guide étudiant](docs/PARTICIPER.md) expliquent les contributions, les pull requests et la synthèse collective. Vérifier son accès au dépôt avant la première séance.

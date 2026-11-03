@@ -1,6 +1,6 @@
 # Évaluation proposée — parcours technique
 
-À annoncer et valider selon les règles de l’école avant M04. M01–M03 sont formatifs. Les points suivants donnent une note finale sur 20, dont **12 individuels et 8 collectifs**. Les notes nominatives ne sont pas publiées dans ce dépôt partagé.
+Les modalités applicables sont précisées avant M04. M01–M03 sont formatifs. Les points suivants donnent une note finale sur 20, dont **12 individuels et 8 collectifs**. Les notes nominatives ne sont pas publiées dans ce dépôt partagé.
 
 ## Individuel — 12 points
 
@@ -29,4 +29,4 @@ Un HTTP 200 sans les données attendues ne vaut pas une reprise métier. Une pr�
 
 Le temps de réparation seul ne classe pas les étudiants. Les variantes M08 peuvent demander des opérations différentes ; noter la qualité du diagnostic, des preuves et de l’oral. Les désaccords argumentés sont recevables et une révision après un test n’est pas pénalisée.
 
-Si le formateur décide du mode secours pour un blocage matériel, il annonce les critères adaptés : qualité du diff proposé, des tests prévus et de l’argumentation. Il indique dans son appréciation ce qui a été exécuté et ce qui a seulement été conçu. Ne pas attribuer une preuve de repli ou de restauration qui n’existe pas.
+Si le formateur décide du mode secours pour un blocage matériel, il annonce les critères adaptés : qualité du diff proposé, des tests prévus et de l’argumentation. Votre rendu distingue ce qui a été exécuté et ce qui a seulement été conçu. Une prédiction ne constitue pas une preuve de repli ou de restauration.

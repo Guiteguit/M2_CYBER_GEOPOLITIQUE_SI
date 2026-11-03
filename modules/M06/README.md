@@ -24,7 +24,7 @@ Le [dossier de traces](donnees/README.md) est **synthétique**, avec des dates f
 1. Construire une chronologie de cinq jalons en citant les fichiers et champs. Qualifier les sources et leurs limites.
 2. Comparer `config_avant.json` et `config_apres.json`. Expliquer un mécanisme qui produit les symptômes et chercher un contre-exemple possible.
 3. Examiner les échecs de connexion externes : démontrent-ils un accès réussi, un changement de configuration ou seulement des tentatives ? Quelle autre preuve serait nécessaire ?
-4. Conserver l’état initial du laboratoire, puis injecter `scenario M06`. Réaliser au moins un test de bout en bout et un test direct d’une dépendance. Conserver les réponses avant d’éditer la configuration.
+4. Conserver l’état initial du laboratoire, puis appliquer le fichier d’incident fourni pour M06. Réaliser au moins un test de bout en bout et un test direct d’une dépendance. Conserver les réponses avant d’éditer la configuration.
 5. Proposer une correction minimale de configuration, annoncer l’effet attendu et l’appliquer. Vérifier les deux applications et le contenu métier. Ne pas remplacer le laboratoire par un reset.
 6. Vérifier la non-régression : le contrôle d’identité existe toujours et les journaux sont conservés. Ne pas modifier le code du laboratoire pour ignorer une erreur.
 

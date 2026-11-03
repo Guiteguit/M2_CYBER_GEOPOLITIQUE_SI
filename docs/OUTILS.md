@@ -31,7 +31,6 @@ Ces liens documentent les outils et les limites d’observation ; ils ne constit
 - [RIPE NCC — historique de routage](https://stat.ripe.net/docs/data-api/api-endpoints/routing-history).
 - [Python 3.12 — serveurs HTTP](https://docs.python.org/3.12/library/http.server.html).
 - [Python — urllib.request](https://docs.python.org/3/library/urllib.request.html).
-- [GitHub — collaborateurs d’un dépôt personnel](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository).
 - [Meta Engineering — détail de la panne du 4 octobre 2021](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/).
 
 Les pièces contractuelles et les publications des dossiers synthétiques sont fictives. Les références ci-dessus documentent les outils ou un incident réel distinct ; elles ne valident pas l’ensemble des affirmations du cas Asteria.

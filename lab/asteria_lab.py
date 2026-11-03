@@ -9,7 +9,6 @@ import csv
 import hashlib
 import io
 import json
-import random
 import threading
 import time
 from datetime import datetime, timezone
@@ -53,6 +52,10 @@ def defaults(base):
 
 def read_config(state):
     config = json.loads((state / "config.json").read_text(encoding="utf-8"))
+    return validate_config(config)
+
+
+def validate_config(config):
     base = config["base_port"]
     if not isinstance(base, int) or not 1024 <= base <= 65520:
         raise ValueError("base_port invalide")
@@ -247,31 +250,33 @@ def export_data(state, destination):
     return metadata
 
 
-def scenario(state, module, seed):
-    base = read_config(state)["base_port"]
-    config = defaults(base)
-    atomic(state / "commandes.csv", csv_text(INITIAL))
-    if module == "M04":
-        config["disabled"] = ["idp"]
-    elif module == "M06":
-        config["auth_ports"] = {role: [base + 9] for role in ("portail", "commandes")}
-    elif module == "M08":
+def apply_incident(state, source):
+    """Appliquer des données de TP, sans charger de code ou choisir une panne."""
+    payload = json.loads(source.read_text(encoding="utf-8-sig"))
+    if payload.get("format") != "asteria-incident-v1":
+        raise ValueError("Format de capsule inconnu")
+    if payload.get("module") not in {"M04", "M06", "M08"}:
+        raise ValueError("Module de capsule invalide")
+    config = validate_config(payload["config"])
+    if config["base_port"] != read_config(state)["base_port"]:
+        raise ValueError("La capsule ne correspond pas au port de base du laboratoire")
+    text = payload["commandes_csv"]
+    parse_orders(text)
+    snapshot_text = payload.get("preincident_csv")
+    snapshot_rows = parse_orders(snapshot_text) if snapshot_text is not None else None
+    # Toutes les données sont vérifiées avant de remplacer l'état de travail.
+    # Aucun chemin ni code arbitraire n'est lu depuis la capsule.
+    if snapshot_text is not None:
         snapshot = state / "sauvegardes" / "preincident.csv"
-        text = csv_text(INITIAL)
-        atomic(snapshot, text)
+        atomic(snapshot, snapshot_text)
         atomic(snapshot.with_suffix(".csv.meta.json"), json.dumps({
-            "exported_at_utc": now(), "sha256": hashlib.sha256(text.encode()).hexdigest(),
-            "rows": len(INITIAL), "quantity_total": 9, "provenance": "snapshot_initial_fourni_par_injecteur"}, indent=2))
-        fault = random.Random(seed).choice(["edge_route", "auth_route", "data_empty"])
-        if fault == "edge_route":
-            config["routes"]["commandes"] = base + 9
-        elif fault == "auth_route":
-            config["auth_ports"] = {role: [base + 9] for role in ("portail", "commandes")}
-        else:
-            atomic(state / "commandes.csv", csv_text([]))
+            "exported_at_utc": now(), "sha256": hashlib.sha256(snapshot_text.encode()).hexdigest(),
+            "rows": len(snapshot_rows), "quantity_total": sum(int(r["quantite"]) for r in snapshot_rows),
+            "provenance": "copie_fournie_dans_exercice"}, indent=2))
+    atomic(state / "commandes.csv", text)
     save_config(state, config)
-    event(state, "controle", "scenario", 200, f"module={module}; seed={seed}")
-    print(f"Scénario {module} injecté. Les serveurs continuent ; conservez les preuves avant correction.")
+    event(state, "controle", "incident_applique", 200, f"module={payload['module']}; fichier={source.name}")
+    print("État d'exercice appliqué ; conservez les preuves avant correction.")
 
 
 def main():
@@ -284,9 +289,9 @@ def main():
     sub.add_parser("status")
     reset = sub.add_parser("reset")
     reset.add_argument("--confirm", action="store_true", required=True)
-    injection = sub.add_parser("scenario")
-    injection.add_argument("module", choices=["M04", "M06", "M08"])
-    injection.add_argument("--seed", type=int, default=1)
+    injection = sub.add_parser("incident")
+    injection.add_argument("--from", dest="source", type=Path, required=True)
+    injection.add_argument("--confirm", action="store_true", required=True)
     export = sub.add_parser("export")
     export.add_argument("--to", type=Path, required=True)
     restore = sub.add_parser("restore")
@@ -314,8 +319,8 @@ def main():
                 results[path] = {"status": code, "body": body}
             print(json.dumps(results, ensure_ascii=False, indent=2))
             return 0 if all(results[path]["status"] == 200 for path in ("/portail", "/commandes")) else 2
-        elif args.command == "scenario":
-            scenario(state, args.module, args.seed)
+        elif args.command == "incident":
+            apply_incident(state, args.source)
         elif args.command == "export":
             print(json.dumps(export_data(state, args.to.resolve()), indent=2))
         elif args.command == "restore":
