@@ -2,6 +2,12 @@
 
 **8 modules de 90 minutes · 3 étudiants · Parcours technique complet.** Observer, manipuler, confronter les preuves et défendre une décision SI.
 
+## M01–M03 : démarrage en autonomie
+
+**Le formateur est absent pendant les trois premiers modules.** Commencer par [DEMARRER_AUTONOMIE.md](docs/DEMARRER_AUTONOMIE.md), puis suivre M01 → M02 → M03, 90 minutes chacun. Les apports écrits, rôles, données, aides progressives et auto-vérifications permettent d’avancer sans cours oral ni validation intermédiaire. Le parcours de base fonctionne avec le navigateur et les fichiers fournis ; aucune installation ni commande Python n’est exigée.
+
+Pendant ce bloc, chacun garde une branche personnelle pour les trois modules et les trois pull requests restent ouvertes. Aucune fusion n’est attendue avant M04. La préparation du laboratoire concerne la reprise avec le formateur, pas les investigations autonomes.
+
 ## Démarrer
 
 - **Participer et rendre son travail :** [guide étudiant](docs/PARTICIPER.md).
@@ -22,7 +28,7 @@
 | [M07](modules/M07/README.md) | Vérifier une affirmation sur un incident | Empreintes, sources et traces | [M07](rendus/M07/README.md) |
 | [M08](modules/M08/README.md) | Diagnostiquer, reprendre et défendre | Épreuve locale reproductible | [M08](rendus/M08/README.md) |
 
-Chaque module M02–M08 comprend une mission, des notions, une aide et des supports de restitution individuels/collectifs. Le contenu est écrit pour un travail autonome suivi d’un échange ; les aides ne sont pas une correction complète.
+Chaque module M02–M08 comprend une mission, des notions, une aide et des supports de restitution individuels/collectifs. M01–M03 se déroulent sans intervention du formateur, avec échanges entre pairs et auto-vérification. M04–M08 conservent leur animation accompagnée ; les aides ne sont pas une correction complète.
 
 ## Environnement
 
@@ -38,4 +44,4 @@ M01–M03 sont formatifs. Les [critères d’évaluation](docs/EVALUATION.md) di
 
 ## Travailler ensemble
 
-Utiliser une branche par contribution puis une branche de synthèse. Le [guide Git](docs/GIT.md) et le [guide étudiant](docs/PARTICIPER.md) expliquent les contributions, les pull requests et la synthèse collective. Vérifier son accès au dépôt avant la première séance.
+Pendant M01–M03, appliquer le [rendu sans fusion](docs/DEMARRER_AUTONOMIE.md). À partir de M04, utiliser une branche par contribution puis une branche de synthèse. Le [guide Git](docs/GIT.md) et le [guide étudiant](docs/PARTICIPER.md) expliquent les contributions, les pull requests et la synthèse collective. Vérifier son accès au dépôt avant la première séance.

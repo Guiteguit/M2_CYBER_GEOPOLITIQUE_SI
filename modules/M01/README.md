@@ -1,76 +1,67 @@
 # M01 — Qui contrôle réellement l’accès à un service numérique ?
 
-**90 minutes · 3 étudiants · DNS, IP et ASN · Travail formatif.**
+**90 minutes · Autonomie complète · Trois étudiants · Formatif.** Commencer par le [guide du bloc autonome](../../docs/DEMARRER_AUTONOMIE.md). Le formateur est absent : toutes les explications nécessaires, les données et les vérifications sont écrites. Un navigateur suffit ; pas de VM, de Python ni de laboratoire à installer.
 
-## Mission
+## Mission et résultat attendu
 
-> Asteria envisage de dépendre davantage de services Internet. Elle vous demande de montrer ce qu’une investigation externe permet d’apprendre sur les acteurs nécessaires à leur accès, et ce qui exige encore des informations du fournisseur.
+Asteria, entreprise fictive, veut comprendre les acteurs dont dépend l’accès à un service numérique. Votre cas d’observation est `isc.org` et `www.isc.org`, ressources publiques d’ISC, qui n’appartiennent pas à Asteria. Identifiez les dépendances visibles, leurs preuves et les informations impossibles à établir depuis l’extérieur.
 
-Le domaine principal observé est **`isc.org`**, avec le nom **`www.isc.org`**. Ce sont des ressources publiques de l’Internet Systems Consortium, utilisées comme cas d’observation externe ; elles n’appartiennent pas à Asteria. L’objet du TP est la méthode d’enquête, pas un audit de sécurité d’ISC.
+Rendez une carte ou une liste de relations nommées, cinq observations sourcées, trois inconnues et une recommandation de dix lignes. Chacun garde son hypothèse initiale et une observation qu’il sait expliquer. A consigne la synthèse de ce module sur sa branche ; B et C discutent et relisent.
 
-Les requêtes portent sur les enregistrements `NS`, `MX`, `A`, `AAAA` de `isc.org`, puis `CNAME`, `A`, `AAAA` de `www.isc.org`. Les noms retournés peuvent être résolus pour comprendre une relation déjà observée. Complétez par RIPEstat et la documentation officielle pertinente. Le TP ne demande ni scan, ni recherche de vulnérabilité, ni énumération automatisée de noms.
+## Chronomètre — 90 minutes
 
-Les données changent : notez les dates, le résolveur ou le service interrogé, et conservez les résultats. Une différence avec une collecte précédente doit être expliquée ou laissée ouverte, pas masquée.
+| Minutes | Action sans intervention extérieure |
+|---|---|
+| 0–8 | Vérifier accès/copie, choisir A/B/C, préparer ses fichiers et noter une hypothèse |
+| 8–23 | Lire [NOTIONS.md](NOTIONS.md) ; chacun reformule une distinction importante |
+| 23–43 | Enquêter sur DNS, web et messagerie, avec commandes ou fichiers fournis |
+| 43–60 | Relier une IP à un réseau et qualifier les acteurs/limites |
+| 60–72 | Tour de parole de deux minutes chacun, puis objections croisées |
+| 72–83 | Compléter la carte et la synthèse commune |
+| 83–90 | [Auto-vérification](AUTO_VERIFICATION.md), retour individuel et enregistrement |
 
-## Objectifs
+Ne dépassez pas trois minutes sur une panne d’outil : passez aux données fournies. Une inconnue documentée vaut mieux qu’une réponse inventée. À 90 minutes, sauvegardez et passez à M02 sans attendre de correction.
 
-- Distinguer domaine, service, adresse, préfixe, ASN et fournisseur.
-- Identifier les dépendances visibles du DNS, du web et de la réception du courrier.
-- Relier une observation à sa preuve et à ses limites.
-- Décrire une dépendance commune possible sans inventer la topologie d’origine.
-- Formuler une recommandation SI et une question sur le contrôle de ces ressources.
+## 1. Avant de lire les notions
 
-## Avant les outils — 10 minutes
+Chacun écrit dans son fichier individuel : qui pourrait empêcher l’accès à un site sans posséder son serveur ? Quelle observation aiderait à le vérifier ? Gardez cette première réponse pour pouvoir expliquer ensuite son évolution.
 
-Chacun répond en quelques lignes dans son fichier individuel :
+## 2. Le chemin garanti avec les fichiers fournis
 
-1. Qui pourrait empêcher l’accès à un service web, sans être propriétaire de son serveur ?
-2. Quelles observations chercherez-vous pour identifier ces acteurs ?
-3. Qu’est-ce qu’une recherche externe ne permettra probablement pas de démontrer ?
+Ouvrir le [dossier de collectes](preuves_secours/README.md), puis :
 
-Le formateur recueille les trois propositions, puis consacre 15 minutes aux notions nécessaires. Ne cherchez pas une liste d’acteurs attendue à recopier.
+- `isc.org_NS.json` pour la délégation ;
+- `isc.org_MX.json` pour la réception du courrier ;
+- `isc.org_A.json`, `isc.org_AAAA.json`, `www.isc.org_A.json`, `www.isc.org_AAAA.json` et `www.isc.org_CNAME.json` pour le web ;
+- les résolutions des noms NS/MX pour poursuivre une relation déjà observée ;
+- `RIPE_web_network-info.json`, puis le fichier RIPE d’ASN fourni dans le dossier pour examiner l’adresse effectivement passée en paramètre.
 
-## Investigation DNS — 20 minutes
+Dans chaque pièce, relever requête ou URL source, date et champs utiles. Distinguer nom demandé, type demandé et réponses effectivement présentes. Si une section est vide ou absente, expliquez ce que cela permet — et ne permet pas — de conclure.
 
-Répondez aux questions suivantes avec vos outils ou les [collectes de secours](preuves_secours/README.md) :
+A commence par NS et délégation ; B par web/IP/ASN ; C par MX et documentation. Chacun réalise une lecture technique, puis vérifie une observation d’un autre. Une capture d’écran n’est pas obligatoire : un extrait cité par fichier et champ suffit.
 
-- Quels serveurs sont annoncés comme autoritaires pour le domaine ?
-- Vers quels noms est dirigée la réception du courrier ? Quelles adresses peut-on associer à ces noms si on poursuit la résolution ?
-- Quelles adresses ou relations d’alias sont visibles pour le web ? Distinguez ce qui est demandé et les éventuelles autres réponses renvoyées.
-- Une absence de réponse pour un type prouve-t-elle l’absence du service ? Précisez le statut de la réponse et le nom étudié.
+Si vous disposez déjà d’un terminal fonctionnel, vous pouvez remplacer une partie de ces lectures par des requêtes en direct selon [AIDE.md](AIDE.md). Indiquez alors la date, le résolveur et les éventuelles différences. Limitez-vous aux noms et types du dossier, ou à la résolution des noms retournés ; aucune énumération, aucun scan ni recherche de vulnérabilité n’est demandé.
 
-Conservez des extraits exploitables plutôt qu’une capture de terminal illisible. Les commandes d’aide sont dans [AIDE.md](AIDE.md) ; vous choisissez la démarche.
+## 3. Des réponses aux dépendances
 
-## Du réseau aux acteurs — 20 minutes
+Choisir une adresse du web et vérifier que le JSON réseau fourni concerne bien cette adresse. Retrouver le préfixe et l’ASN annonçant, puis l’organisation associée. Une documentation officielle peut compléter l’analyse si Internet fonctionne ; sinon consigner le besoin de confirmation, sans attribuer un rôle au seul nom d’un domaine.
 
-- Choisissez une adresse effectivement observée et retrouvez son préfixe et son ou ses ASN annonçants avec RIPEstat.
-- Identifiez l’organisation associée à l’ASN et distinguez cette information de la localisation des serveurs.
-- Consultez une ou deux sources officielles pour confirmer un rôle technique ou comprendre les limites d’un service observé.
-- Reliez au moins une dépendance à un acteur qui peut la modifier ou l’interrompre. Une nationalité ou un pays de registre ne constitue pas à lui seul une preuve de contrôle de toutes les données.
+Pour chaque relation, écrire : « cet élément utilise ou s’appuie sur cet autre élément, d’après telle preuve ». Un nom de fournisseur, une IP et un pays de registre ne sont pas interchangeables. Les [notions](NOTIONS.md) et l’[aide](AIDE.md) donnent les distinctions.
 
-Pour répartir la recherche, A commence par DNS/délégation, B par web/IP/ASN, C par messagerie et documentation. Chacun réalise au moins une observation technique et en explique une limite. Faites ensuite une vérification croisée ; personne ne reste uniquement chargé de recopier les résultats.
+## 4. Discussion à trois — douze minutes
 
-## Confrontation — 15 minutes
+Chacun présente une observation, la preuve et une limite pendant deux minutes. Pendant les six minutes suivantes, examinez :
 
-Chaque étudiant dispose de deux minutes pour exposer une observation, sa preuve et une limite. Utilisez ensuite les neuf minutes restantes pour débattre :
+1. Quelle dépendance commune peut-on démontrer, et quelle indépendance reste non prouvée ?
+2. Quel changement technique, commercial ou international pourrait affecter un acteur identifié ? Formulez une possibilité conditionnelle, pas une accusation.
+3. Quelle preuve Asteria devrait-elle demander avant de décider de conserver ou remplacer ce service ?
 
-1. Les fonctions étudiées dépendent-elles d’un acteur commun ? Qu’est-ce qui le démontre ?
-2. Quel changement économique ou international pourrait affecter une de ces dépendances ? Formulez un scénario conditionnel, pas une accusation ou une règle juridique supposée.
-3. Asteria pourrait-elle réduire cette dépendance ? Quelle information manque pour choisir une alternative ?
+Si vous ne tranchez pas un désaccord en cinq minutes, écrivez les deux hypothèses et le test qui les départagerait. Continuez.
 
-## Synthèse — 10 minutes
+## 5. Remise et passage au M02
 
-Produisez dans [SYNTHESE.md](../../rendus/M01/SYNTHESE.md) :
+Compléter [SYNTHESE.md](../../rendus/M01/SYNTHESE.md) : carte, cinq observations, trois inconnues et recommandation. Une liste « départ — relation — arrivée — preuve » remplace une image si le dessin vous ralentit. Chacun complète son fichier individuel A/B/C.
 
-- une carte des relations observées, avec un sens de lecture et une distinction entre faits et hypothèses ;
-- cinq observations sourcées ;
-- trois inconnues importantes ;
-- une recommandation de dix lignes maximum : décision proposée, raison, limite et vérification prioritaire.
+A enregistre la synthèse sur `tp/autonomie-a`, B et C conservent leurs contributions sur leurs branches personnelles. Les trois pull requests restent ouvertes ; aucune fusion n’est nécessaire. Si GitHub bloque, conserver les fichiers localement selon le [guide commun](../../docs/DEMARRER_AUTONOMIE.md).
 
-Les positions individuelles, preuves et synthèse se trouvent dans [rendus/M01](../../rendus/M01/README.md). Les sources en ligne sont accompagnées d’une URL et d’une date ; les réponses techniques précisent la cible et le point d’observation. L’absence d’un nom de fournisseur dans un résultat n’autorise pas à inventer une attribution.
-
-## Ce qui sera discuté
-
-Le retour porte sur la précision, la traçabilité, l’interprétation et le lien entre dépendance technique et décision SI. Un résultat « inconnu avec une vérification pertinente » peut être meilleur qu’une conclusion catégorique non démontrée. Aucun classement de fournisseurs n’est attendu.
-
-Le partage des accès et la prise en main de Git sont préparés avant la séance. En cas de problème réseau, utilisez les mêmes questions sur les résultats datés de secours, en signalant leur ancienneté. Le déroulé totalise 90 minutes ; il sera ajusté au rythme du groupe.
+Terminer l’[auto-vérification](AUTO_VERIFICATION.md), noter un blocage éventuel et ouvrir [M02](../M02/README.md). M01 reste formatif ; le retour avec le formateur aura lieu à partir de M04.

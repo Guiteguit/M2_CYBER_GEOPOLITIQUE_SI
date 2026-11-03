@@ -1,5 +1,7 @@
 # Participer au cours et rendre son travail
 
+> **M01–M03 sans formateur :** suivre d’abord [le guide autonome](DEMARRER_AUTONOMIE.md). Une branche personnelle couvre les trois modules et aucune fusion n’est attendue. Le fonctionnement ci-dessous s’applique normalement à partir de M04.
+
 ## Avant la séance
 
 Accepter l’invitation au dépôt, vérifier que l’on peut le cloner avec son propre compte, puis noter sa lettre A/B/C. Lire les [outils](OUTILS.md) et préparer le [laboratoire](../lab/README.md) avant M04. Les critères d’évaluation sont dans [EVALUATION.md](EVALUATION.md).

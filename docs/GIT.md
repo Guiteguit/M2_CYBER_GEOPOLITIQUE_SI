@@ -1,5 +1,7 @@
 # Git : préparer le rendu sans y passer la séance
 
+> **M01–M03 sans formateur :** suivre d’abord [le guide autonome](DEMARRER_AUTONOMIE.md). Une branche personnelle couvre les trois modules et aucune fusion n’est attendue. Le fonctionnement ci-dessous s’applique normalement à partir de M04.
+
 Les accès au dépôt sont attribués par le formateur. Un dépôt privé exige une authentification autorisée ; ne jamais mettre de mot de passe ou de jeton dans les fichiers ou l’URL du dépôt.
 
 ## Préparation hors du temps d’investigation

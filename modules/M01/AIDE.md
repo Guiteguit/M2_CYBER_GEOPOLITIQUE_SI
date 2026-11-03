@@ -2,6 +2,16 @@
 
 Ces exemples servent à débloquer une recherche. Ils ne remplacent ni le choix des observations ni leur interprétation.
 
+**Pendant M01 en autonomie :** les fichiers du [dossier de collectes](preuves_secours/README.md) permettent de terminer sans terminal ni recherche en direct. Ne consacrez pas plus de trois minutes à faire fonctionner un outil. Les commandes ci-dessous sont facultatives.
+
+## Aides progressives sans installation
+
+**Niveau 1 — Je ne sais pas quel fichier lire.** Revenez à la question : délégation → NS ; réception du courrier → MX ; adresse web → A/AAAA ; relation d’alias → CNAME. Ouvrez le fichier correspondant, puis cherchez `Question` et `Answer`. Pour le réseau, ouvrez les fichiers RIPE et vérifiez l’adresse de l’URL source.
+
+**Niveau 2 — Je ne sais pas extraire une observation.** Notez d’abord la valeur brute avec le fichier et le champ, sans nommer un fournisseur si vous ne l’avez pas confirmé. Dans un MX, la préférence et le nom ont des fonctions différentes. Une preuve peut être un extrait texte ; pas besoin d’une capture.
+
+**Niveau 3 — Je ne sais pas conclure.** Écrivez deux phrases : « le fichier montre… » et « cela ne permet pas encore de savoir… ». Ajoutez la preuve qui manque. Si une section est vide, ne la remplacez pas par une supposition. Relisez [NOTIONS.md](NOTIONS.md), puis conservez le point à vérifier et continuez.
+
 ## DNS avec dig
 
 ```bash

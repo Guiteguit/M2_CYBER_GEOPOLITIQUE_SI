@@ -1,42 +1,64 @@
 # M02 — Une route visible signifie-t-elle un service disponible ?
 
-**90 min · Recherche BGP et analyse de traces · Formatif.** Prérequis : vocabulaire IP/préfixe/ASN du M01. Matériel : navigateur et Python 3.10+ ou tableur ; aucun routeur ni VM à installer.
+**90 minutes · Autonomie complète · Analyse BGP et mesures · Formatif.** Suivre le [guide commun](../../docs/DEMARRER_AUTONOMIE.md). Aucun cours oral, script ou site externe n’est nécessaire pour terminer. Les JSON et CSV sont lisibles directement dans GitHub ou avec une copie locale.
 
 ## Mission
 
-Asteria souhaite savoir si un changement de routage observé suffit à expliquer une interruption de service. Vous devez séparer visibilité des routes, accès mesuré et fonctionnement applicatif, puis proposer une surveillance pertinente.
+Asteria cherche si une observation de routage suffit à expliquer une interruption de service. Distinguez route observée, accès depuis une sonde et disponibilité applicative. Votre analyse doit préciser le périmètre et proposer une surveillance utile.
 
-Commencer par les [notions](NOTIONS.md), les [données](donnees/README.md) et l’[aide](AIDE.md). Deux jeux sont séparés : une collecte réelle RIPEstat et un exercice CSV **entièrement simulé**. Ne pas mélanger leurs dates, préfixes ou conclusions.
+Le module utilise une collecte RIPE réelle datée et deux CSV simulés : [présentation des données](donnees/README.md). Ne leur attribuez pas le même incident ou la même période. Vous pouvez terminer M02 même si le diagnostic M01 reste incertain : toutes les ressources sont fournies ici.
 
-## Déroulé — 90 minutes
+B est rapporteur. A commence par les sondes HTTP, B par le JSON RIPE, C par le CSV de routes ; chacun relit au moins une autre source.
 
-| Temps | Activité |
+## Chronomètre — 90 minutes
+
+| Minutes | Travail autonome |
 |---|---|
-| 0–10 | Chacun écrit : « Si une route disparaît d’un observateur, que puis-je conclure ? » |
-| 10–25 | Apports : origine, AS_PATH, observateurs, visibilité et mesure du service |
-| 25–45 | Examiner le JSON RIPE et relever ressource, période, origines et périmètre d’observation |
-| 45–65 | Analyser les CSV simulés et construire une chronologie croisant les couches |
-| 65–80 | Confronter les diagnostics et leurs contre-exemples |
-| 80–90 | Rédiger une décision de supervision et une limite de preuve |
+| 0–5 | Hypothèse individuelle et attribution des tâches |
+| 5–20 | Lecture de [NOTIONS.md](NOTIONS.md) et reformulation croisée |
+| 20–38 | Qualifier la collecte réelle : ressource, dates, origine et premier saut |
+| 38–58 | Comparer les deux CSV simulés et construire quatre jalons |
+| 58–70 | Présentations croisées et mise à l’épreuve des hypothèses |
+| 70–83 | Rédiger la synthèse et trois indicateurs |
+| 83–90 | [Auto-vérification](AUTO_VERIFICATION.md), trace individuelle et enregistrement |
 
-## Investigation
+## 1. Hypothèse et lecture
 
-1. Dans la collecte réelle, retrouver les paramètres et la période effectivement couverte. Identifier un ASN d’origine et, si disponible, un premier saut. Distinguer date de collecte et dates des observations.
-2. Dans `routes_simulees.csv`, comparer les deux collecteurs à chaque instant : nombre de pairs voyant le préfixe, population totale et chemin rapporté. Calculer les fractions sans les transformer en pourcentage d’utilisateurs affectés.
-3. Croiser avec `sondes_simulees.csv`. Identifier un moment où un changement de visibilité ne produit pas les mêmes effets depuis toutes les sondes et un moment où le routage semble revenu mais où l’application reste indisponible.
-4. Proposer au moins deux explications compatibles avec les observations. Pour les départager, demander une preuve précise : données opérateur, journaux de changement, autres observateurs ou mesure applicative.
+Avant les notions, chacun écrit : « Une route disparaît chez un observateur : puis-je affirmer que tous les utilisateurs ont perdu le service ? Quelle information manque ? » Ne corrigez pas votre réponse avant de l’avoir conservée.
 
-Les CSV peuvent être ouverts dans un tableur. Le script `scripts/analyser_bgp.py` donne les fractions par ligne, sans expliquer la cause. Le résultat brut n’est pas votre diagnostic.
+Lire les notions puis expliquer à un autre la différence entre ASN d’origine, chemin observé et trajet physique. Utilisez les [aides progressives](AIDE.md) si une colonne ou un champ bloque.
 
-## Questions de débat
+## 2. Collecte réelle
 
-- Est-ce une anomalie locale, une interruption partielle, une panne applicative ou une opération intentionnelle ? Que pouvez-vous réellement établir ?
-- Quels opérateurs et dépendances d’interconnexion Asteria devrait-elle examiner avant de choisir une deuxième liaison ?
-- Deux opérateurs pourraient-ils dépendre d’un même transit ou passage physique ? Quelles preuves manquent ?
-- Une variation d’AS_PATH prouve-t-elle un passage physique par tous les pays supposés associés aux ASN ?
+Ouvrir [ripe_routing_history_reel.json](donnees/ripe_routing_history_reel.json). Retrouver :
 
-## Livrables et retour
+- la date à laquelle le fichier a été collecté ;
+- la ressource et les paramètres demandés dans `source_url` ;
+- la période effectivement couverte dans `response.data` ;
+- un groupe de `by_origin`, son origine/premier saut et une de ses périodes de visibilité.
 
-Compléter [le rendu](../../rendus/M02/SYNTHESE.md) : chronologie de quatre jalons, trois observations sourcées, deux hypothèses concurrentes et trois indicateurs (source, fréquence, responsable, déclencheur, action). Chacun conserve une courte position individuelle et explique une limite pendant l’oral.
+Avec l’option de premier saut, une valeur `origin` peut contenir deux ASN ; les notions expliquent comment lire ce format. N’assimilez pas le nombre de groupes au nombre d’origines distinctes sans examiner ces valeurs. La collecte réelle ne fournit pas à elle seule un incident à diagnostiquer.
 
-Le retour porte sur la précision des périodes, la séparation des couches et la prudence de l’attribution. M02 est formatif. En cas de problème Internet, les fichiers locaux suffisent ; aucune requête vers les préfixes simulés n’est attendue.
+La consultation de RIPEstat en ligne et le formatage avec Python sont facultatifs. Si un site ou un outil bloque plus de trois minutes, restez sur le fichier fourni.
+
+## 3. Exercice simulé
+
+Ouvrir [routes_simulees.csv](donnees/routes_simulees.csv) et [sondes_simulees.csv](donnees/sondes_simulees.csv), dans le navigateur ou un tableur. Les dates, préfixes et ASN de cet exercice sont fictifs ; aucune requête vers ces adresses n’est demandée.
+
+Pour chacun des quatre instants : comparer R1 et R2, calculer `peers_seeing / peers_total`, noter les chemins observés puis relever les résultats des sondes A et B. La fraction obtenue décrit les pairs du collecteur, pas les utilisateurs affectés.
+
+Votre chronologie doit comporter quatre lignes : instant, route selon R1/R2, service selon A/B, conclusion limitée. Cherchez un exemple de différence entre observateurs et un exemple de différence entre routage et application. Le script de l’[aide](AIDE.md) est seulement une calculatrice facultative.
+
+## 4. Discussion à trois
+
+Deux minutes chacun pour présenter une observation et une limite, puis six minutes pour confronter au moins deux explications possibles. Pour chacune, demander une preuve qui pourrait la confirmer ou la rendre moins plausible.
+
+Un opérateur pourrait-il contrôler plusieurs accès apparemment différents ? De quelles données disposer pour décider d’une deuxième liaison ? Une variation de chemin suffit-elle à affirmer une censure ou une opération étatique ? Conservez les conditions et les inconnues dans le rendu.
+
+## 5. Livrables et suite
+
+Compléter [la synthèse M02](../../rendus/M02/SYNTHESE.md) : trois observations sourcées, chronologie de quatre jalons, deux hypothèses et trois indicateurs comportant source, responsable, fréquence, déclencheur et action.
+
+B dépose la synthèse sur `tp/autonomie-b`. Chacun complète son fichier individuel sur sa propre branche, déjà utilisée au M01. Ne fusionnez pas et n’attendez pas d’approbation. En mode local, conserver les fichiers pour remise ultérieure.
+
+Effectuer l’[auto-vérification](AUTO_VERIFICATION.md), consigner les blocages et ouvrir [M03](../M03/README.md), même si une hypothèse reste ouverte. Le formateur discutera vos raisonnements à partir de M04.

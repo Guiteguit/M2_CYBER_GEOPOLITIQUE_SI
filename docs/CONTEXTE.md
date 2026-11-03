@@ -14,6 +14,10 @@ Pour chaque investigation, cherchez à répondre à trois questions :
 
 Une nationalité, un pays renseigné dans un registre ou une localisation annoncée ne suffit pas à établir les lieux de stockage, tous les intervenants du support ou une obligation juridique. Documentez séparément les différents aspects.
 
+## Organisation des trois premiers modules
+
+M01–M03 sont réalisés en autonomie complète pendant l’absence du formateur. Les étudiants lisent les apports, investiguent, confrontent leurs réponses puis utilisent les auto-vérifications. Un résultat incertain doit être documenté ; il n’empêche pas de poursuivre. La reprise et les questions sont traitées à partir de M04. Voir [le guide de départ](DEMARRER_AUTONOMIE.md).
+
 ## Évaluation
 
 M01 est formatif : vous recevrez un retour sur la qualité de vos preuves, votre interprétation et votre contribution individuelle. Il n’entre pas dans une note finale. M02–M03 sont également formatifs. Les modalités des modules évalués sont proposées dans le [barème](EVALUATION.md) et annoncées avant M04, après validation par l’école.

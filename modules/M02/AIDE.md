@@ -1,5 +1,17 @@
 # M02 — Aides facultatives
 
+**Mode autonome de base :** ouvrez le JSON et les deux CSV dans GitHub ou un éditeur. Aucun script ni accès à RIPEstat n’est obligatoire. Après trois minutes de blocage d’un outil, poursuivre dans ces fichiers.
+
+## Aides progressives
+
+1. **Je confonds les dates.** `collected_at_utc` décrit le téléchargement. `source_url` porte la demande. Les champs `query_starttime` et `query_endtime` dans les données décrivent la période effective. Relevez-les séparément avant de comparer.
+2. **Le CSV me paraît trop dense.** Prenez un seul instant. Copiez les lignes R1 et R2, puis A et B à ce même instant. Calculez une fraction et écrivez une phrase par couche. Répétez pour les autres instants. Si un tableur met tout dans une colonne, choisir la virgule comme séparateur ou lire le texte brut.
+3. **Je ne peux pas prouver la cause.** C’est possible avec ce dossier. Donnez deux mécanismes compatibles, les faits utiles et une preuve supplémentaire qui les départagerait. La mission ne demande pas de deviner une cause certaine.
+
+Les [notions](NOTIONS.md) expliquent le format de premier saut et la différence entre fraction de pairs et utilisateurs. Le résultat d’un calcul seul n’est pas une interprétation.
+
+## Outils facultatifs déjà disponibles
+
 Depuis la racine du dépôt :
 
 ```bash
