@@ -1,6 +1,6 @@
 # M2 Cyber — Géopolitique du cyberespace et stratégie SI
 
-**8 modules de 90 minutes · 3 étudiants · Parcours technique complet.** Observer, manipuler, confronter les preuves et défendre une décision SI.
+**10 modules de 90 minutes · 3 étudiants · Parcours technique complet.** Observer, manipuler, confronter les preuves et défendre une décision SI.
 
 ## M01–M03 : démarrage en autonomie
 
@@ -8,7 +8,7 @@
 
 Pendant ce bloc, chacun garde une branche personnelle pour les trois modules et les trois pull requests restent ouvertes. Aucune fusion n’est attendue avant M04. La préparation du laboratoire concerne la reprise avec le formateur, pas les investigations autonomes.
 
-## M04–M08 : autonomie accompagnée
+## M04–M10 : autonomie accompagnée
 
 Les étudiants conduisent les investigations et défendent leurs choix. Le formateur prépare les incidents, reste disponible pour les blocages, questionne les décisions et anime la restitution. Aucun exposé oral préalable n’est nécessaire : suivre [le guide commun](docs/AUTONOMIE_ACCOMPAGNEE.md), puis la mission du module.
 
@@ -31,8 +31,10 @@ Les étudiants conduisent les investigations et défendent leurs choix. Le forma
 | [M06](modules/M06/README.md) | Investiguer et corriger une perturbation | Traces synthétiques et reproduction | [M06](rendus/M06/README.md) |
 | [M07](modules/M07/README.md) | Vérifier une affirmation sur un incident | Empreintes, sources et traces | [M07](rendus/M07/README.md) |
 | [M08](modules/M08/README.md) | Diagnostiquer, reprendre et défendre | Épreuve locale reproductible | [M08](rendus/M08/README.md) |
+| [M09](modules/M09/README.md) | Auditer la chaîne logicielle | Inventaire, avis fictifs et comparaison de versions | [M09](rendus/M09/README.md) |
+| [M10](modules/M10/README.md) | Prouver une sortie fournisseur | Mapping JSON/CSV, import SQLite et contrôles métier | [M10](rendus/M10/README.md) |
 
-Chaque module M02–M08 comprend une mission, des notions, une aide et des supports de restitution individuels/collectifs. M01–M03 se déroulent sans intervention du formateur, avec échanges entre pairs et auto-vérification. M04–M08 se déroulent en [autonomie accompagnée](docs/AUTONOMIE_ACCOMPAGNEE.md) : lectures, investigations, aides progressives et auto-vérifications. Le formateur est présent pour aider et discuter les décisions, puis évaluer les raisonnements.
+Chaque module M02–M10 comprend une mission, des notions, une aide et des supports de restitution individuels/collectifs. M01–M03 se déroulent sans intervention du formateur, avec échanges entre pairs et auto-vérification. M04–M10 se déroulent en [autonomie accompagnée](docs/AUTONOMIE_ACCOMPAGNEE.md) : lectures, investigations, aides progressives et auto-vérifications. Le formateur est présent pour aider et discuter les décisions, puis évaluer les raisonnements.
 
 ## Environnement
 
@@ -40,11 +42,13 @@ M01–M03 et M07 s’appuient sur des observations ou des jeux de données. Le l
 
 Il s’agit d’un modèle d’applications et d’identité fictive, pas d’un déploiement SSO ou d’une architecture résiliente de production. Le labo fait de vrais échanges HTTP locaux ; BGP est étudié via les observations du M02, sans émission d’annonces.
 
+M09–M10 utilisent aussi Python 3.10+ standard, sans serveur ni capsule, avec des données fictives hors ligne. Ils travaillent sous `lab/runtime/m09` et `m10` et ne modifient pas l’état des exercices précédents.
+
 ## Méthode et évaluation
 
-Douze heures effectives, hors pauses et préparation des postes. Conserver des hypothèses individuelles, des preuves datées et une synthèse argumentée. Chaque conclusion relie un acteur, une dépendance et une décision pour Asteria. Les pays et offres du cas sont fictifs ; les observations réelles sont explicitement séparées des traces simulées.
+Quinze heures effectives, hors pauses et préparation des postes. Conserver des hypothèses individuelles, des preuves datées et une synthèse argumentée. Chaque conclusion relie un acteur, une dépendance et une décision pour Asteria. Les pays et offres du cas sont fictifs ; les observations réelles sont explicitement séparées des traces simulées.
 
-M01–M03 sont formatifs. Les [critères d’évaluation](docs/EVALUATION.md) distinguent 12 points individuels et 8 collectifs. Les modalités applicables sont précisées avant M04.
+M01–M03 et M09–M10 sont formatifs. M08 conserve son épreuve de synthèse évaluée ; M09–M10 prolongent le parcours sans changer le barème M04–M08. Les [critères d’évaluation](docs/EVALUATION.md) distinguent 12 points individuels et 8 collectifs. Les modalités applicables sont précisées avant M04.
 
 ## Travailler ensemble
 

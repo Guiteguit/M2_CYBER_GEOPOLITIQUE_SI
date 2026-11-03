@@ -1,4 +1,4 @@
-# M04–M08 — Travailler en autonomie avec un formateur en soutien
+# M04–M10 — Travailler en autonomie avec un formateur en soutien
 
 Vous conduisez l’enquête et les manipulations. Le formateur est présent pour aider, poser des questions, apporter une explication ciblée et vous aider à examiner une décision. Il ne déroule pas la solution à votre place et son accord n’est pas nécessaire à chaque étape.
 
@@ -29,6 +29,8 @@ Une réponse intermédiaire peut rester incertaine. Documenter l’inconnue et p
 | M06 | C | Comparer hypothèses, causalité et attribution |
 | M07 | A | Relier chaque affirmation à ses preuves |
 | M08 | B | Démontrer la reprise et défendre une décision |
+| M09 | C | Séparer correspondance de version, exposition et compatibilité |
+| M10 | A | Vérifier les données et les limites de la sortie fournisseur |
 
 Pendant les manipulations, faites tourner pilote, observateur des preuves et contradicteur. Sur trois postes, chacun réalise ses tests puis confronte ses résultats. Sur une instance collective, changer le pilote entre les phases et garder les hypothèses individuelles. Le rapporteur consigne ; il ne fait pas tout le travail.
 

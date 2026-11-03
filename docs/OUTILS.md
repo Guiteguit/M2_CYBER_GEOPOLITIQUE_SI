@@ -34,3 +34,8 @@ Ces liens documentent les outils et les limites d’observation ; ils ne constit
 - [Meta Engineering — détail de la panne du 4 octobre 2021](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/).
 
 Les pièces contractuelles et les publications des dossiers synthétiques sont fictives. Les références ci-dessus documentent les outils ou un incident réel distinct ; elles ne valident pas l’ensemble des affirmations du cas Asteria.
+
+
+## M09–M10 : outils locaux supplémentaires
+
+Python 3.10+ et sa bibliothèque standard suffisent : JSON/CSV pour M09, SQLite intégré à Python pour M10. Aucune installation de paquet, forge externe ou base distante n’est demandée. Consulter [M09](../modules/M09/README.md) et [M10](../modules/M10/README.md). Les avis et composants de M09 sont inventés ; aucun scan de composant réel n’est réalisé.

@@ -1,0 +1,65 @@
+{
+  "simulation": true,
+  "services": {
+    "portail": [
+      "portail"
+    ],
+    "commandes": [
+      "commandes"
+    ]
+  },
+  "components": [
+    {
+      "id": "portail",
+      "version": "1.0",
+      "depends_on": [
+        "identite-sdk",
+        "journal-kit"
+      ],
+      "maintainer": "Asteria",
+      "distribution": "interne"
+    },
+    {
+      "id": "commandes",
+      "version": "1.0",
+      "depends_on": [
+        "export-kit",
+        "journal-kit"
+      ],
+      "maintainer": "Asteria",
+      "distribution": "interne"
+    },
+    {
+      "id": "identite-sdk",
+      "version": "2.1",
+      "depends_on": [
+        "parse-kit"
+      ],
+      "maintainer": "Lumen",
+      "distribution": "Forge-Nord"
+    },
+    {
+      "id": "export-kit",
+      "version": "4.0",
+      "depends_on": [
+        "parse-kit"
+      ],
+      "maintainer": "Delta",
+      "distribution": "Forge-Nord"
+    },
+    {
+      "id": "journal-kit",
+      "version": "3.0",
+      "depends_on": [],
+      "maintainer": "Delta",
+      "distribution": "Forge-Sud"
+    },
+    {
+      "id": "parse-kit",
+      "version": "1.4",
+      "depends_on": [],
+      "maintainer": "Lumen",
+      "distribution": "Forge-Nord"
+    }
+  ]
+}

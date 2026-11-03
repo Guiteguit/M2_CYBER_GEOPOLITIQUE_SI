@@ -35,3 +35,8 @@ Si le formateur décide du mode secours pour un blocage matériel, il annonce le
 ## Autonomie accompagnée et aide
 
 M04–M08 restent accompagnés et évalués par le formateur. Demander une aide n’entraîne pas automatiquement une pénalité. Consigner les aides déterminantes et distinguer ce qui a été suggéré, exécuté et expliqué par chaque étudiant. L’appréciation porte sur les critères annoncés, la compréhension et les vérifications propres ; une solution donnée ne devient pas à elle seule une démonstration individuelle. L’auto-vérification prépare la restitution et ne remplace pas l’évaluation, notamment en M08.
+
+
+## Extension M09–M10 — formative
+
+M09 et M10 prolongent le parcours jusqu’à quinze heures. Le barème sur 20 de M04–M08 reste inchangé. M08 est l’épreuve de synthèse de ce bloc évalué. M09–M10 donnent lieu à un retour individuel et collectif : en M09, qualité du graphe, distinction avis/exposition et cohérence du lot proposé ; en M10, mapping, contrôles métier, contre-test de double import et limites de réversibilité. Une extension notée demanderait une annonce distincte avant les activités ; aucune redistribution automatique des points n’est appliquée.

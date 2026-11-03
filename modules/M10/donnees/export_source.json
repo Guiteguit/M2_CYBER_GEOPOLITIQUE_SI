@@ -1,0 +1,30 @@
+{
+  "simulation": true,
+  "format": "AsteriaVendorDemo-v1",
+  "orders": [
+    {
+      "order_ref": "C001",
+      "customer_name": "Atelier Nord",
+      "units": "4",
+      "state": "CONFIRMED"
+    },
+    {
+      "order_ref": "C002",
+      "customer_name": "Atelier Est",
+      "units": "3",
+      "state": "CONFIRMED"
+    },
+    {
+      "order_ref": "C003",
+      "customer_name": "Atelier Sud",
+      "units": "2",
+      "state": "CONFIRMED"
+    },
+    {
+      "order_ref": "X004",
+      "customer_name": "Essai annulé",
+      "units": "5",
+      "state": "CANCELLED"
+    }
+  ]
+}

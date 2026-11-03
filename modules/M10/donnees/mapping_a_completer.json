@@ -1,0 +1,11 @@
+{
+  "fields": {
+    "id": "A_COMPLETER",
+    "client": "A_COMPLETER",
+    "quantity": "A_COMPLETER"
+  },
+  "status_field": "A_COMPLETER",
+  "include_statuses": [
+    "A_COMPLETER"
+  ]
+}

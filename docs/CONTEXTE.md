@@ -21,3 +21,8 @@ M01–M03 sont réalisés en autonomie complète pendant l’absence du formateu
 ## Évaluation
 
 M01 est formatif : vous recevrez un retour sur la qualité de vos preuves, votre interprétation et votre contribution individuelle. Il n’entre pas dans une note finale. M02–M03 sont également formatifs. Les modalités des modules évalués sont proposées dans le [barème](EVALUATION.md) et annoncées avant M04, après validation par l’école.
+
+
+## Prolongements après la reprise
+
+M09 analyse la chaîne logicielle et M10 teste la portabilité des commandes vers une cible locale. Ces modules sont formatifs et accompagnés ; ils prolongent le parcours jusqu’à dix modules de 90 minutes, soit quinze heures effectives.

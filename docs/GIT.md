@@ -31,6 +31,6 @@ Depuis GitHub, ouvrir une pull request de sa branche vers `main`. Le modèle de 
 
 Le rapporteur complète `rendus/M04/SYNTHESE.md` **sur sa branche personnelle du module**, puis commit et push sur cette même branche. Il cite les preuves des autres étudiants par leur branche ou pull request. Aucune fusion n’est nécessaire pour écrire ou présenter la synthèse ; les fichiers vierges des autres participants sur sa branche ne remplacent pas leurs rendus.
 
-Le formateur relit et intègre les contributions ultérieurement. Pour le module suivant, repartir de `main` à jour avec une nouvelle branche personnelle ; ne pas écraser les branches non fusionnées. Rapporteurs : M04 A, M05 B, M06 C, M07 A, M08 B. Voir [le guide d’autonomie accompagnée](AUTONOMIE_ACCOMPAGNEE.md).
+Le formateur relit et intègre les contributions ultérieurement. Pour le module suivant, repartir de `main` à jour avec une nouvelle branche personnelle ; ne pas écraser les branches non fusionnées. Rapporteurs : M04 A, M05 B, M06 C, M07 A, M08 B, M09 C, M10 A. Voir [le guide d’autonomie accompagnée](AUTONOMIE_ACCOMPAGNEE.md).
 
 Ne pas utiliser `push --force` pour résoudre un problème courant. En cas de conflit ou de droits insuffisants, conserver ses fichiers localement et demander l’aide du formateur. Si Git bloque pendant le TP, rendre les fichiers au formateur pour intégration ultérieure.

@@ -2,7 +2,7 @@
 
 > **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
 
-**90 min · Épreuve finale technique et orale.** Prérequis : laboratoire préparé avant la séance, techniques M04–M07, Python 3.10+ et navigateur. [Barème commun](../../docs/EVALUATION.md). Aucun composant externe ni compte cloud requis.
+**90 min · Épreuve de synthèse évaluée du bloc M04–M08.** Prérequis : laboratoire préparé avant la séance, techniques M04–M07, Python 3.10+ et navigateur. [Barème commun](../../docs/EVALUATION.md). Aucun composant externe ni compte cloud requis.
 
 ## Mandat
 
@@ -54,3 +54,7 @@ En cas d’impossibilité de lancer le serveur, prévenir immédiatement le form
 - Quels critères permettent de déclarer la reprise métier et quelle limite demeure ?
 
 Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.
+
+## Suite du parcours
+
+Poursuivre avec [M09 — chaîne logicielle](../M09/README.md), puis [M10 — réversibilité fournisseur](../M10/README.md). Ces prolongements formatifs ne modifient pas les critères de cette épreuve.
