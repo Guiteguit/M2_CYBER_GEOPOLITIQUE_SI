@@ -1,49 +1,48 @@
-# M06 — Panne, changement ou action malveillante ?
+# M06 — Piloter une cellule de crise et communiquer sans surinterpréter
 
-> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
-
-**90 min · Investigation de traces et reproduction HTTP · Évaluation individuelle.** Prérequis : M04–M05, laboratoire opérationnel et Python 3.10+ ; accès Internet non nécessaire.
+**90 minutes · 2 étudiants · Étude de cas de management SI · Voir les critères annoncés du barème.** Le formateur est présent en soutien : vous conduisez l’analyse et pouvez demander une aide ciblée. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
 ## Mission
 
-Deux applications Asteria deviennent indisponibles pendant une période de tension internationale. Un compte externe a également échoué à se connecter. La direction demande un diagnostic et une reprise proportionnée. Vous ne devez ni attribuer l’incident par intuition ni effacer les traces pour obtenir une page verte.
+Vous dirigez les premières heures d’une perturbation. Décidez des priorités, répartissez les responsabilités et communiquez à trois publics avec un niveau de certitude explicite.
 
-Le [dossier de traces](donnees/README.md) est **synthétique**, avec des dates fictives. Il contient événements d’exploitation, mesures, journal d’accès et deux configurations. Les journaux réels produits par votre reproduction auront les dates de votre machine : gardez les deux chronologies distinctes.
+## Ouvrir les supports dans cet ordre
 
-## Déroulé
+1. [Rôles](ROLES.md) : B prend le premier rôle, A le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
 
-| Minutes | Travail conduit par les étudiants |
+## Chronomètre
+
+| Minutes | Travail du binôme |
 |---|---|
-| 0–8 | Hypothèse individuelle et test susceptible de l’infirmer |
-| 8–20 | Lire les notions et préciser les sources/périmètres |
-| 20–42 | Croiser les traces et comparer les configurations |
-| 42–65 | Reproduire, choisir une correction et vérifier |
-| 65–78 | Défendre le raisonnement et les limites d’attribution |
-| 78–90 | Auto-vérifier, rédiger la situation et enregistrer |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-## Investigation et reprise
+## Travaux à réaliser
 
-1. Construire une chronologie de cinq jalons en citant les fichiers et champs. Qualifier les sources et leurs limites.
-2. Comparer `config_avant.json` et `config_apres.json`. Expliquer un mécanisme qui produit les symptômes et chercher un contre-exemple possible.
-3. Examiner les échecs de connexion externes : démontrent-ils un accès réussi, un changement de configuration ou seulement des tentatives ? Quelle autre preuve serait nécessaire ?
-4. Conserver l’état initial du laboratoire, puis appliquer le fichier d’incident fourni pour M06. Réaliser au moins un test de bout en bout et un test direct d’une dépendance. Conserver les réponses avant d’éditer la configuration.
-5. Proposer une correction minimale de configuration, annoncer l’effet attendu et l’appliquer. Vérifier les deux applications et le contenu métier. Ne pas remplacer le laboratoire par un reset.
-6. Vérifier la non-régression : le contrôle d’identité existe toujours et les journaux sont conservés. Ne pas modifier le code du laboratoire pour ignorer une erreur.
-
-La modification en classe prouve qu’une correction résout les symptômes de votre modèle. Le dossier documentaire sert à examiner la cause et les limites de l’attribution de l’incident fictif, sans assimiler automatiquement reproduction et preuve historique.
-
-## Échange avec la direction
-
-Que peut-on dire publiquement à cet instant ? Faut-il maintenir le fournisseur, suspendre des accès, contrôler un changement ou attendre d’autres éléments ? Quelle dépendance de support international complique éventuellement la reprise ? Distinguer ce qui est établi dans les traces et les scénarios ajoutés.
+1. Qualifier P1–P5 ; créer un journal de cinq décisions maximum avec responsables et prochain point.
+2. Préparer trois messages cohérents et distinguer instruction, fait et hypothèse ; confronter les demandes commerciales et production.
+3. Après l’événement, réviser le plan, justifier le périmètre de maintien/suspension et écrire un retour individuel sur une décision contestée.
 
 ## Livrables
 
-[Rendu M06](../../rendus/M06/SYNTHESE.md) : chronologie, deux hypothèses comparées, diff de correction, preuves avant/après et message de situation de six lignes. Chaque étudiant défend une hypothèse, un test et ce qu’il a révisé. Voir le [barème](../../docs/EVALUATION.md).
+- Tableau des faits, déclarations, hypothèses et rumeurs.
+- Journal de crise initial puis révisé.
+- Trois messages et une justification individuelle de décision.
 
-## Points de décision à consigner
+Utiliser [la synthèse du cas](../../rendus/M06/SYNTHESE.md) et les fichiers [A](../../rendus/M06/individuel/A.md) / [B](../../rendus/M06/individuel/B.md). **Rapporteur : B.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
 
-- Quel test distingue vos deux premières hypothèses ?
-- Quel changement minimal proposez-vous, avec quelle prédiction et quel moyen de vérifier la non-régression ?
-- Qu’avez-vous établi sur le mécanisme, et que manque-t-il encore pour parler d’un auteur ?
+## Point de décision
 
-Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.
+Quelle nouvelle observation vous ferait élargir ou lever la suspension ?
+
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
+
+Passer ensuite à [M07](../M07/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.

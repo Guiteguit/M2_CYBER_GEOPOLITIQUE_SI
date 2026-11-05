@@ -1,55 +1,37 @@
-# M2 Cyber — Géopolitique du cyberespace et stratégie SI
+# M2 Cyber — Géopolitique et stratégie SI : décider pour Asteria
 
-**10 modules de 90 minutes · 3 étudiants · Parcours technique complet.** Observer, manipuler, confronter les preuves et défendre une décision SI.
+**10 modules de 90 minutes · 15 heures · 2 étudiants · Études de cas de management SI.** Vous incarnez des responsables : lire un dossier, confronter deux positions, décider, puis réexaminer la décision lorsqu’un fait change. Tous les cas, acteurs, pays, montants et documents sont fictifs.
 
-## M01–M03 : démarrage en autonomie
+**Aucun TP de configuration, de code ou de diagnostic technique.** Un navigateur ou une copie des documents suffit. Un éditeur ou traitement de texte et une calculatrice sont utiles. GitHub sert à lire et déposer, pas à évaluer votre maîtrise de Git.
 
-**Le formateur est absent pendant les trois premiers modules.** Commencer par [DEMARRER_AUTONOMIE.md](docs/DEMARRER_AUTONOMIE.md), puis suivre M01 → M02 → M03, 90 minutes chacun. Les apports écrits, rôles, données, aides progressives et auto-vérifications permettent d’avancer sans cours oral ni validation intermédiaire. Le parcours de base fonctionne avec le navigateur et les fichiers fournis ; aucune installation ni commande Python n’est exigée.
+## Commencer
 
-Pendant ce bloc, chacun garde une branche personnelle pour les trois modules et les trois pull requests restent ouvertes. Aucune fusion n’est attendue avant M04. La préparation du laboratoire concerne la reprise avec le formateur, pas les investigations autonomes.
+1. Lire [le contexte Asteria](docs/CONTEXTE.md) et [le fonctionnement pour deux](docs/METHODE.md).
+2. **M01–M03 sans formateur :** suivre [le guide autonome](docs/DEMARRER_AUTONOMIE.md), puis [M01](modules/M01/README.md).
+3. **M04–M10 avec le formateur en soutien :** suivre [l’autonomie accompagnée](docs/AUTONOMIE_ACCOMPAGNEE.md). Vous conduisez les cas ; il aide, questionne et anime la restitution.
+4. Préparer [les rendus simples](docs/PARTICIPER.md) et lire [l’évaluation](docs/EVALUATION.md) avant M04.
 
-## M04–M10 : autonomie accompagnée
+## Les dix missions
 
-Les étudiants conduisent les investigations et défendent leurs choix. Le formateur prépare les incidents, reste disponible pour les blocages, questionne les décisions et anime la restitution. Aucun exposé oral préalable n’est nécessaire : suivre [le guide commun](docs/AUTONOMIE_ACCOMPAGNEE.md), puis la mission du module.
+| Module | Cas à traiter | Décision attendue |
+|---|---|---|
+| [M01](modules/M01/README.md) | Cartographier les dépendances et les pouvoirs de décision | Trois dépendances prioritaires et demandes de preuve |
+| [M02](modules/M02/README.md) | Décider face à une rupture internationale de service | Plan gradué sur trente jours |
+| [M03](modules/M03/README.md) | Choisir un fournisseur et défendre un coût complet | Choix fournisseur conditionnel et coût complet |
+| [M04](modules/M04/README.md) | Arbitrer un portefeuille SI sous contrainte | Portefeuille SI et reports assumés |
+| [M05](modules/M05/README.md) | Organiser une continuité métier en mode dégradé | Service minimum et conditions de reprise |
+| [M06](modules/M06/README.md) | Piloter une cellule de crise et communiquer sans surinterpréter | Plan de crise et communication |
+| [M07](modules/M07/README.md) | Négocier un contrat qui préserve la capacité d’action | Accord contractuel ou non-accord argumenté |
+| [M08](modules/M08/README.md) | Gouverner un projet SI et encadrer les données | Lancement, pilote conditionnel ou report |
+| [M09](modules/M09/README.md) | Préparer une sortie fournisseur et préserver les compétences | Trajectoire de réversibilité et compétences |
+| [M10](modules/M10/README.md) | Soutenir une stratégie SI devant un comité de direction | Stratégie à douze mois et arbitrage révisé |
 
-## Démarrer
+## Ce que vous trouverez dans chaque module
 
-- **Participer et rendre son travail :** [guide étudiant](docs/PARTICIPER.md).
-- **Étudiants :** [contexte Asteria](docs/CONTEXTE.md), [outils](docs/OUTILS.md), puis [M01](modules/M01/README.md).
-- **Avant les manipulations locales :** [préparer le laboratoire](lab/README.md).
-- **Avant M04 :** prendre connaissance du [barème proposé](docs/EVALUATION.md).
+Une mission et un déroulé de 90 minutes, un dossier de pièces, deux rôles, des notions expliquées, un événement à ouvrir à la minute 45, des aides et une auto-vérification. Les [rendus](rendus/README.md) comprennent une synthèse de décision et une trace individuelle A/B.
 
-## Parcours disponible
+Une note courte argumentée vaut mieux qu’un diaporama long. Les preuves sont ici des pièces du dossier, calculs, conditions et raisonnements ; aucune commande, capture technique ou recherche externe n’est exigée. Plusieurs décisions peuvent être recevables si elles respectent le mandat et rendent leurs limites visibles.
 
-| Module | Mission technique | Support principal | Rendu |
-|---|---|---|---|
-| [M01](modules/M01/README.md) | DNS, IP, ASN : dépendances visibles | Observation publique et collectes datées | [M01](rendus/M01/README.md) |
-| [M02](modules/M02/README.md) | Routage observé et service disponible | Collecte RIPE réelle + traces simulées | [M02](rendus/M02/README.md) |
-| [M03](modules/M03/README.md) | Comparer deux implantations | Manifestes JSON et contrats fictifs | [M03](rendus/M03/README.md) |
-| [M04](modules/M04/README.md) | Tester une dépendance commune | Applications HTTP locales | [M04](rendus/M04/README.md) |
-| [M05](modules/M05/README.md) | Prouver repli et restauration | Configuration, CSV et manifeste | [M05](rendus/M05/README.md) |
-| [M06](modules/M06/README.md) | Investiguer et corriger une perturbation | Traces synthétiques et reproduction | [M06](rendus/M06/README.md) |
-| [M07](modules/M07/README.md) | Vérifier une affirmation sur un incident | Empreintes, sources et traces | [M07](rendus/M07/README.md) |
-| [M08](modules/M08/README.md) | Diagnostiquer, reprendre et défendre | Épreuve locale reproductible | [M08](rendus/M08/README.md) |
-| [M09](modules/M09/README.md) | Auditer la chaîne logicielle | Inventaire, avis fictifs et comparaison de versions | [M09](rendus/M09/README.md) |
-| [M10](modules/M10/README.md) | Prouver une sortie fournisseur | Mapping JSON/CSV, import SQLite et contrôles métier | [M10](rendus/M10/README.md) |
+## Changement de parcours
 
-Chaque module M02–M10 comprend une mission, des notions, une aide et des supports de restitution individuels/collectifs. M01–M03 se déroulent sans intervention du formateur, avec échanges entre pairs et auto-vérification. M04–M10 se déroulent en [autonomie accompagnée](docs/AUTONOMIE_ACCOMPAGNEE.md) : lectures, investigations, aides progressives et auto-vérifications. Le formateur est présent pour aider et discuter les décisions, puis évaluer les raisonnements.
-
-## Environnement
-
-M01–M03 et M07 s’appuient sur des observations ou des jeux de données. Le laboratoire M04–M06/M08 utilise Python 3.10+ et sa bibliothèque standard, sans VM, Docker ni `pip`. Ses cinq composants écoutent uniquement sur `127.0.0.1`. Les essais de cette version ont été exécutés sous Linux/Python 3.12 ; vérifier les postes de classe avant la séance.
-
-Il s’agit d’un modèle d’applications et d’identité fictive, pas d’un déploiement SSO ou d’une architecture résiliente de production. Le labo fait de vrais échanges HTTP locaux ; BGP est étudié via les observations du M02, sans émission d’annonces.
-
-M09–M10 utilisent aussi Python 3.10+ standard, sans serveur ni capsule, avec des données fictives hors ligne. Ils travaillent sous `lab/runtime/m09` et `m10` et ne modifient pas l’état des exercices précédents.
-
-## Méthode et évaluation
-
-Quinze heures effectives, hors pauses et préparation des postes. Conserver des hypothèses individuelles, des preuves datées et une synthèse argumentée. Chaque conclusion relie un acteur, une dépendance et une décision pour Asteria. Les pays et offres du cas sont fictifs ; les observations réelles sont explicitement séparées des traces simulées.
-
-M01–M03 et M09–M10 sont formatifs. M08 conserve son épreuve de synthèse évaluée ; M09–M10 prolongent le parcours sans changer le barème M04–M08. Les [critères d’évaluation](docs/EVALUATION.md) distinguent 12 points individuels et 8 collectifs. Les modalités applicables sont précisées avant M04.
-
-## Travailler ensemble
-
-Pendant M01–M03, appliquer le [rendu sans fusion](docs/DEMARRER_AUTONOMIE.md). À partir de M04, utiliser une branche personnelle par module ; le rapporteur dépose aussi la synthèse collective sur sa propre branche, sans attendre de fusion. Le [guide Git](docs/GIT.md) et le [guide étudiant](docs/PARTICIPER.md) expliquent les contributions, les pull requests et la synthèse collective. Vérifier son accès au dépôt avant la première séance.
+Cette version remplace le parcours technique antérieur. Vos anciennes branches et l’historique ne sont pas réécrits. Pour ces cas, créer des branches neuves `cas/a` et `cas/b` depuis le `main` actuel ; ne pas fusionner les anciens travaux techniques dans ce parcours. Voir [la transition](docs/TRANSITION.md). Les corrigés restent dans le dépôt formateur séparé.

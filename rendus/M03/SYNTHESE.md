@@ -1,31 +1,49 @@
-# M03 — Synthèse collective à compléter
+# M03 — Note de décision du binôme
 
-Participants : … · Date : … · Sources : réel / simulé / labo : …
+Rapporteur A. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-## Graphes
+## Mandat, contraintes et qualification des pièces
 
-Carte des dépendances de A et B, avec acteurs communs et limites : …
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
 
-## Coûts et capacité
+## Livrables propres au cas
 
-Mise en place + récurrents + sortie applicable ; jours requis et plafond : …
+### 1. Tableau de coûts initiaux et révisés avec calculs visibles.
 
-## Arbitrage
+À compléter.
 
-Choix, conditions, risque conservé et contre-argument : …
+### 2. Matrice pondérée et conditions obligatoires séparées.
 
-## Preuves à demander
+À compléter.
 
-Trois demandes précises, destinataire et effet sur la décision : …
+### 3. Note achats : choix conditionnel, demandes de preuve, échéance et alternative.
 
+À compléter.
 
+## Comparaison et décision initiale — avant la minute 45
 
-## Auto-vérification et points pour la reprise
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
+|---|---|---|---|
+| Option 1 | | | |
+| Option 2 | | | |
 
-Critères de la fiche d’auto-vérification vérifiés / à reprendre : …
+- Choix initial et renoncement :
 
-Blocage — tentative — solution de repli — question restante : …
+## Événement et arbitrage révisé
 
-Désaccord conservé et preuve qui permettrait de le trancher : …
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
 
-Contributions individuelles : liens vers les branches/pull requests ou fichiers locaux A/B/C : …
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
+|---|---|---|---|---|
+| À compléter | | | | |
+
+## Retour et contributions
+
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

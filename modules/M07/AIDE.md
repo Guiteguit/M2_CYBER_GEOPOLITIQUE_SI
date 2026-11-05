@@ -1,22 +1,21 @@
-# M07 — Aides
+# M07 — Aides progressives
 
-Depuis la racine :
+## Niveau 1 : revenir au mandat
 
-```bash
-python3 scripts/verifier_preuves.py modules/M06/donnees/SHA256SUMS.json
-python3 scripts/verifier_preuves.py modules/M07/donnees/SHA256SUMS.json
-```
+Écrire en une phrase la décision demandée. Relever les contraintes obligatoires, les moyens et les inconnues dans [le dossier](DOSSIER.md). Séparer les déclarations des acteurs des capacités réellement établies. Relire les [notions](NOTIONS.md) sans chercher une réponse unique.
 
-Le script renvoie 0 si les fichiers du manifeste correspondent et 1 sinon. Le manifeste liste des chemins relatifs à son dossier ; aucun fichier extérieur à ce dossier n’est accepté. Il ne valide ni une origine cryptographique ni le caractère exhaustif des pièces.
+## Niveau 2 : comparer avec les mêmes critères
 
-Pour une ligne du journal, noter le service, l’instant, le statut et la portée. Pour une publication, noter la source citée, son indépendance et le saut logique éventuel. Si votre conclusion exige un journal d’administration absent, demander ce journal plutôt qu’en inventer le contenu.
+Mettre les options sur une même période et dans un même périmètre. Si des coûts ou charges sont fournis, montrer les additions et vérifier chaque ressource séparément. Une information absente devient une question ou une condition. Reprendre les exigences suivantes :
 
+- Le minimum E+S et le plafond de 46 k€ sont vérifiés.
+- L’accusé de réception n’est pas présenté comme un rétablissement.
+- L’accord distingue engagements, preuves à obtenir, refus et validation restante.
 
-## Aides progressives — choisir le niveau utile
+## Niveau 3 : préparer la discussion
 
-1. **Reformuler :** relire la mission et les notions ; écrire ce qui est observé, ce qui est supposé et le prochain résultat attendu.
-2. **Comparer :** demander à un pair de proposer une autre explication. Choisir un test qui distingue les deux ; les chemins et commandes de ce fichier ou du [laboratoire](../../lab/README.md) servent à exécuter ce choix.
-3. **Solliciter :** après trois à cinq minutes sans progrès, présenter au formateur l’objectif, le test tenté, le résultat exact et l’aide recherchée. Il peut aider plus tôt sur un blocage matériel ou un risque de perte des preuves.
-4. **Reprendre la main :** après une question, un indice ou une démonstration, expliquer votre décision, effectuer votre vérification et consigner l’aide déterminante dans le rendu.
+Quel engagement concret reste utile si le fournisseur a payé son avoir mais que votre activité ne reprend pas ?
 
-Ne pas empiler des modifications au hasard. Conserver l’état et les erreurs utiles. Si l’exécution est impossible, faire constater le blocage au formateur, proposer une séquence de tests et marquer les résultats non exécutés comme prédictions. Lire le [fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md).
+Faire reformuler votre position par l’autre, puis demander une objection fondée sur une pièce. Conserver le premier choix et l’effet de l’événement. Écrire une conclusion conditionnelle si la preuve manque : décideur, responsable de vérification, échéance et alternative.
+
+Avec le formateur, après trois à cinq minutes sans progrès, présenter votre objectif, option, pièce ou calcul et besoin. Après son indice, vous reprenez la décision et la vérification. Si GitHub bloque, travailler dans un document local ; la mise en forme ne doit pas consommer la séance. Ne pas contacter de destinataire réel.

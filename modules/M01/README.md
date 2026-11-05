@@ -1,67 +1,48 @@
-# M01 — Qui contrôle réellement l’accès à un service numérique ?
+# M01 — Cartographier les dépendances et les pouvoirs de décision
 
-**90 minutes · Autonomie complète · Trois étudiants · Formatif.** Commencer par le [guide du bloc autonome](../../docs/DEMARRER_AUTONOMIE.md). Le formateur est absent : toutes les explications nécessaires, les données et les vérifications sont écrites. Un navigateur suffit ; pas de VM, de Python ni de laboratoire à installer.
+**90 minutes · 2 étudiants · Étude de cas de management SI · Formatif.** Le formateur est absent : suivre le guide autonome, sans attendre une validation. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
-## Mission et résultat attendu
+## Mission
 
-Asteria, entreprise fictive, veut comprendre les acteurs dont dépend l’accès à un service numérique. Votre cas d’observation est `isc.org` et `www.isc.org`, ressources publiques d’ISC, qui n’appartiennent pas à Asteria. Identifiez les dépendances visibles, leurs preuves et les informations impossibles à établir depuis l’extérieur.
+La direction d’Asteria vous demande où elle risque de perdre sa capacité à décider ou à fonctionner. Préparez une carte des dépendances utiles au métier et trois questions prioritaires à poser aux fournisseurs. Vous ne recherchez aucune adresse IP et ne configurez aucun outil.
 
-Rendez une carte ou une liste de relations nommées, cinq observations sourcées, trois inconnues et une recommandation de dix lignes. Chacun garde son hypothèse initiale et une observation qu’il sait expliquer. A consigne la synthèse de ce module sur sa branche ; B et C discutent et relisent.
+## Ouvrir les supports dans cet ordre
 
-## Chronomètre — 90 minutes
+1. [Rôles](ROLES.md) : A prend le premier rôle, B le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
 
-| Minutes | Action sans intervention extérieure |
+## Chronomètre
+
+| Minutes | Travail du binôme |
 |---|---|
-| 0–8 | Vérifier accès/copie, choisir A/B/C, préparer ses fichiers et noter une hypothèse |
-| 8–23 | Lire [NOTIONS.md](NOTIONS.md) ; chacun reformule une distinction importante |
-| 23–43 | Enquêter sur DNS, web et messagerie, avec commandes ou fichiers fournis |
-| 43–60 | Relier une IP à un réseau et qualifier les acteurs/limites |
-| 60–72 | Tour de parole de deux minutes chacun, puis objections croisées |
-| 72–83 | Compléter la carte et la synthèse commune |
-| 83–90 | [Auto-vérification](AUTO_VERIFICATION.md), retour individuel et enregistrement |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-Ne dépassez pas trois minutes sur une panne d’outil : passez aux données fournies. Une inconnue documentée vaut mieux qu’une réponse inventée. À 90 minutes, sauvegardez et passez à M02 sans attendre de correction.
+## Travaux à réaliser
 
-## 1. Avant de lire les notions
+1. Construire une carte de cinq à huit relations activité → ressource → acteur ; nommer le responsable de la décision interne.
+2. Retenir trois dépendances prioritaires et expliquer impact, durée, degré de preuve et limite. Refuser la simple addition de toutes les pertes annoncées.
+3. Après l’événement, confronter les deux positions et rédiger une note à la DG de 200 mots maximum avec trois demandes de preuve datées.
 
-Chacun écrit dans son fichier individuel : qui pourrait empêcher l’accès à un site sans posséder son serveur ? Quelle observation aiderait à le vérifier ? Gardez cette première réponse pour pouvoir expliquer ensuite son évolution.
+## Livrables
 
-## 2. Le chemin garanti avec les fichiers fournis
+- Carte des relations avec pièces P1–P4.
+- Trois priorités et trois inconnues, chacune avec responsable et prochaine vérification.
+- Réponse à la DG : indépendance démontrée, seulement déclarée ou non établie.
 
-Ouvrir le [dossier de collectes](preuves_secours/README.md), puis :
+Utiliser [la synthèse du cas](../../rendus/M01/SYNTHESE.md) et les fichiers [A](../../rendus/M01/individuel/A.md) / [B](../../rendus/M01/individuel/B.md). **Rapporteur : A.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
 
-- `isc.org_NS.json` pour la délégation ;
-- `isc.org_MX.json` pour la réception du courrier ;
-- `isc.org_A.json`, `isc.org_AAAA.json`, `www.isc.org_A.json`, `www.isc.org_AAAA.json` et `www.isc.org_CNAME.json` pour le web ;
-- les résolutions des noms NS/MX pour poursuivre une relation déjà observée ;
-- `RIPE_web_network-info.json`, puis le fichier RIPE d’ASN fourni dans le dossier pour examiner l’adresse effectivement passée en paramètre.
+## Point de décision
 
-Dans chaque pièce, relever requête ou URL source, date et champs utiles. Distinguer nom demandé, type demandé et réponses effectivement présentes. Si une section est vide ou absente, expliquez ce que cela permet — et ne permet pas — de conclure.
+Quelle preuve vous ferait passer de « secours annoncé » à « capacité de reprise démontrée » ?
 
-A commence par NS et délégation ; B par web/IP/ASN ; C par MX et documentation. Chacun réalise une lecture technique, puis vérifie une observation d’un autre. Une capture d’écran n’est pas obligatoire : un extrait cité par fichier et champ suffit.
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
 
-Si vous disposez déjà d’un terminal fonctionnel, vous pouvez remplacer une partie de ces lectures par des requêtes en direct selon [AIDE.md](AIDE.md). Indiquez alors la date, le résolveur et les éventuelles différences. Limitez-vous aux noms et types du dossier, ou à la résolution des noms retournés ; aucune énumération, aucun scan ni recherche de vulnérabilité n’est demandé.
-
-## 3. Des réponses aux dépendances
-
-Choisir une adresse du web et vérifier que le JSON réseau fourni concerne bien cette adresse. Retrouver le préfixe et l’ASN annonçant, puis l’organisation associée. Une documentation officielle peut compléter l’analyse si Internet fonctionne ; sinon consigner le besoin de confirmation, sans attribuer un rôle au seul nom d’un domaine.
-
-Pour chaque relation, écrire : « cet élément utilise ou s’appuie sur cet autre élément, d’après telle preuve ». Un nom de fournisseur, une IP et un pays de registre ne sont pas interchangeables. Les [notions](NOTIONS.md) et l’[aide](AIDE.md) donnent les distinctions.
-
-## 4. Discussion à trois — douze minutes
-
-Chacun présente une observation, la preuve et une limite pendant deux minutes. Pendant les six minutes suivantes, examinez :
-
-1. Quelle dépendance commune peut-on démontrer, et quelle indépendance reste non prouvée ?
-2. Quel changement technique, commercial ou international pourrait affecter un acteur identifié ? Formulez une possibilité conditionnelle, pas une accusation.
-3. Quelle preuve Asteria devrait-elle demander avant de décider de conserver ou remplacer ce service ?
-
-Si vous ne tranchez pas un désaccord en cinq minutes, écrivez les deux hypothèses et le test qui les départagerait. Continuez.
-
-## 5. Remise et passage au M02
-
-Compléter [SYNTHESE.md](../../rendus/M01/SYNTHESE.md) : carte, cinq observations, trois inconnues et recommandation. Une liste « départ — relation — arrivée — preuve » remplace une image si le dessin vous ralentit. Chacun complète son fichier individuel A/B/C.
-
-A enregistre la synthèse sur `tp/autonomie-a`, B et C conservent leurs contributions sur leurs branches personnelles. Les trois pull requests restent ouvertes ; aucune fusion n’est nécessaire. Si GitHub bloque, conserver les fichiers localement selon le [guide commun](../../docs/DEMARRER_AUTONOMIE.md).
-
-Terminer l’[auto-vérification](AUTO_VERIFICATION.md), noter un blocage éventuel et ouvrir [M02](../M02/README.md). M01 reste formatif ; le retour avec le formateur aura lieu à partir de M04.
+Passer ensuite à [M02](../M02/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.

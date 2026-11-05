@@ -1,9 +1,0 @@
-timestamp_utc,probe,target,http_result
-2030-04-10T09:00:00Z,sonde-A,service-web,200
-2030-04-10T09:00:00Z,sonde-B,service-web,200
-2030-04-10T09:05:00Z,sonde-A,service-web,timeout
-2030-04-10T09:05:00Z,sonde-B,service-web,200
-2030-04-10T09:15:00Z,sonde-A,service-web,503
-2030-04-10T09:15:00Z,sonde-B,service-web,503
-2030-04-10T09:25:00Z,sonde-A,service-web,200
-2030-04-10T09:25:00Z,sonde-B,service-web,200

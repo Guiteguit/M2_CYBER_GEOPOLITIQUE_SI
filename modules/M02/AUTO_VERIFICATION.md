@@ -1,19 +1,12 @@
-# M02 — Vérifier sa démarche
+# M02 — Avant de rendre
 
-Cette fiche contrôle la méthode, pas l’attribution d’une cause. Le corrigé détaillé reste dans l’espace formateur ; vous n’avez pas besoin de l’obtenir pour passer au module suivant.
+- [ ] Une restriction du support n’est pas transformée en arrêt de l’application.
+- [ ] Le plan respecte 12 k€ et prend en compte la disponibilité des personnes.
+- [ ] Les seuils sont vérifiables, nominatifs par fonction et associés à une décision.
+- [ ] Deux options et les pièces qui les soutiennent sont visibles.
+- [ ] La décision initiale est conservée et l’effet de l’événement est expliqué.
+- [ ] La décision finale nomme responsable, preuve attendue, risque accepté et réexamen.
+- [ ] Chacun peut expliquer sa contribution et une objection ; les aides déterminantes sont indiquées.
+- [ ] Le rendu est enregistré et le désaccord éventuel reste visible.
 
-- [ ] Le JSON réel et les CSV simulés restent séparés par nature, objet et période.
-- [ ] La date de collecte et la période des données réelles sont distinguées.
-- [ ] Les valeurs brutes d’origine/premier saut sont citées avant leur interprétation.
-- [ ] La chronologie contient les quatre instants du jeu simulé, les deux collecteurs et les deux sondes.
-- [ ] Les fractions portent sur les pairs observés ; aucune proportion d’utilisateurs n’a été inventée.
-- [ ] Les deux hypothèses indiquent un fait utile et une preuve pour les départager.
-- [ ] Trois indicateurs ont source, responsable, fréquence, déclencheur et action.
-
-## Relecture croisée
-
-A refait une fraction choisie par C ; C retrouve une mesure citée par A ; B explique à l’un des deux une période du JSON réel. Ne transformez pas une différence de visibilité en conclusion mondiale, ni une réponse HTTP en preuve que toute l’application fonctionne.
-
-Chaque hypothèse doit rester conditionnelle lorsqu’aucune preuve ne permet de conclure. Si vous affirmez une action étatique ou une censure, demandez quelle pièce prouve l’intention et l’auteur. Sans cette pièce, reformulez et consignez la vérification nécessaire.
-
-B enregistre la synthèse sur sa branche, chacun son fichier individuel. Notez une question à poser au retour du formateur et passez à M03 ; ne fusionnez aucune pull request.
+Une case non cochée est une limite à expliquer, pas une raison d’inventer une preuve. L’auto-vérification prépare le retour du formateur ; elle ne remplace pas l’évaluation.

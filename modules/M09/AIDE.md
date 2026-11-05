@@ -1,17 +1,21 @@
 # M09 — Aides progressives
 
-Toutes les commandes partent de la racine du dépôt. Sous Windows, remplacer `python3` par `py -3` si nécessaire. Copier les fichiers avec l’explorateur ou VS Code ; créer le répertoire `lab/runtime/m09` sans toucher aux données fournies.
+## Niveau 1 : revenir au mandat
 
-1. **Lire un chemin :** partir du nom du service, suivre `depends_on` jusqu’aux composants sans dépendance. Relever les composants retrouvés depuis plusieurs services.
-2. **Comparer :** pour chaque correspondance composant/version, consulter la condition de l’avis puis les paramètres du service. L’auditeur n’effectue pas cette comparaison.
-3. **Choisir un lot :** copier l’inventaire, modifier les versions d’un lot puis comparer la sortie. Vérifier chaque contrainte de compatibilité déclarée dans le dossier. Une absence d’avis n’est pas un test fonctionnel.
+Écrire en une phrase la décision demandée. Relever les contraintes obligatoires, les moyens et les inconnues dans [le dossier](DOSSIER.md). Séparer les déclarations des acteurs des capacités réellement établies. Relire les [notions](NOTIONS.md) sans chercher une réponse unique.
 
-```bash
-python3 scripts/auditer_dependances.py --inventory lab/runtime/m09/inventaire_candidat.json --advisories modules/M09/donnees/avis.json
-```
+## Niveau 2 : comparer avec les mêmes critères
 
-Conserver la sortie affichée dans une preuve texte, ou ajouter `> lab/runtime/m09/audit_candidat.json` pour la rediriger. Le JSON candidat reste dans le runtime ; copier seulement les preuves choisies dans le rendu.
+Mettre les options sur une même période et dans un même périmètre. Si des coûts ou charges sont fournis, montrer les additions et vérifier chaque ressource séparément. Une information absente devient une question ou une condition. Reprendre les exigences suivantes :
 
-Si une clé ou un JSON est invalide : comparer avec la copie intacte, vérifier virgules et guillemets, conserver l’erreur. Après trois à cinq minutes sans progrès, montrer au formateur objectif, hypothèse, tentative et erreur. Après un indice, choisir et expliquer vous-mêmes le test suivant.
+- La préparation n’est pas présentée comme une migration réalisée ou financée.
+- Les moyens et les absences contraignent le planning.
+- Chaque jalon a une preuve métier, un décideur et une possibilité de report.
 
-**Secours sans Python :** suivre les relations et croiser avis/version/conditions dans un tableau. Écrire les modifications proposées et leurs résultats prédits ; ne pas les présenter comme un audit exécuté. Le formateur aide à distinguer les compétences démontrées.
+## Niveau 3 : préparer la discussion
+
+Quelle partie de votre plan reste possible si le fournisseur ne participe plus, et quelle partie n’est qu’une promesse ?
+
+Faire reformuler votre position par l’autre, puis demander une objection fondée sur une pièce. Conserver le premier choix et l’effet de l’événement. Écrire une conclusion conditionnelle si la preuve manque : décideur, responsable de vérification, échéance et alternative.
+
+Avec le formateur, après trois à cinq minutes sans progrès, présenter votre objectif, option, pièce ou calcul et besoin. Après son indice, vous reprenez la décision et la vérification. Si GitHub bloque, travailler dans un document local ; la mise en forme ne doit pas consommer la séance. Ne pas contacter de destinataire réel.

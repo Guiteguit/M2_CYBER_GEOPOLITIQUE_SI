@@ -1,15 +1,12 @@
-# M10 — Auto-vérification
+# M10 — Avant de rendre
 
-Ce contrôle prépare la discussion ; il ne certifie pas à lui seul le diagnostic.
+- [ ] Le portefeuille respecte budget, jours et prérequis avant et après événement.
+- [ ] Les résultats sont des capacités à démontrer, pas des promesses déjà acquises.
+- [ ] Chacun explique une décision, un renoncement et les conditions de réexamen.
+- [ ] Deux options et les pièces qui les soutiennent sont visibles.
+- [ ] La décision initiale est conservée et l’effet de l’événement est expliqué.
+- [ ] La décision finale nomme responsable, preuve attendue, risque accepté et réexamen.
+- [ ] Chacun peut expliquer sa contribution et une objection ; les aides déterminantes sont indiquées.
+- [ ] Le rendu est enregistré et le désaccord éventuel reste visible.
 
-- [ ] Le mapping et la règle de sélection ont été écrits avant l’import.
-- [ ] La référence métier et le dossier fourni sont intacts.
-- [ ] Les trois commandes, les clients et les neuf unités concordent avec la référence.
-- [ ] Le second import est refusé et une vérification ultérieure confirme la base intacte.
-- [ ] La consultation réussit après renommage de la seule copie source.
-- [ ] Les limites identité, écritures, fonctions applicatives et poste commun sont explicites.
-- [ ] Chacun explique une preuve et une objection ; les aides déterminantes sont indiquées.
-- [ ] Les observations, déclarations fictives et prédictions sont distinguées.
-- [ ] Les preuves sont enregistrées et la synthèse cite les branches des autres.
-
-Quelle observation vous ferait changer d’avis ? Quelle ressource reste contrôlée par un tiers ? Comparer les réponses avant de revenir à la [mission](README.md).
+Une case non cochée est une limite à expliquer, pas une raison d’inventer une preuve. L’auto-vérification prépare le retour du formateur ; elle ne remplace pas l’évaluation.

@@ -1,8 +1,16 @@
-# M10 — Contribution B
+# M10 — Contribution individuelle B
 
-- Hypothèse et priorité avant investigation :
-- Test personnel, résultat et lien vers la preuve :
-- Interprétation et limite :
-- Objection reçue et décision révisée ou défendue :
-- Aide déterminante et vérification effectuée ensuite :
-- Ce qui reste à prouver :
+## Avant l’échange
+
+- Rôle :
+- Ma première décision et sa raison :
+- Pièce ou calcul que je veux vérifier :
+
+## Après l’analyse et l’événement
+
+- Une observation ou un calcul dont je suis responsable :
+- Ma décision finale et la pièce qui l’étaye :
+- L’objection de mon camarade, reformulée sans la déformer :
+- Ce que j’ai changé ou défendu et pourquoi :
+- Risque restant et condition de réexamen :
+- Aide déterminante reçue, puis vérification faite par moi-même (ou « aucune ») :

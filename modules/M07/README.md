@@ -1,50 +1,48 @@
-# M07 — Vérifier une affirmation publique sur un incident
+# M07 — Négocier un contrat qui préserve la capacité d’action
 
-> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
-
-**90 min · Analyse de preuves, intégrité et recherche de source · Évaluation collective.** Prérequis : dossier M06 ; Python 3.10+ ou outil de calcul d’empreinte. Le parcours de base fonctionne sans Internet.
+**90 minutes · 2 étudiants · Étude de cas de management SI · Voir les critères annoncés du barème.** Le formateur est présent en soutien : vous conduisez l’analyse et pouvez demander une aide ciblée. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
 ## Mission
 
-Une publication affirme que l’incident Asteria prouve une opération étatique. Votre équipe doit produire une analyse vérifiable et une communication proportionnée. Vous travaillez sur les pièces fictives de M06 et sur quatre nouvelles publications **également fictives**, sans reprendre leurs affirmations comme des faits.
+Préparez puis jouez une négociation fournisseur. Transformez les promesses de continuité, d’accès et de sortie en engagements vérifiables et identifiez les concessions possibles.
 
-## Déroulé
+## Ouvrir les supports dans cet ordre
 
-| Minutes | Travail conduit par les étudiants |
+1. [Rôles](ROLES.md) : A prend le premier rôle, B le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
+
+## Chronomètre
+
+| Minutes | Travail du binôme |
 |---|---|
-| 0–8 | Formuler les preuves nécessaires à une attribution |
-| 8–20 | Lire les notions et distinguer les niveaux de preuve |
-| 20–40 | Vérifier les manifestes et tracer les citations |
-| 40–60 | Confronter les cinq affirmations aux pièces |
-| 60–78 | Discussion contradictoire et message de situation |
-| 78–90 | Auto-vérifier et enregistrer la synthèse |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-## Travail technique et documentaire
+## Travaux à réaliser
 
-1. Calculer les empreintes des fichiers du dossier M06 et des pièces M07 avec le script fourni. Expliquer ce que confirme un manifeste fourni dans le même dépôt et ce qu’il ne prouve pas sur l’auteur ou l’exhaustivité.
-2. Construire le graphe de citations entre `publication_1.md`, `reprise_2.md`, `reprise_3.md` et `note_operateur.md`. Compter les origines réellement indépendantes pour chaque affirmation, pas le nombre de liens.
-3. Pour chaque ligne d’`affirmations.csv`, rechercher une pièce technique qui soutient, contredit ou laisse ouverte l’affirmation. Citer la date et le périmètre. Il est possible que plusieurs aspects d’une même phrase aient des statuts différents.
-4. Formuler deux hypothèses concurrentes sur l’incident et une demande de preuve permettant de progresser. Séparer mécanisme technique et attribution de l’auteur.
-5. Produire un message de six lignes maximum à la direction : impacts confirmés, action de reprise, inconnues et prochaine vérification. Ne pas promettre une attribution future certaine.
-
-Le manifeste ne doit pas être modifié pour masquer une différence. Si un fichier a changé, analyser la divergence par rapport à la version du dépôt et l’indiquer. Le script ne vérifie pas de signature d’éditeur.
-
-## Comparaison réelle facultative — dans le temps de discussion
-
-Lire le [retour d’expérience officiel de Meta sur la panne du 4 octobre 2021](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/). Comparer les types de preuves et les difficultés de reprise à votre dossier. Ne pas attribuer à Asteria les événements d’un autre incident. Un bref [repère hors ligne](donnees/REPERES_REELS.md) est fourni.
-
-## Sens géopolitique
-
-Comment une accusation peut-elle influencer les choix de fournisseurs ou la communication d’une entreprise ? Quel acteur bénéficierait d’une décision précipitée ? Une hypothèse sur un intérêt n’est pas la preuve d’une campagne coordonnée. Les pays et comptes du dossier sont fictifs.
+1. Acheteur : préparer trois priorités et une alternative ; fournisseur : préparer offre et concessions dans le catalogue.
+2. Jouer une première négociation de dix minutes et consigner accord provisoire, coûts et refus.
+3. Après événement et inversion des rôles, négocier de nouveau puis rédiger deux clauses et une recommandation commune.
 
 ## Livrables
 
-[Rendu M07](../../rendus/M07/SYNTHESE.md) : résultat d’intégrité, graphe des sources, matrice des cinq affirmations, deux hypothèses et message final. Chacun défend une affirmation et une limite. Le retour juge la qualité de la preuve, pas l’adhésion à un récit politique.
+- Mandats préparés séparément et accord provisoire.
+- Budget de l’accord final et concessions explicites.
+- Deux clauses vérifiables, limites et recommandation de signature conditionnelle ou de non-accord.
 
-## Points de décision à consigner
+Utiliser [la synthèse du cas](../../rendus/M07/SYNTHESE.md) et les fichiers [A](../../rendus/M07/individuel/A.md) / [B](../../rendus/M07/individuel/B.md). **Rapporteur : A.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
 
-- Que vérifie l’empreinte et quelle confiance accordez-vous à sa référence ?
-- Combien d’origines indépendantes soutiennent réellement une affirmation ?
-- Quelle formulation permet d’informer la direction sans dépasser les preuves ?
+## Point de décision
 
-Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.
+Quel engagement concret reste utile si le fournisseur a payé son avoir mais que votre activité ne reprend pas ?
+
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
+
+Passer ensuite à [M08](../M08/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.

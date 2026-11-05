@@ -1,30 +1,16 @@
-# M03 — Position individuelle A
+# M03 — Contribution individuelle A
 
-Date : …
+## Avant l’échange
 
-## Avant l’investigation
+- Rôle :
+- Ma première décision et sa raison :
+- Pièce ou calcul que je veux vérifier :
 
-Hypothèse : …
+## Après l’analyse et l’événement
 
-Observation ou test qui pourrait l’infirmer : …
-
-## Ma contribution
-
-Action ou décision dont je suis responsable : …
-
-Preuve datée et interprétation : …
-
-Limite et autre explication possible : …
-
-## Après confrontation
-
-Je maintiens ou révise mon hypothèse parce que : …
-
-Conséquence pour une décision SI et dépendance concernée : …
-
-
-## Auto-vérification en autonomie
-
-Point discuté avec un autre étudiant et modification éventuelle : …
-
-Blocage, tentative, solution de repli et question restante : …
+- Une observation ou un calcul dont je suis responsable :
+- Ma décision finale et la pièce qui l’étaye :
+- L’objection de mon camarade, reformulée sans la déformer :
+- Ce que j’ai changé ou défendu et pourquoi :
+- Risque restant et condition de réexamen :
+- Aide déterminante reçue, puis vérification faite par moi-même (ou « aucune ») :

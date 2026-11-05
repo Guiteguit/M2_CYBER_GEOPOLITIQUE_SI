@@ -1,22 +1,49 @@
-# M10 — Synthèse collective
+# M10 — Note de décision du binôme
 
-## Preuves et diagnostic
+Rapporteur B. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-Mapping et règle métier ; sorties de transformation/import/verify ; second import refusé et base intacte ; lecture sans source ; retour arrière ; décision de sortie et conditions.
+## Mandat, contraintes et qualification des pièces
 
-| Question ou test | Résultat observé / prédit | Preuve et branche | Interprétation et limite |
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
+
+## Livrables propres au cas
+
+### 1. Support de décision de deux pages maximum, initial et révisé.
+
+À compléter.
+
+### 2. Trajectoire 30/90/180 jours, bilan 12 mois et trois indicateurs avec seuils.
+
+À compléter.
+
+### 3. Retour individuel : choix défendu, objection, limite et révision après événement.
+
+À compléter.
+
+## Comparaison et décision initiale — avant la minute 45
+
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
 |---|---|---|---|
-| À compléter | | | |
+| Option 1 | | | |
+| Option 2 | | | |
 
-## Décisions
+- Choix initial et renoncement :
 
-| Décision | Ressource et acteur concernés | Justification | Test d’acceptation | Retour arrière / risque résiduel |
+## Événement et arbitrage révisé
+
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
+
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
 |---|---|---|---|---|
 | À compléter | | | | |
 
-## Contributions et accompagnement
+## Retour et contributions
 
-- Liens vers les contributions A/B/C :
-- Désaccord et argument retenu :
-- Aides déterminantes et décisions/test effectués ensuite :
-- Questions restantes au formateur :
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

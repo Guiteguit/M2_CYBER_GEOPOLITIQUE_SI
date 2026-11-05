@@ -1,37 +1,49 @@
-# M08 — Synthèse collective à compléter
+# M08 — Note de décision du binôme
 
-Participants : … · Date : … · Sources : réel / simulé / labo : …
+Rapporteur B. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-## Contexte
+## Mandat, contraintes et qualification des pièces
 
-Fichier d’incident reçu, instance collective ou individuelle, état initial : …
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
 
-## Hypothèses et tests
+## Livrables propres au cas
 
-Deux hypothèses, tests discriminants et preuves : …
+### 1. Matrice de données et responsabilités.
 
-## Journal des décisions
+À compléter.
 
-Cinq décisions maximum : heure, preuve, action, responsable, résultat : …
+### 2. Comparaison des options et décision initiale/révisée.
 
-## Correction et reprise
+À compléter.
 
-Diff ou import ; contrôles HTTP, C001/C002/C003, quantités 4/3/2, identité conservée : …
+### 3. Mandat de pilote ou de report avec jalons, indicateurs et arrêts.
 
-## Limites
+À compléter.
 
-Dépendances restantes, démonstrations non réalisées : …
+## Comparaison et décision initiale — avant la minute 45
 
-## Feuille de route
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
+|---|---|---|---|
+| Option 1 | | | |
+| Option 2 | | | |
 
-Trois mesures à 30/60/90 jours : dépendance, responsable, preuve de résultat, effort : …
+- Choix initial et renoncement :
 
+## Événement et arbitrage révisé
 
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
 
-## Décision et accompagnement
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
+|---|---|---|---|---|
+| À compléter | | | | |
 
-- Hypothèse avant intervention et résultat attendu :
-- Test effectué, observation et décision retenue (ou révisée) :
-- Aide déterminante reçue d’un pair ou du formateur, ou « aucune » :
-- Ce que j’ai / nous avons ensuite décidé et vérifié :
-- Incertitude à discuter à la restitution :
+## Retour et contributions
+
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

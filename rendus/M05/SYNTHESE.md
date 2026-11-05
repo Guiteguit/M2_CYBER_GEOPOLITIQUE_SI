@@ -1,33 +1,49 @@
-# M05 — Synthèse collective à compléter
+# M05 — Note de décision du binôme
 
-Participants : … · Date : … · Sources : réel / simulé / labo : …
+Rapporteur A. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-## Configuration
+## Mandat, contraintes et qualification des pièces
 
-État avant/après et justification du choix de repli : …
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
 
-## Matrice de repli
+## Livrables propres au cas
 
-Principal seul ; secondaire utilisé ; deux validations indisponibles : …
+### 1. Plan de charge avant/après avec lots maintenus et différés.
 
-## Export et restauration
+À compléter.
 
-CSV, manifeste, empreinte, identifiants, quantités et preuve de reprise : …
+### 2. Exemple de registre, responsables et contrôles.
 
-## Chronologie
+À compléter.
 
-Date de copie, constat de perte, reprise vérifiée, limite RTO/RPO : …
+### 3. Critères de reprise, gestion des écarts et message client.
 
-## Production
+À compléter.
 
-Deux exigences d’indépendance et moyens de les tester : …
+## Comparaison et décision initiale — avant la minute 45
 
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
+|---|---|---|---|
+| Option 1 | | | |
+| Option 2 | | | |
 
+- Choix initial et renoncement :
 
-## Décision et accompagnement
+## Événement et arbitrage révisé
 
-- Hypothèse avant intervention et résultat attendu :
-- Test effectué, observation et décision retenue (ou révisée) :
-- Aide déterminante reçue d’un pair ou du formateur, ou « aucune » :
-- Ce que j’ai / nous avons ensuite décidé et vérifié :
-- Incertitude à discuter à la restitution :
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
+
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
+|---|---|---|---|---|
+| À compléter | | | | |
+
+## Retour et contributions
+
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

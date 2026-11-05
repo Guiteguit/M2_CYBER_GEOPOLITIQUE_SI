@@ -1,22 +1,49 @@
-# M09 — Synthèse collective
+# M09 — Note de décision du binôme
 
-## Preuves et diagnostic
+Rapporteur A. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-Cartographie et chemins transitifs ; correspondances / conditions ; candidat avant-après et compatibilité ; deux actions ; forge indisponible et preuve de reconstruction manquante.
+## Mandat, contraintes et qualification des pièces
 
-| Question ou test | Résultat observé / prédit | Preuve et branche | Interprétation et limite |
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
+
+## Livrables propres au cas
+
+### 1. Grille de réversibilité et risques de concentration.
+
+À compléter.
+
+### 2. Deux trajectoires chiffrées puis plan révisé sur 90 jours.
+
+À compléter.
+
+### 3. Trois décisions conditionnelles et preuve de suppléance à obtenir.
+
+À compléter.
+
+## Comparaison et décision initiale — avant la minute 45
+
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
 |---|---|---|---|
-| À compléter | | | |
+| Option 1 | | | |
+| Option 2 | | | |
 
-## Décisions
+- Choix initial et renoncement :
 
-| Décision | Ressource et acteur concernés | Justification | Test d’acceptation | Retour arrière / risque résiduel |
+## Événement et arbitrage révisé
+
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
+
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
 |---|---|---|---|---|
 | À compléter | | | | |
 
-## Contributions et accompagnement
+## Retour et contributions
 
-- Liens vers les contributions A/B/C :
-- Désaccord et argument retenu :
-- Aides déterminantes et décisions/test effectués ensuite :
-- Questions restantes au formateur :
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

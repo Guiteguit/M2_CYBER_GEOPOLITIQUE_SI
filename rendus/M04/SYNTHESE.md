@@ -1,29 +1,49 @@
-# M04 — Synthèse collective à compléter
+# M04 — Note de décision du binôme
 
-Participants : … · Date : … · Sources : réel / simulé / labo : …
+Rapporteur B. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-## Carte
+## Mandat, contraintes et qualification des pièces
 
-Applications, point d’entrée et dépendances identifiées : …
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
 
-## Matrice avant/pendant/après
+## Livrables propres au cas
 
-URL, date, statut, effet métier et preuve : …
+### 1. Deux portefeuilles chiffrés et un choix initial.
 
-## Mécanisme
+À compléter.
 
-Hypothèse testée, explication et limite : …
+### 2. Plan révisé, responsabilités et preuves de résultat.
 
-## Améliorations
+À compléter.
 
-Deux améliorations comparées et dépendances restantes : …
+### 3. Risques reportés et note individuelle d’arbitrage.
 
+À compléter.
 
+## Comparaison et décision initiale — avant la minute 45
 
-## Décision et accompagnement
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
+|---|---|---|---|
+| Option 1 | | | |
+| Option 2 | | | |
 
-- Hypothèse avant intervention et résultat attendu :
-- Test effectué, observation et décision retenue (ou révisée) :
-- Aide déterminante reçue d’un pair ou du formateur, ou « aucune » :
-- Ce que j’ai / nous avons ensuite décidé et vérifié :
-- Incertitude à discuter à la restitution :
+- Choix initial et renoncement :
+
+## Événement et arbitrage révisé
+
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
+
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
+|---|---|---|---|---|
+| À compléter | | | | |
+
+## Retour et contributions
+
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

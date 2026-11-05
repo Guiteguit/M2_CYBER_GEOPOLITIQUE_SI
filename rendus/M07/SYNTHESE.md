@@ -1,29 +1,49 @@
-# M07 — Synthèse collective à compléter
+# M07 — Note de décision du binôme
 
-Participants : … · Date : … · Sources : réel / simulé / labo : …
+Rapporteur A. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-## Intégrité
+## Mandat, contraintes et qualification des pièces
 
-Commande, résultats, version du dépôt et limites du manifeste : …
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
 
-## Sources
+## Livrables propres au cas
 
-Graphe des citations et origines indépendantes par affirmation : …
+### 1. Mandats préparés séparément et accord provisoire.
 
-## Matrice des affirmations
+À compléter.
 
-A1 à A5 : statut, pièce, date, portée et limite : …
+### 2. Budget de l’accord final et concessions explicites.
 
-## Hypothèses et communication
+À compléter.
 
-Deux hypothèses, preuve manquante et message final de six lignes : …
+### 3. Deux clauses vérifiables, limites et recommandation de signature conditionnelle ou de non-accord.
 
+À compléter.
 
+## Comparaison et décision initiale — avant la minute 45
 
-## Décision et accompagnement
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
+|---|---|---|---|
+| Option 1 | | | |
+| Option 2 | | | |
 
-- Hypothèse avant intervention et résultat attendu :
-- Test effectué, observation et décision retenue (ou révisée) :
-- Aide déterminante reçue d’un pair ou du formateur, ou « aucune » :
-- Ce que j’ai / nous avons ensuite décidé et vérifié :
-- Incertitude à discuter à la restitution :
+- Choix initial et renoncement :
+
+## Événement et arbitrage révisé
+
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
+
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
+|---|---|---|---|---|
+| À compléter | | | | |
+
+## Retour et contributions
+
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

@@ -1,33 +1,48 @@
-# M10 — Prouver la réversibilité d’un fournisseur
+# M10 — Soutenir une stratégie SI devant un comité de direction
 
-> **Autonomie accompagnée · 90 minutes · Python 3.10+ standard.** Le formateur aide et discute vos décisions ; aucun exposé préalable ni service externe n’est nécessaire. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md), les [notions](NOTIONS.md), puis les [aides](AIDE.md). Ces travaux sont formatifs, sans modification du barème M04–M08.
+**90 minutes · 2 étudiants · Étude de cas de management SI · Voir les critères annoncés du barème.** Le formateur est présent en soutien : vous conduisez l’analyse et pouvez demander une aide ciblée. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
 ## Mission
 
-Asteria dispose d’un export propriétaire fictif et veut récupérer ses commandes dans une cible exploitable sans l’outil source. Vous devez construire la correspondance de données, exécuter la migration, vérifier le métier et proposer les conditions d’une véritable sortie fournisseur. Ce TP n’utilise ni serveur ni capsule et ne modifie pas le laboratoire M08.
+Consolidez une stratégie SI pour douze mois : choisissez les investissements, défendez les renoncements et réagissez à un changement de moyens en comité. Chacun doit pouvoir expliquer et contester la décision commune.
 
-## Déroulé
+## Ouvrir les supports dans cet ordre
 
-| Minutes | Travail conduit par les étudiants |
+1. [Rôles](ROLES.md) : B prend le premier rôle, A le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
+
+## Chronomètre
+
+| Minutes | Travail du binôme |
 |---|---|
-| 0–8 | Définir les critères de sortie et écrire les risques anticipés |
-| 8–20 | Lire notions, export et contrat cible ; attribuer les rôles |
-| 20–40 | Compléter le mapping et produire un CSV intermédiaire |
-| 40–60 | Importer puis contrôler les lignes et le rejet d’un second import |
-| 60–75 | Consulter sans la source, préparer retour arrière et limites |
-| 75–90 | Auto-vérifier, soutenir la décision de sortie et déposer |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-## Manipulations
+## Travaux à réaliser
 
-1. Lire [le contrat cible](donnees/CONTRAT_CIBLE.md), l’[export](donnees/export_source.json) et les [notions](NOTIONS.md). Le référentiel métier fixe les résultats attendus ; il reste intact. Écrire les correspondances de champs et la règle d’inclusion avant d’utiliser l’outil.
-2. Créer `lab/runtime/m10/`. Copier l’export en `source.json` et le [mapping à compléter](donnees/mapping_a_completer.json) en `mapping.json` dans ce répertoire. Compléter le mapping dans un éditeur. L’outil applique votre choix : il ne devine ni les champs ni le statut à retenir.
-3. Exécuter les commandes de [AIDE.md](AIDE.md) : transformer vers `commandes.csv`, importer dans une **nouvelle** base `cible.sqlite`, puis vérifier contre `reference_metier.csv`. Une erreur exige une explication et une correction de la copie, pas du référentiel.
-4. Rejouer le même import : il doit échouer. Vérifier ensuite que la base contient toujours exactement les lignes attendues. En option, créer un CSV avec doublon sur une copie et contrôler le rejet sans import partiel dans une autre base.
-5. Renommer **uniquement la copie** `lab/runtime/m10/source.json` en `source_hors_ligne.json`. Relancer `inspect` et `verify` sur la cible : ces commandes ne reçoivent aucun chemin vers l’export. Conserver les sorties. Ne pas renommer les fichiers fournis dans `modules/`.
-6. Préparer le retour arrière : source intacte, preuves conservées, nouvelle cible distincte si nouvelle tentative. Aucun effacement n’est requis. Le test prouve une consultation locale de données, sans démontrer identité, interfaces applicatives, nouvelles écritures, performance ou continuité en production.
+1. Construire un portefeuille initial avec totaux, prérequis et un scénario alternatif ; relier chaque choix à une dépendance et un enjeu métier.
+2. Après événement et inversion des rôles, réviser la trajectoire ; présenter jalons, indicateurs et risques acceptés.
+3. Mener une soutenance de douze minutes : trois minutes par étudiant, puis six minutes de questions ; remettre ensuite une note personnelle expliquant un choix et une objection.
 
-## Décision de sortie
+## Livrables
 
-Présenter un avis **sortie possible / sous conditions / non démontrée**, étayé par les tests. Ajouter trois exigences vérifiables : contrôle des données et accès, indépendance opérationnelle, délai et procédure de sortie. Relier chaque exigence à un acteur qui contrôle encore une ressource. Le contrat fictif n’est pas une analyse juridique réelle.
+- Support de décision de deux pages maximum, initial et révisé.
+- Trajectoire 30/90/180 jours, bilan 12 mois et trois indicateurs avec seuils.
+- Retour individuel : choix défendu, objection, limite et révision après événement.
 
-Compléter le [rendu M10](../../rendus/M10/README.md) et [l’auto-vérification](AUTO_VERIFICATION.md). **Rapporteur A**, synthèse sur `tp/m10-a`. Chaque étudiant défend un contrôle et une limite. La restitution termine le parcours de dix modules ; le barème existant de M04–M08 reste inchangé.
+Utiliser [la synthèse du cas](../../rendus/M10/SYNTHESE.md) et les fichiers [A](../../rendus/M10/individuel/A.md) / [B](../../rendus/M10/individuel/B.md). **Rapporteur : B.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
+
+## Point de décision
+
+Quel risque votre comité accepte-t-il vraiment en finançant ce plan plutôt qu’un autre, et quand le réexaminera-t-il ?
+
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
+
+Ce comité termine le parcours ; chacun explique une décision, un renoncement et une condition de réexamen.

@@ -1,30 +1,21 @@
-# M02 — Aides facultatives
+# M02 — Aides progressives
 
-**Mode autonome de base :** ouvrez le JSON et les deux CSV dans GitHub ou un éditeur. Aucun script ni accès à RIPEstat n’est obligatoire. Après trois minutes de blocage d’un outil, poursuivre dans ces fichiers.
+## Niveau 1 : revenir au mandat
 
-## Aides progressives
+Écrire en une phrase la décision demandée. Relever les contraintes obligatoires, les moyens et les inconnues dans [le dossier](DOSSIER.md). Séparer les déclarations des acteurs des capacités réellement établies. Relire les [notions](NOTIONS.md) sans chercher une réponse unique.
 
-1. **Je confonds les dates.** `collected_at_utc` décrit le téléchargement. `source_url` porte la demande. Les champs `query_starttime` et `query_endtime` dans les données décrivent la période effective. Relevez-les séparément avant de comparer.
-2. **Le CSV me paraît trop dense.** Prenez un seul instant. Copiez les lignes R1 et R2, puis A et B à ce même instant. Calculez une fraction et écrivez une phrase par couche. Répétez pour les autres instants. Si un tableur met tout dans une colonne, choisir la virgule comme séparateur ou lire le texte brut.
-3. **Je ne peux pas prouver la cause.** C’est possible avec ce dossier. Donnez deux mécanismes compatibles, les faits utiles et une preuve supplémentaire qui les départagerait. La mission ne demande pas de deviner une cause certaine.
+## Niveau 2 : comparer avec les mêmes critères
 
-Les [notions](NOTIONS.md) expliquent le format de premier saut et la différence entre fraction de pairs et utilisateurs. Le résultat d’un calcul seul n’est pas une interprétation.
+Mettre les options sur une même période et dans un même périmètre. Si des coûts ou charges sont fournis, montrer les additions et vérifier chaque ressource séparément. Une information absente devient une question ou une condition. Reprendre les exigences suivantes :
 
-## Outils facultatifs déjà disponibles
+- Une restriction du support n’est pas transformée en arrêt de l’application.
+- Le plan respecte 12 k€ et prend en compte la disponibilité des personnes.
+- Les seuils sont vérifiables, nominatifs par fonction et associés à une décision.
 
-Depuis la racine du dépôt :
+## Niveau 3 : préparer la discussion
 
-```bash
-python3 scripts/analyser_bgp.py modules/M02/donnees/routes_simulees.csv
-python3 -m json.tool modules/M02/donnees/ripe_routing_history_reel.json
-```
+Quel fait précis rendrait votre mesure la plus coûteuse nécessaire ?
 
-En ligne, [RIPEstat](https://stat.ripe.net/) permet de rechercher le préfixe de l’adresse étudiée au M01. L’[API Routing History](https://stat.ripe.net/docs/data-api/api-endpoints/routing-history) accepte une IP, un préfixe ou un ASN. Noter la période et les filtres ; ne pas interpréter les informations filtrées comme un recensement exhaustif.
+Faire reformuler votre position par l’autre, puis demander une objection fondée sur une pièce. Conserver le premier choix et l’effet de l’événement. Écrire une conclusion conditionnelle si la preuve manque : décideur, responsable de vérification, échéance et alternative.
 
-Exemple de requête publique, à dater si vous l’utilisez :
-
-```bash
-curl 'https://stat.ripe.net/data/routing-history/data.json?resource=151.101.0.0%2F22&max_rows=30'
-```
-
-Le script ne détecte pas une attaque et ne vérifie pas la validité RPKI. Pour comparer deux instants, aligner collecteur, préfixe et population de pairs. Utiliser un tableur est tout aussi recevable.
+Sans formateur, après cinq minutes de désaccord sans élément nouveau, consigner les deux positions et continuer. Aucun accord extérieur n’est nécessaire. Si GitHub bloque, travailler dans un document local ; la mise en forme ne doit pas consommer la séance. Ne pas contacter de destinataire réel.

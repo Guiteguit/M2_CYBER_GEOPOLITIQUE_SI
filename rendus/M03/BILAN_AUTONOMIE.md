@@ -1,30 +1,10 @@
-# Bilan collectif M01–M03 — à compléter par C avec A et B
+# Bilan du bloc autonome M01–M03
 
-Date : … · Lettres attribuées : A … / B … / C …
+- Liens vers les trois synthèses et les six contributions A/B :
+- Une décision de chaque cas et ce qui a changé après événement :
+- Désaccords encore ouverts et pièces qui permettraient de trancher :
+- Notions à reprendre avec le formateur :
+- Difficultés d’accès ou de remise et repli utilisé :
+- Ce qui a facilité l’échange à deux ; ce qu’il faut améliorer :
 
-## Où sont nos travaux ?
-
-| Contribution | Branche / pull request ou dossier local |
-|---|---|
-| A : trois fichiers individuels et synthèse M01 | … |
-| B : trois fichiers individuels et synthèse M02 | … |
-| C : trois fichiers individuels, synthèse M03 et ce bilan | … |
-
-## Six points pour la reprise au M04
-
-1. Une dépendance que nous pouvons démontrer, avec sa preuve : …
-2. Une conclusion initiale que nous avons nuancée ou abandonnée : …
-3. Un désaccord restant et la preuve qui permettrait de le traiter : …
-4. Le blocage technique le plus gênant et notre solution de repli : …
-5. Une recommandation SI que nous défendons et son risque conservé : …
-6. La première question à poser au retour du formateur : …
-
-## État des livrables
-
-M01 : terminé / partiel — manque : …
-
-M02 : terminé / partiel — manque : …
-
-M03 : terminé / partiel — manque : …
-
-Nous avons distingué les observations réellement exécutées, les collectes antérieures et les données simulées : …
+Le formateur reprend ce bilan dans l’ouverture de M04, sans ajouter une correction complète aux 90 minutes.

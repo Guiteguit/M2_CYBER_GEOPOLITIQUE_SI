@@ -1,60 +1,48 @@
-# M08 — Diagnostiquer, reprendre et défendre une stratégie
+# M08 — Gouverner un projet SI et encadrer les données
 
-> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
+**90 minutes · 2 étudiants · Étude de cas de management SI · Voir les critères annoncés du barème.** Le formateur est présent en soutien : vous conduisez l’analyse et pouvez demander une aide ciblée. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
-**90 min · Épreuve de synthèse évaluée du bloc M04–M08.** Prérequis : laboratoire préparé avant la séance, techniques M04–M07, Python 3.10+ et navigateur. [Barème commun](../../docs/EVALUATION.md). Aucun composant externe ni compte cloud requis.
+## Mission
 
-## Mandat
+La filiale veut lancer un outil de prévision partagé avec un partenaire. Organisez une décision de lancement, report ou pilote sous conditions et répartissez les responsabilités.
 
-Une perturbation affecte le laboratoire Asteria. Vous devez établir les symptômes, proposer une correction minimale, démontrer le fonctionnement métier et défendre une évolution du SI. Le diagnostic porte sur le laboratoire, pas sur une panne réelle d’un pays ou d’un fournisseur.
+## Ouvrir les supports dans cet ordre
 
-Le fichier d’incident est remis au début de l’épreuve. Il contient l’état d’exercice et une copie préincident à appliquer une seule fois. L’évaluation porte sur la méthode, les preuves et l’explication individuelle ; constater les symptômes avant de proposer une correction.
+1. [Rôles](ROLES.md) : B prend le premier rôle, A le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
 
-## Critères de reprise annoncés
+## Chronomètre
 
-- Les deux parcours `/portail` et `/commandes` répondent HTTP 200 via le point d’entrée.
-- Les commandes C001, C002 et C003 sont présentes, sans doublon, avec les quantités 4, 3 et 2 : total neuf.
-- La validation d’identité fictive reste utilisée ; pas de suppression de contrôle dans le code.
-- Les journaux et preuves avant/après sont conservés.
-- La correction vise le périmètre touché ; pas de reset ou de nouvelle injection pour faire disparaître la panne.
-
-Le formateur indique avant le départ si les trois étudiants travaillent sur un labo collectif avec rôles tournants ou sur trois instances locales. La même exigence de preuves et d’explication individuelle s’applique. Les variantes doivent être comparées selon la méthode, pas au seul temps de réparation.
-
-## Déroulé — 90 minutes
-
-| Minutes | Travail conduit par les étudiants |
+| Minutes | Travail du binôme |
 |---|---|
-| 0–10 | Lire le mandat, répartir les rôles et noter les hypothèses |
-| 10–20 | Constater l’état et préserver les preuves |
-| 20–45 | Choisir les tests, décider et corriger le périmètre touché |
-| 45–60 | Démontrer la reprise technique et métier |
-| 60–70 | Préparer la stratégie et auto-vérifier les preuves |
-| 70–85 | Restituer et défendre individuellement les décisions |
-| 85–90 | Enregistrer et écrire le retour individuel |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-## Travaux attendus
+## Travaux à réaliser
 
-1. Établir une matrice de symptômes : chemin utilisateur, couche locale, données et journaux.
-2. Énoncer deux hypothèses et un test qui les départage. En cas de première hypothèse correcte, expliquer pourquoi une autre est moins compatible avec vos observations.
-3. Documenter l’action proposée et son risque, puis conserver un diff ou une preuve d’import/restauration si nécessaire. N’appliquer aucun changement hors du laboratoire.
-4. Valider les critères de reprise. Une réponse HTTP 200 sans les données requises n’est pas une reprise métier.
-5. Présenter une feuille de route de trois mesures à 30/60/90 jours : dépendance réduite, responsable, preuve de résultat et effort relatif (faible/moyen/fort). Aucun coût de marché inventé n’est nécessaire.
-6. Relier au moins une mesure à une dépendance de contrôle ou de support international. Préciser ce qu’un autre fournisseur ou un autre pays changerait, et ce qu’il ne changerait pas.
+1. Établir la matrice données / usage / destinataire / autorité / preuve requise.
+2. Comparer les trois options sur budget, charge, résultat et conditions ; préparer un schéma de responsabilités avec un seul décideur final par décision.
+3. Après événement, choisir lancement, pilote conditionnel ou report ; définir deux indicateurs et trois critères d’arrêt.
 
 ## Livrables
 
-[Rendu M08](../../rendus/M08/SYNTHESE.md) : journal de cinq décisions maximum, hypothèses/test, correction, preuves de reprise, limites et feuille de route. Chaque étudiant explique une décision ou vérification dont il a la responsabilité. Conserver les fichiers individuels A/B/C pour distinguer les contributions.
+- Matrice de données et responsabilités.
+- Comparaison des options et décision initiale/révisée.
+- Mandat de pilote ou de report avec jalons, indicateurs et arrêts.
 
-En cas d’impossibilité de lancer le serveur, prévenir immédiatement le formateur. La variante d’analyse de traces décrite dans [AIDE.md](AIDE.md) permet d’évaluer les raisonnements, mais doit être signalée comme telle : elle ne prouve pas une réparation exécutée.
+Utiliser [la synthèse du cas](../../rendus/M08/SYNTHESE.md) et les fichiers [A](../../rendus/M08/individuel/A.md) / [B](../../rendus/M08/individuel/B.md). **Rapporteur : B.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
 
-## Points de décision à consigner
+## Point de décision
 
-- Quels symptômes et quel test rendent une hypothèse plus plausible que l’autre ?
-- Quelle intervention minimale est justifiée et quelles preuves conserver avant elle ?
-- Quels critères permettent de déclarer la reprise métier et quelle limite demeure ?
+Qui peut réellement autoriser le partage, et quelle preuve manque encore même si le budget est signé ?
 
-Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
 
-## Suite du parcours
-
-Poursuivre avec [M09 — chaîne logicielle](../M09/README.md), puis [M10 — réversibilité fournisseur](../M10/README.md). Ces prolongements formatifs ne modifient pas les critères de cette épreuve.
+Passer ensuite à [M09](../M09/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.

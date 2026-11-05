@@ -1,19 +1,11 @@
-## Contribution
+## Cas et contribution
 
-Module et participant(s) : …
+- Étudiant A ou B :
+- Modules et fichiers concernés :
+- Position initiale, décision retenue et changement après événement :
+- Pièces / calculs utilisés :
+- Objection ou désaccord conservé :
+- Aide déterminante et vérification effectuée ensuite :
+- Fichiers de l’autre contribution cités :
 
-## Observations et preuves
-
-Qu’avez-vous établi et à partir de quels fichiers ou sources ?
-
-## Interprétation et limites
-
-Quelle conclusion reste une hypothèse ? Quelle information pourrait vous faire changer d’avis ?
-
-## Décision SI
-
-Quelle action ou vérification recommandez-vous à Asteria ?
-
-## Points à discuter en restitution
-
-…
+Laisser la pull request ouverte ; aucune fusion n’est nécessaire pour poursuivre.

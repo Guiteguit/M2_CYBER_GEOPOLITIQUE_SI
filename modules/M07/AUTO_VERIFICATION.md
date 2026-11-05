@@ -1,16 +1,12 @@
-# M07 — Auto-vérification avant restitution
+# M07 — Avant de rendre
 
-Ce contrôle vérifie la méthode et la présence des preuves ; il ne garantit pas à lui seul la justesse du diagnostic. Ne cocher que ce qui a été réalisé.
+- [ ] Le minimum E+S et le plafond de 46 k€ sont vérifiés.
+- [ ] L’accusé de réception n’est pas présenté comme un rétablissement.
+- [ ] L’accord distingue engagements, preuves à obtenir, refus et validation restante.
+- [ ] Deux options et les pièces qui les soutiennent sont visibles.
+- [ ] La décision initiale est conservée et l’effet de l’événement est expliqué.
+- [ ] La décision finale nomme responsable, preuve attendue, risque accepté et réexamen.
+- [ ] Chacun peut expliquer sa contribution et une objection ; les aides déterminantes sont indiquées.
+- [ ] Le rendu est enregistré et le désaccord éventuel reste visible.
 
-- [ ] Le résultat du contrôle d’empreintes est conservé avec son périmètre.
-- [ ] La confiance dans le manifeste est distinguée de la véracité des affirmations.
-- [ ] Le graphe de sources distingue origine et reprises.
-- [ ] Les cinq assertions A1 à A5 ont un statut, une pièce et une limite.
-- [ ] Le message final distingue impact connu, inconnues et prochaines actions.
-- [ ] Chacun a une trace personnelle et peut expliquer une preuve sans lire la synthèse.
-- [ ] Les aides déterminantes, les inconnues et les résultats seulement prédits sont identifiés.
-- [ ] Les travaux sont enregistrés ; le rapporteur cite les contributions des autres branches sans attendre leur fusion.
-
-Avant de conclure, répondre : **quelle observation pourrait vous faire changer d’avis ? Quelle dépendance reste hors de portée de votre démonstration ?** Comparer vos réponses puis présenter le désaccord restant au formateur.
-
-Revenir à la [mission](README.md) ou aux [aides](AIDE.md). Une case manquante devient un point à expliquer, pas un résultat à inventer.
+Une case non cochée est une limite à expliquer, pas une raison d’inventer une preuve. L’auto-vérification prépare le retour du formateur ; elle ne remplace pas l’évaluation.

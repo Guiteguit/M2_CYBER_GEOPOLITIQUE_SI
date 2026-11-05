@@ -1,52 +1,49 @@
-# M01 — Synthèse collective à compléter
+# M01 — Note de décision du binôme
 
-Participants : … · Date d’analyse : … · Cible : … · Collecte en direct ou secours : …
+Rapporteur A. Contributions A/B : [liens des fichiers sur leurs branches à compléter]. Une à deux pages suffisent.
 
-## Carte des dépendances
+## Mandat, contraintes et qualification des pièces
 
-Insérer une image ou un diagramme Mermaid. Nommer les relations et définir une légende. La carte distingue acteurs, services et ressources ; elle ne prétend pas montrer une topologie complète non observée.
+- Décision demandée :
+- Conditions obligatoires et ressources :
+- Faits / déclarations / inconnues déterminants, avec P1, P2… :
 
-## Cinq observations
+## Livrables propres au cas
 
-| N° | Observation précise | Preuve : fichier ou URL | Date et point d’observation | Interprétation | Limite |
-|---|---|---|---|---|---|
-| 1 | … | … | … | … | … |
-| 2 | … | … | … | … | … |
-| 3 | … | … | … | … | … |
-| 4 | … | … | … | … | … |
-| 5 | … | … | … | … | … |
+### 1. Carte des relations avec pièces P1–P4.
 
-## Trois inconnues
+À compléter.
 
-| Inconnue | Pourquoi elle compte | Interlocuteur ou source | Preuve recherchée |
+### 2. Trois priorités et trois inconnues, chacune avec responsable et prochaine vérification.
+
+À compléter.
+
+### 3. Réponse à la DG : indépendance démontrée, seulement déclarée ou non établie.
+
+À compléter.
+
+## Comparaison et décision initiale — avant la minute 45
+
+| Option | Arguments et pièces | Coût / charge si fournis | Limite / condition |
 |---|---|---|---|
-| … | … | … | … |
-| … | … | … | … |
-| … | … | … | … |
+| Option 1 | | | |
+| Option 2 | | | |
 
-## Scénario conditionnel et décision SI
+- Choix initial et renoncement :
 
-Acteur concerné : …
+## Événement et arbitrage révisé
 
-Changement possible → dépendance affectée → conséquence pour l’entreprise : …
+- Ce qui a changé :
+- Décision finale et alternative rejetée :
+- Calculs révisés ou vérifications de contraintes :
+- Désaccord maintenu et élément permettant de trancher :
 
-Ce scénario dépend des hypothèses suivantes : …
+| Action / preuve attendue | Responsable d’action | Décideur | Échéance / seuil | Risque accepté et réexamen |
+|---|---|---|---|---|
+| À compléter | | | | |
 
-## Recommandation à Asteria — dix lignes maximum
+## Retour et contributions
 
-Décision proposée : …
-
-Justification fondée sur les observations : …
-
-Limite et vérification prioritaire : …
-
-
-## Auto-vérification et points pour la reprise
-
-Critères de la fiche d’auto-vérification vérifiés / à reprendre : …
-
-Blocage — tentative — solution de repli — question restante : …
-
-Désaccord conservé et preuve qui permettrait de le trancher : …
-
-Contributions individuelles : liens vers les branches/pull requests ou fichiers locaux A/B/C : …
+- Apport de A et apport de B :
+- Aide déterminante et ce que nous avons ensuite vérifié :
+- Blocage, repli et question restante :

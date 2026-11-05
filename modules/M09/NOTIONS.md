@@ -1,19 +1,9 @@
-# M09 — Dépendances logicielles et autonomie de maintenance
+# M09 — Repères pour décider
 
-## Inventaire, chaîne et risque
+La réversibilité est une capacité à sortir d’une relation ou d’un système en conservant les actifs et fonctions nécessaires. Un export est une pièce possible, pas une démonstration de reprise. Examiner formats, significations, droits d’usage, identités, assistance, compétences et contrôles d’acceptation.
 
-Un inventaire décrit les composants connus dans un périmètre donné. Il peut manquer des dépendances de construction, des extensions ou un service distant. Une SBOM vise une description structurée de composants et de relations ; le JSON de ce TP simplifie cette idée sans prétendre respecter un format industriel. Une dépendance directe est appelée par le composant étudié ; une dépendance transitive est atteinte par une autre. Des applications distinctes peuvent ainsi partager la même bibliothèque.
+Une dépendance aux compétences peut survivre au changement de fournisseur. Si une seule personne sait faire valider un export ou réconcilier les commandes, la nouvelle architecture conserve une fragilité organisationnelle. Préparer suppléance et transmission doit produire une preuve : une autre personne réalise l’activité ou en conduit un exercice documenté.
 
-Le mainteneur, la forge, le distributeur et l’exploitant sont des rôles différents. Deux noms de fournisseurs ne prouvent pas deux chaînes de contrôle indépendantes. Un composant disponible dans une archive peut toujours dépendre d’un service d’identité ou d’un outil de construction absent. Une affirmation d’autonomie doit nommer le scénario et les ressources indispensables.
+Une trajectoire de sortie comporte des portes de décision. À chaque jalon, le sponsor examine une preuve et autorise poursuite, correction ou arrêt. Ces portes ne doivent pas devenir des signatures sans contenu. Une décision de bascule exige notamment le contrôle des données, la capacité d’exploitation et un moyen de retour ou de stabilisation.
 
-## Un avis ne remplace pas un diagnostic
-
-Une correspondance composant/version indique un problème à examiner. Il faut encore comparer les conditions décrites, la configuration active, les entrées accessibles et l’impact métier. Une sévérité ne mesure pas seule la priorité pour Asteria. Une condition déclarée absente dans ce dossier réduit une hypothèse ; en production, elle demanderait une vérification sur le déploiement concerné.
-
-Une version corrigée peut imposer un changement dans son appelant. En supprimant une correspondance d’avis tout en rompant une contrainte de compatibilité, on n’a pas démontré un état exploitable. Distinguer audit statique et test fonctionnel. Le script ne télécharge et n’exécute aucune bibliothèque ; un résultat candidat nécessite donc des tests supplémentaires avant un déploiement réel.
-
-## Continuer aujourd’hui et maintenir demain
-
-La disparition d’une forge n’arrête pas nécessairement un binaire déjà installé. Elle peut cependant empêcher de reconstruire, corriger ou agrandir le service. Une copie indépendante des sources, dépendances, outils et droits nécessaires est une piste, à éprouver par reconstruction dans un environnement séparé. Les aspects contractuels restent des demandes de preuves, pas des conclusions juridiques du TP.
-
-Pour chaque action, écrire : dépendance réduite, hypothèse, test d’acceptation, moyen de retour arrière et risque non traité. Un lot technique cohérent peut être prioritaire malgré une sévérité moindre si l’exposition et l’impact sont mieux établis. Accepter le débat, puis borner la recommandation avec les éléments réellement disponibles.
+Les scénarios de rupture internationale peuvent réduire le temps disponible pour obtenir l’assistance. Distinguer la cessation annoncée du support, l’arrêt des accès et la fin du droit d’usage : ce sont des événements différents. Une menace de rupture ne rend pas automatiquement une sortie immédiate possible. La feuille de route doit expliciter les éléments encore sous contrôle du fournisseur.

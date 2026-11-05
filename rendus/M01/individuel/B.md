@@ -1,30 +1,16 @@
-# M01 — Position individuelle B
+# M01 — Contribution individuelle B
 
-Date : …
+## Avant l’échange
 
-## Avant l’investigation
+- Rôle :
+- Ma première décision et sa raison :
+- Pièce ou calcul que je veux vérifier :
 
-Hypothèse sur les acteurs nécessaires au service : …
+## Après l’analyse et l’événement
 
-Observations que je prévois de rechercher : …
-
-Ce que la recherche externe ne pourra probablement pas établir : …
-
-## Après l’investigation
-
-Mon observation technique, avec preuve et date : …
-
-Interprétation et limite : …
-
-Dépendance et conséquence possible pour Asteria : …
-
-Je maintiens ou révise mon hypothèse parce que : …
-
-La preuve qui pourrait encore modifier ma conclusion : …
-
-
-## Auto-vérification en autonomie
-
-Point discuté avec un autre étudiant et modification éventuelle : …
-
-Blocage, tentative, solution de repli et question restante : …
+- Une observation ou un calcul dont je suis responsable :
+- Ma décision finale et la pièce qui l’étaye :
+- L’objection de mon camarade, reformulée sans la déformer :
+- Ce que j’ai changé ou défendu et pourquoi :
+- Risque restant et condition de réexamen :
+- Aide déterminante reçue, puis vérification faite par moi-même (ou « aucune ») :

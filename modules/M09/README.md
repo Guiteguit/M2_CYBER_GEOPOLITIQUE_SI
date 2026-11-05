@@ -1,38 +1,48 @@
-# M09 — Auditer une chaîne d’approvisionnement logicielle
+# M09 — Préparer une sortie fournisseur et préserver les compétences
 
-> **Autonomie accompagnée · 90 minutes · Python 3.10+ standard.** Le formateur aide et discute vos décisions ; aucun exposé préalable ni service externe n’est nécessaire. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md), les [notions](NOTIONS.md), puis les [aides](AIDE.md). Ces travaux sont formatifs, sans modification du barème M04–M08.
+**90 minutes · 2 étudiants · Étude de cas de management SI · Formatif.** Le formateur est présent en soutien : vous conduisez l’analyse et pouvez demander une aide ciblée. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
 ## Mission
 
-Après la reprise de M08, Asteria veut réduire les dépendances logicielles qui menacent ses deux services. Vous recevez un inventaire, des avis de sécurité et des déclarations d’exploitation **entièrement fictifs**. Choisissez deux actions pour la prochaine fenêtre, avec tests et risques résiduels. Ce module peut démarrer même si votre réparation M08 est incomplète.
+Le fournisseur annonce une évolution de son support. Préparez une trajectoire de réversibilité réaliste, avec des critères de décision, des responsables et un plan de compétences.
 
-## Déroulé
+## Ouvrir les supports dans cet ordre
 
-| Minutes | Travail conduit par les étudiants |
+1. [Rôles](ROLES.md) : A prend le premier rôle, B le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
+
+## Chronomètre
+
+| Minutes | Travail du binôme |
 |---|---|
-| 0–8 | Lire la mission et écrire une priorité individuelle provisoire |
-| 8–20 | Lire notions et dossier ; répartir les rôles |
-| 20–40 | Auditer l’inventaire et reconstruire les chemins transitifs |
-| 40–60 | Tester un lot de versions sur une copie, comparer et examiner la compatibilité |
-| 60–78 | Confronter les priorités, tester le scénario de forge indisponible |
-| 78–90 | Auto-vérifier, défendre deux actions et déposer les preuves |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-## Investigation technique
+## Travaux à réaliser
 
-1. Lire [SCENARIO.md](donnees/SCENARIO.md), `inventaire.json`, `avis.json` et `exploitation.json` dans [donnees](donnees/). Distinguer composant direct, transitif, mainteneur et point de distribution. Chaque étudiant prédit quel service peut être concerné par chaque avis.
-2. Exécuter l’auditeur depuis la racine et conserver sa sortie :
+1. Construire une grille données / accès / contrat / compétences / preuves manquantes et distinguer support et droit d’usage.
+2. Comparer deux plans avec budget, jours, prérequis et jalons ; préciser ce qui reste non financé.
+3. Réviser après événement ; défendre trois portes de décision et un plan de transmission sans supposer la disponibilité de Léa.
 
-```bash
-python3 scripts/auditer_dependances.py --inventory modules/M09/donnees/inventaire.json --advisories modules/M09/donnees/avis.json
-```
+## Livrables
 
-Le code de sortie 0 indique une lecture réussie, **pas** l’absence de risque. Reconstituer un chemin complet par service ; confronter les correspondances de versions aux conditions d’exploitation.
-3. Créer `lab/runtime/m09/`, y copier l’inventaire sous `inventaire_candidat.json` et modifier uniquement cette copie avec un éditeur. Choisir un lot de versions dans celles déclarées disponibles. Relancer l’auditeur en lui donnant le chemin candidat. Conserver avant/après et diff. Ne pas modifier les avis pour supprimer une alerte.
-4. Vérifier séparément les contraintes de compatibilité dans `exploitation.json`. Une sortie sans correspondance peut encore décrire un lot incompatible. L’inventaire n’installe rien : le test est une comparaison statique, pas un test d’exécution de bibliothèques.
-5. Décrire l’effet d’une indisponibilité de Forge-Nord : déploiement actuel, nouvelle installation, correctif et reconstruction. Proposer les preuves nécessaires pour revendiquer une reconstruction indépendante.
+- Grille de réversibilité et risques de concentration.
+- Deux trajectoires chiffrées puis plan révisé sur 90 jours.
+- Trois décisions conditionnelles et preuve de suppléance à obtenir.
 
-## Points de décision et rendu
+Utiliser [la synthèse du cas](../../rendus/M09/SYNTHESE.md) et les fichiers [A](../../rendus/M09/individuel/A.md) / [B](../../rendus/M09/individuel/B.md). **Rapporteur : A.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
 
-Choisir deux actions : pourquoi celles-ci avant les autres, quelles conditions, quels tests d’acceptation et quel retour arrière ? Contester au moins une priorité avec une pièce du dossier. La sévérité d’un avis n’est pas une preuve suffisante d’exploitabilité.
+## Point de décision
 
-Compléter le [rendu M09](../../rendus/M09/README.md), puis [l’auto-vérification](AUTO_VERIFICATION.md). **Rapporteur C**, synthèse sur sa branche `tp/m09-c` ; A et B gardent leur propre branche et leurs contributions. Conserver les aides reçues et les inconnues. Le formateur peut aider à choisir un test, puis chacun défend sa décision.
+Quelle partie de votre plan reste possible si le fournisseur ne participe plus, et quelle partie n’est qu’une promesse ?
+
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
+
+Passer ensuite à [M10](../M10/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.

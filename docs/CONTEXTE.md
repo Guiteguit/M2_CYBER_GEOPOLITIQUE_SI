@@ -1,28 +1,23 @@
-# Le contexte Asteria
+# Asteria : une entreprise et des décisions SI
 
-Asteria Industrie est une entreprise fictive de 180 salariés, dont 15 dans une filiale commerciale en Estérie, pays fictif. Elle produit des capteurs industriels et doit maintenir commandes, fabrication et expéditions. Son équipe SI compte quatre personnes.
+Asteria Industrie produit des capteurs et compte 180 salariés, dont 15 dans sa filiale commerciale d’Estérie. Elle doit confirmer ses commandes, produire, expédier et payer ses salariés. La DSI compte quatre personnes. La direction veut comprendre ses dépendances numériques et conserver sa capacité d’action face aux changements de contrats, de prestataires ou de relations internationales.
 
-Dans ce parcours technique, Asteria est votre cliente. Vous étudiez des services et des architectures pour lui expliquer les dépendances, les preuves disponibles et les options à envisager. Les domaines publics étudiés ne lui appartiennent pas et ne constituent pas une reproduction de son infrastructure.
+## Les acteurs du fil rouge
 
-## Pourquoi ce travail relève de la géopolitique et de la stratégie SI
+| Acteur fictif | Rôle dans les dossiers |
+|---|---|
+| DG, DAF, métiers et DSI Asteria | Décident des priorités, des moyens et des risques acceptés |
+| NordSuite / suite Orion | Prestataire et service de gestion des commandes |
+| AccèsGlobal / Identia | Prestataire d’accès commun à plusieurs services |
+| PaieClaire | Prestataire de paie |
+| UnionSI, Horizon | Fournisseurs alternatifs étudiés |
+| InsightPart | Partenaire d’un projet de prévision |
+| Estérie, Valorie, Novarie | Pays fictifs : filiale, hébergement ou support selon les pièces |
 
-Pour chaque investigation, cherchez à répondre à trois questions :
+Aucune nationalité ne constitue à elle seule une preuve de danger ou de conformité. Les sujets géopolitiques portent sur les acteurs, leurs leviers de contrôle, les ruptures possibles et les options d’action. Les documents ne décrivent aucune crise internationale réelle et ne donnent pas de conseil juridique.
 
-1. Quel acteur contrôle une ressource nécessaire au service ?
-2. Comment un changement technique, économique ou international pourrait-il affecter cette dépendance ?
-3. Quelle décision l’entreprise peut-elle prendre, et quelles preuves lui manquent encore ?
+## Comment les cas s’enchaînent
 
-Une nationalité, un pays renseigné dans un registre ou une localisation annoncée ne suffit pas à établir les lieux de stockage, tous les intervenants du support ou une obligation juridique. Documentez séparément les différents aspects.
+Les décisions précédentes enrichissent vos arguments mais ne sont **pas automatiquement exécutées** dans l’entreprise fictive. Chaque dossier fixe un nouvel état de référence et sa propre enveloppe de moyens. Les budgets de modules différents ne s’additionnent pas. Si votre décision antérieure contredit l’état d’un nouveau cas, noter l’écart et utiliser l’état donné pour rendre les travaux comparables. Au M10, vous pourrez expliciter une variante sans effacer le mandat commun.
 
-## Organisation des trois premiers modules
-
-M01–M03 sont réalisés en autonomie complète pendant l’absence du formateur. Les étudiants lisent les apports, investiguent, confrontent leurs réponses puis utilisent les auto-vérifications. Un résultat incertain doit être documenté ; il n’empêche pas de poursuivre. La reprise et les questions sont traitées à partir de M04. Voir [le guide de départ](DEMARRER_AUTONOMIE.md).
-
-## Évaluation
-
-M01 est formatif : vous recevrez un retour sur la qualité de vos preuves, votre interprétation et votre contribution individuelle. Il n’entre pas dans une note finale. M02–M03 sont également formatifs. Les modalités des modules évalués sont proposées dans le [barème](EVALUATION.md) et annoncées avant M04, après validation par l’école.
-
-
-## Prolongements après la reprise
-
-M09 analyse la chaîne logicielle et M10 teste la portabilité des commandes vers une cible locale. Ces modules sont formatifs et accompagnés ; ils prolongent le parcours jusqu’à dix modules de 90 minutes, soit quinze heures effectives.
+Toutes les sommes sont fictives, en k€ HT lorsque précisé. Elles servent aux calculs du cas, sans représenter un tarif actuel de marché. Aucune probabilité réelle, obligation légale ou garantie fournisseur ne doit être inventée.

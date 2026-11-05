@@ -1,4 +1,0 @@
-timestamp_utc,account,source_ip,result,scope
-2030-04-10T08:59:00Z,support-externe,192.0.2.40,failure,interface VPN simulee
-2030-04-10T08:59:10Z,support-externe,192.0.2.40,failure,interface VPN simulee
-2030-04-10T08:59:20Z,support-externe,192.0.2.40,failure,interface VPN simulee

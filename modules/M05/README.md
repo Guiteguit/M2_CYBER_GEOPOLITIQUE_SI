@@ -1,54 +1,48 @@
-# M05 — Démontrer un repli et une restauration
+# M05 — Organiser une continuité métier en mode dégradé
 
-> **Autonomie accompagnée :** vous conduisez ce module à partir des supports. Le formateur est présent en soutien, pour une aide ciblée et pour challenger vos décisions ; aucun exposé oral n’est nécessaire pour commencer. Lire [le fonctionnement commun](../../docs/AUTONOMIE_ACCOMPAGNEE.md). Les apports sont dans [NOTIONS.md](NOTIONS.md), les aides dans [AIDE.md](AIDE.md), puis utiliser [AUTO_VERIFICATION.md](AUTO_VERIFICATION.md).
-
-**90 min · Configuration, export et restauration locale · Évaluation collective.** Prérequis : laboratoire démarré, navigateur/HTTP et Python 3.10+. Ne pas réinstaller d’environnement. Les données sont fictives et les changements restent dans `lab/runtime`.
+**90 minutes · 2 étudiants · Étude de cas de management SI · Voir les critères annoncés du barème.** Le formateur est présent en soutien : vous conduisez l’analyse et pouvez demander une aide ciblée. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
 ## Mission
 
-Asteria demande deux preuves différentes : continuer à accéder aux applications lorsque l’identité principale est indisponible, et récupérer les commandes après une perte de données. Vous devez démontrer ces capacités puis dire ce qu’elles ne garantissent pas.
+Orion sera indisponible une journée. Organisez les commandes et les expéditions avec une équipe réduite, puis préparez le contrôle du retour à la normale.
 
-## Déroulé
+## Ouvrir les supports dans cet ordre
 
-| Minutes | Travail conduit par les étudiants |
+1. [Rôles](ROLES.md) : A prend le premier rôle, B le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
+
+## Chronomètre
+
+| Minutes | Travail du binôme |
 |---|---|
-| 0–8 | Écrire l’objectif et préparer les preuves de référence |
-| 8–20 | Lire les notions ; prédire les critères de succès |
-| 20–42 | Configurer le repli et exécuter les contre-tests |
-| 42–65 | Exporter, simuler la perte puis restaurer et contrôler |
-| 65–78 | Confronter les résultats et les dépendances restantes |
-| 78–90 | Auto-vérifier, présenter et enregistrer |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-## Partie A — Le repli d’accès
+## Travaux à réaliser
 
-1. Sauvegarder votre configuration puis établir une référence saine. Le fichier d’incident fourni pour cette activité permet de reproduire l’indisponibilité de l’identité principale.
-2. Examiner le second service d’identité fourni dans le laboratoire. Modifier uniquement la configuration des applications pour disposer d’un second choix. Justifier l’ordre des essais.
-3. Avec la dépendance principale indisponible, démontrer les deux parcours HTTP et le fournisseur effectivement utilisé. Vérifier aussi l’échec lorsque les deux validations d’identité sont indisponibles : le modèle ne doit pas simplement ignorer ce contrôle.
-4. Rétablir une configuration fonctionnelle pour la partie B. Conserver les différences et les preuves, pas seulement une réponse finale HTTP 200.
-
-## Partie B — Les données
-
-1. Exporter les commandes par le parcours prévu ; conserver le CSV et son manifeste. Relever nombre de commandes, quantité totale et empreinte.
-2. Après vérification de cette copie, remplacer **uniquement** `lab/runtime/commandes.csv` par un CSV contenant son en-tête et aucune ligne de données. Ne pas supprimer de répertoire. Mesurer l’effet dans l’application : un HTTP 200 suffit-il à valider le service métier ?
-3. Restaurer depuis votre export. Contrôler le contenu, les identifiants, les quantités et les deux parcours utilisateur.
-4. Mesurer la durée entre votre constat de perte et le contrôle de reprise. Indiquer la date de l’export et les éventuelles écritures non couvertes. Cet essai ne démontre pas un RTO/RPO contractuel en production.
-
-Les [aides](AIDE.md) donnent les commandes de gestion de fichiers et de restauration, pas une procédure complète de résilience.
-
-## Contre-épreuve stratégique
-
-Votre seconde identité et votre copie sont sur le même ordinateur. Que se passe-t-il si l’hôte, le disque ou l’équipe d’exploitation devient indisponible ? Quelle autonomie exigeriez-vous d’un fournisseur externe ? Qui pourrait autoriser une reprise sans les outils du fournisseur principal ?
+1. Calculer deux plans de charge possibles et définir le service minimum ; vérifier les lots indivisibles.
+2. Concevoir un registre de cinq lignes d’exemple : identifiant temporaire, commande source, action, validation et état de rapprochement.
+3. Réviser après l’événement ; préparer la décision de reprise et une communication client de 120 mots maximum.
 
 ## Livrables
 
-[Rendu M05](../../rendus/M05/SYNTHESE.md) : configuration avant/après, matrice de tests principal seul/secondaire/deux indisponibles, export et manifeste, contrôles de contenu et chronologie de reprise. Terminer par deux exigences pour une architecture réellement indépendante, avec un moyen de les vérifier.
+- Plan de charge avant/après avec lots maintenus et différés.
+- Exemple de registre, responsables et contrôles.
+- Critères de reprise, gestion des écarts et message client.
 
-Le reset ne remplace pas la restauration : il recrée les données initiales et ne démontre pas l’usage de votre sauvegarde. Ne pas l’utiliser comme preuve de réussite de la partie B.
+Utiliser [la synthèse du cas](../../rendus/M05/SYNTHESE.md) et les fichiers [A](../../rendus/M05/individuel/A.md) / [B](../../rendus/M05/individuel/B.md). **Rapporteur : A.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
 
-## Points de décision à consigner
+## Point de décision
 
-- Avant le repli : quel ordre de dépendances proposez-vous et comment prouver qu’un contrôle reste actif ?
-- Avant de vider les lignes fictives : la copie et son manifeste sont-ils présents et vérifiés ? Sinon, ne pas provoquer la perte ; poursuivre la vérification ou solliciter une aide.
-- Après restauration : quel contrôle métier complète le HTTP 200 et quelles écritures ne sont pas démontrées récupérables ?
+Qui autorise le retour à la saisie normale, et avec quelle preuve concernant les commandes traitées à la main ?
 
-Ces traces ne sont pas des demandes d’autorisation. Après une aide ou une objection, expliquez vous-mêmes la décision retenue et testez-la. À la fin, le rapporteur consigne la synthèse sur sa branche personnelle du module, sans attendre une fusion ; chacun garde son fichier individuel.
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
+
+Passer ensuite à [M06](../M06/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.

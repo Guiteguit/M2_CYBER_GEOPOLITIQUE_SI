@@ -1,42 +1,30 @@
-# Évaluation proposée — parcours technique
+# Évaluer les décisions et la compréhension
 
-Les modalités applicables sont précisées avant M04. M01–M03 sont formatifs. Les points suivants donnent une note finale sur 20, dont **12 individuels et 8 collectifs**. Les notes nominatives ne sont pas publiées dans ce dépôt partagé.
+**Proposition sur 20, à annoncer avant M04 et à confirmer selon les règles de l’établissement.** M01–M03 et M09 sont formatifs. Le nouveau parcours évalue le management SI ; les anciens critères de commandes ou de reprise technique ne s’appliquent plus. Les notes nominatives restent hors du dépôt étudiant.
 
-## Individuel — 12 points
+## Part individuelle —12 points par étudiant
 
-| Pièce | Critère | Points |
+| Module | Contribution examinée | Points |
 |---|---|---:|
-| M04 : hypothèse, une preuve et oral | Expliquer une dépendance commune, les statuts et leur limite | 4 |
-| M06 : hypothèses, test discriminant et oral | Relier les traces à une correction proportionnée et distinguer causalité/attribution | 4 |
-| M08 : décision ou vérification expliquée, retour personnel | Diagnostiquer, justifier et contrôler la reprise sans effacer les preuves | 4 |
+| M04 | Arbitrage budget/capacité, renoncement et preuve attendue | 4 |
+| M06 | Décision de crise, qualification des informations et révision | 4 |
+| M10 | Défense d’un choix stratégique, réponse à l’objection et risque accepté | 4 |
 
-Pour chaque ligne : 0 absent/hors sujet ; 1 observation peu expliquée ; 2 réponse pertinente mais incomplète ; 3 raisonnement étayé avec une limite ; 4 raisonnement étayé, test discriminant et révision ou défense claire face à l’objection.
+Pour chaque ligne : 0 = contribution absente ou non explicable ; 1 = avis sans justification suffisante ; 2 = décision pertinente mais contrainte ou preuve importante manquante ; 3 = décision étayée, contraintes respectées, limite explicite ; 4 = ces éléments plus comparaison d’alternative et révision ou défense argumentée face à l’objection. Le style oratoire ne remplace pas la compréhension ; une explication écrite peut compléter l’oral.
 
-## Collectif — 8 points
+## Part collective —8 points
 
-| Pièce | Critère | Points |
+| Module | Pièce et critères | Points |
 |---|---|---:|
-| M05 | Repli prouvé et échec des deux validations correctement testé | 2 |
-| M05 | Restauration depuis un export, intégrité et contenu contrôlés | 2 |
-| M07 | Qualification des preuves, indépendance des sources et communication | 2 |
-| M08 | Dossier de reprise et feuille de route reliant dépendances et décisions | 2 |
+| M05 | Plan de continuité cohérent en charge, contrôle et reprise | 2 |
+| M07 | Accord ou non-accord chiffré, clauses vérifiables et limites | 2 |
+| M08 | Décision de projet, autorisations, jalons et critères d’arrêt | 2 |
+| M10 | Trajectoire réalisable, indicateurs de résultat et risques acceptés | 2 |
 
-Pour chaque ligne : 0 absent ou non démontré ; 1 démarche correcte mais preuve ou limite importante manquante ; 2 démonstration cohérente, preuves et limites explicites.
+Pour chaque ligne : 0 = absent ou incohérence centrale non reconnue ; 1 = démarche pertinente mais preuve, responsabilité ou contrainte importante manquante ; 2 = décision cohérente, pièces, limites et conditions explicites. Un accord n’est pas obligatoire au M07 ; un non-accord bien justifié peut obtenir tous les points.
 
-## Principes
+## Principes de retour
 
-Un HTTP 200 sans les données attendues ne vaut pas une reprise métier. Une prédiction de résultat n’est pas une exécution. Un reset n’est pas une restauration depuis sauvegarde. Une modification de code supprimant le contrôle d’identité ne répond pas aux missions.
+La note finale de chacun additionne sa part individuelle sur 12 et la part collective du binôme sur 8. Un désaccord argumenté n’est pas une faute. Réviser après un événement est attendu. Une hypothèse clairement signalée peut être recevable si elle ne contredit pas le mandat sans le reconnaître. Les calculs du dossier sont vérifiables ; les choix peuvent différer.
 
-Le temps de réparation seul ne classe pas les étudiants. Les variantes M08 peuvent demander des opérations différentes ; noter la qualité du diagnostic, des preuves et de l’oral. Les désaccords argumentés sont recevables et une révision après un test n’est pas pénalisée.
-
-Si le formateur décide du mode secours pour un blocage matériel, il annonce les critères adaptés : qualité du diff proposé, des tests prévus et de l’argumentation. Votre rendu distingue ce qui a été exécuté et ce qui a seulement été conçu. Une prédiction ne constitue pas une preuve de repli ou de restauration.
-
-
-## Autonomie accompagnée et aide
-
-M04–M08 restent accompagnés et évalués par le formateur. Demander une aide n’entraîne pas automatiquement une pénalité. Consigner les aides déterminantes et distinguer ce qui a été suggéré, exécuté et expliqué par chaque étudiant. L’appréciation porte sur les critères annoncés, la compréhension et les vérifications propres ; une solution donnée ne devient pas à elle seule une démonstration individuelle. L’auto-vérification prépare la restitution et ne remplace pas l’évaluation, notamment en M08.
-
-
-## Extension M09–M10 — formative
-
-M09 et M10 prolongent le parcours jusqu’à quinze heures. Le barème sur 20 de M04–M08 reste inchangé. M08 est l’épreuve de synthèse de ce bloc évalué. M09–M10 donnent lieu à un retour individuel et collectif : en M09, qualité du graphe, distinction avis/exposition et cohérence du lot proposé ; en M10, mapping, contrôles métier, contre-test de double import et limites de réversibilité. Une extension notée demanderait une annonce distincte avant les activités ; aucune redistribution automatique des points n’est appliquée.
+Demander de l’aide n’entraîne pas automatiquement une pénalité. Consigner les aides déterminantes ; le formateur vérifie ensuite ce que chaque étudiant peut expliquer et décider. L’absence de l’un ne doit pas condamner l’autre : annoncer une adaptation d’activité et de restitution, sans attribuer des contributions fictives.

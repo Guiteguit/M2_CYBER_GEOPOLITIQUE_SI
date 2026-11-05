@@ -1,21 +1,21 @@
-# M03 — Aides
+# M03 — Aides progressives
 
-**Sans Python :** lire les JSON, recopier les paramètres utiles dans un tableau et utiliser une calculatrice. Le script ci-dessous est une option, pas un prérequis. Les noms du dossier sont fictifs : les chercher sur Internet ne vous apportera pas la preuve manquante.
+## Niveau 1 : revenir au mandat
 
-## Aides progressives
+Écrire en une phrase la décision demandée. Relever les contraintes obligatoires, les moyens et les inconnues dans [le dossier](DOSSIER.md). Séparer les déclarations des acteurs des capacités réellement établies. Relire les [notions](NOTIONS.md) sans chercher une réponse unique.
 
-1. **Je ne sais pas construire la carte.** Commencez par une fonction : applications, DNS, identité, sauvegarde ou support. Relevez son acteur puis ses dépendances explicites. Une table de relations nommées est acceptée à la place d’une image.
-2. **Nos calculs diffèrent.** Écrivez la formule avant le montant. Vérifiez dix-huit mois, frais mensuels, mise en place et condition des frais de sortie dans le contrat. Les jours d’équipe ne sont pas une somme d’argent. Faites refaire le calcul sans montrer votre résultat.
-3. **Nous n’avons pas de choix certain.** Rédigez un choix conditionnel et son risque conservé. Indiquez le test qui pourrait modifier l’arbitrage ; ne présentez ni une localisation déclarée comme une conformité prouvée, ni un export prévu comme une restauration testée.
+## Niveau 2 : comparer avec les mêmes critères
 
-## Script facultatif
+Mettre les options sur une même période et dans un même périmètre. Si des coûts ou charges sont fournis, montrer les additions et vérifier chaque ressource séparément. Une information absente devient une question ou une condition. Reprendre les exigences suivantes :
 
-```bash
-python3 scripts/comparer_offres.py modules/M03/donnees/offre_A.json modules/M03/donnees/offre_B.json
-```
+- Le calcul porte sur trois ans et inclut la sortie.
+- Les notes sont justifiées et les informations manquantes restent visibles.
+- Le choix est réexaminé avec les nouveaux prix et un autre jeu de poids.
 
-Le script affiche le prix de chaque offre sur dix-huit mois, ses jours d’équipe et les identifiants d’acteurs communs. Il ne modélise pas automatiquement la sortie de A lors d’une migration vers B : appliquer la convention du contrat. Vous pouvez refaire tous les calculs dans un tableur.
+## Niveau 3 : préparer la discussion
 
-Questions utiles : qui peut créer un administrateur de secours ? Qui détient la procédure de restauration ? Que se passe-t-il si le support d’un pays n’intervient plus ? Quelle preuve différencie une capacité annoncée d’une capacité testée ?
+Votre offre préférée reste-t-elle acceptable si sa promesse d’autonomie n’est pas démontrée avant la signature ?
 
-Les noms et adresses de ce dossier sont fictifs. Ils ne sont pas des cibles à résoudre ou à contacter.
+Faire reformuler votre position par l’autre, puis demander une objection fondée sur une pièce. Conserver le premier choix et l’effet de l’événement. Écrire une conclusion conditionnelle si la preuve manque : décideur, responsable de vérification, échéance et alternative.
+
+Sans formateur, après cinq minutes de désaccord sans élément nouveau, consigner les deux positions et continuer. Aucun accord extérieur n’est nécessaire. Si GitHub bloque, travailler dans un document local ; la mise en forme ne doit pas consommer la séance. Ne pas contacter de destinataire réel.

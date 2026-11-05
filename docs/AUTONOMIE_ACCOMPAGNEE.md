@@ -1,64 +1,19 @@
-# M04–M10 — Travailler en autonomie avec un formateur en soutien
+# M04–M10 : autonomie accompagnée
 
-Vous conduisez l’enquête et les manipulations. Le formateur est présent pour aider, poser des questions, apporter une explication ciblée et vous aider à examiner une décision. Il ne déroule pas la solution à votre place et son accord n’est pas nécessaire à chaque étape.
+Vous conduisez les cas. Le formateur est présent pour expliquer une notion, aider à organiser l’analyse, jouer un membre du comité et discuter vos décisions. Vous n’avez pas à obtenir son accord à chaque étape. Les supports écrits suffisent pour commencer.
 
-**M01–M03 restent organisés sans sa présence** selon le [guide dédié](DEMARRER_AUTONOMIE.md). Ce document s’applique à partir de M04. Chaque mission dispose de notions à lire, d’aides progressives, d’un chronomètre et d’une auto-vérification.
+## Quand solliciter une aide
 
-## Avant de démarrer
+Lire le mandat, les notions et l’aide progressive. Si vous ne progressez plus après trois à cinq minutes, présenter l’objectif, votre option, la pièce ou le calcul qui bloque et l’aide recherchée. Demander immédiatement une aide pour un accès manquant. Après un indice ou une démonstration, reformuler votre choix et effectuer vous-mêmes la vérification suivante.
 
-Lire la mission et les critères. Vérifier le laboratoire et disposer du fichier d’incident du module concerné avant son application. La préparation du poste et la remise de ce fichier sont prévues en amont ; le choix des pannes reste dans l’espace formateur. Ne pas ouvrir un ancien incident d’un autre module pour remplacer celui prévu.
+Le formateur peut aussi intervenir spontanément s’il constate une contrainte oubliée, une certitude sans preuve ou une participation déséquilibrée. Ses passages sont courts : quelle décision, quelle preuve, quelle autre option ? Une explication ciblée peut précéder la reprise du cas, sans transformer toute la séance en exposé.
 
-Les manipulations restent dans votre laboratoire local et portent sur des données fictives. Si le poste ou un fichier indispensable manque, solliciter immédiatement le formateur pour définir un mode de travail ou le secours. L’autonomie ne consiste pas à perdre la séance sur une installation.
+## Échanges et restitution
 
-## Votre cycle de travail
+Suivre les rôles A/B et le [fonctionnement commun](METHODE.md). À la minute 45, lire l’événement ; le formateur peut le jouer oralement mais le texte reste disponible. Préparer la restitution dans le temps de 90 minutes. Chacun expose une décision ou une objection. Une divergence argumentée peut rester dans la synthèse.
 
-1. Écrire une hypothèse individuelle avant la lecture ou les tests.
-2. Lire les notions, puis choisir une première observation utile.
-3. Prédire l’effet d’un test, l’exécuter et conserver sa preuve.
-4. Comparer le résultat à la prédiction, discuter avec les autres et choisir la suite.
-5. Vérifier les critères métier et les limites avant de conclure.
+Demander de l’aide n’entraîne pas automatiquement une pénalité. Consigner les aides déterminantes et montrer ce que vous avez ensuite décidé et vérifié. La compréhension individuelle compte ; une solution donnée ne devient pas à elle seule une contribution personnelle. Voir [le barème](EVALUATION.md).
 
-Une réponse intermédiaire peut rester incertaine. Documenter l’inconnue et proposer une vérification plutôt qu’attendre que le formateur choisisse votre diagnostic. Les points de décision de chaque mission sont des traces à consigner, pas des demandes d’autorisation.
+## Fin de séance
 
-## Répartition des rôles
-
-| Module | Rapporteur | Point de vigilance |
-|---|---|---|
-| M04 | A | Distinguer santé locale et usage |
-| M05 | B | Vérifier repli, copie et données restaurées |
-| M06 | C | Comparer hypothèses, causalité et attribution |
-| M07 | A | Relier chaque affirmation à ses preuves |
-| M08 | B | Démontrer la reprise et défendre une décision |
-| M09 | C | Séparer correspondance de version, exposition et compatibilité |
-| M10 | A | Vérifier les données et les limites de la sortie fournisseur |
-
-Pendant les manipulations, faites tourner pilote, observateur des preuves et contradicteur. Sur trois postes, chacun réalise ses tests puis confronte ses résultats. Sur une instance collective, changer le pilote entre les phases et garder les hypothèses individuelles. Le rapporteur consigne ; il ne fait pas tout le travail.
-
-## Quand demander de l’aide
-
-Commencer par les notions, l’aide du module et une vérification par un camarade. Si vous ne progressez plus après trois à cinq minutes, solliciter le formateur. En cas de risque de perdre une preuve ou de modifier autre chose que le labo, demander immédiatement une aide ; il n’y a aucun délai à respecter pour cela.
-
-Une demande utile présente quatre éléments :
-
-- **But :** ce que vous cherchez à vérifier.
-- **Hypothèse :** ce que vous pensez observer et pourquoi.
-- **Preuve :** commande, fichier, réponse, erreur et résultat déjà obtenu.
-- **Besoin :** une notion, une méthode de test ou une explication d’outil.
-
-Le formateur peut répondre par une question, un indice ou une démonstration ciblée. Après l’aide, vous choisissez ou expliquez le test suivant et vérifiez vous-mêmes son effet. Demander une aide ne conduit pas automatiquement à une pénalité ; indiquez cependant ce que l’aide vous a apporté pour distinguer votre raisonnement personnel.
-
-## Confronter une décision
-
-Avant un changement, écrire : « Nous pensons que… ; ce test devrait montrer… ; nous conserverons… ; nous conclurons seulement si… ». Puis chercher un contre-argument. Un camarade peut défendre l’autre hypothèse ; le formateur peut challenger une déduction ou rappeler une contrainte métier.
-
-L’échange final présente la preuve et sa limite, pas seulement la commande. Le formateur peut demander une justification individuelle et reste responsable du retour pédagogique et de l’évaluation. Une auto-vérification ne remplace pas son appréciation.
-
-## Rendre sans attendre une fusion
-
-À partir de M04, créer une branche personnelle par module (`tp/m04-a`, `tp/m04-b`, `tp/m04-c`, etc.). Chacun complète son fichier individuel et ses preuves. Le rapporteur ajoute la synthèse collective sur **sa branche personnelle du module**, en citant les contributions des autres par lien de branche ou de pull request. Il n’a pas à attendre leur intégration dans `main`.
-
-Ouvrir les pull requests vers `main` et laisser la revue/intégration au formateur. L’activité et le module suivant ne dépendent pas d’une fusion ; une preuve peut être citée depuis la branche qui la contient. Le [guide Git](GIT.md) et [PARTICIPER.md](PARTICIPER.md) donnent les commandes. En cas de blocage Git, conserver les fichiers localement et continuer l’analyse.
-
-## Terminer la séance
-
-Utiliser l’auto-vérification du module, sauvegarder les preuves, enregistrer les fichiers et écrire une hypothèse révisée. Noter toute aide déterminante et les questions restantes. Ne pas utiliser un reset ou une nouvelle application d’incident comme preuve de réparation. Le formateur peut ensuite vous aider à tirer une conclusion ou à préparer le module suivant.
+La synthèse est déposée par le rapporteur sur sa branche et cite la contribution de l’autre. Aucune fusion n’est nécessaire pour continuer. Les fichiers locaux sont recevables si GitHub bloque. Le formateur restitue ensuite les points forts et une amélioration ciblée par personne.

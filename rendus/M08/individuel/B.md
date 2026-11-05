@@ -1,32 +1,16 @@
-# M08 — Position individuelle B
+# M08 — Contribution individuelle B
 
-Date : …
+## Avant l’échange
 
-## Avant l’investigation
+- Rôle :
+- Ma première décision et sa raison :
+- Pièce ou calcul que je veux vérifier :
 
-Hypothèse : …
+## Après l’analyse et l’événement
 
-Observation ou test qui pourrait l’infirmer : …
-
-## Ma contribution
-
-Action ou décision dont je suis responsable : …
-
-Preuve datée et interprétation : …
-
-Limite et autre explication possible : …
-
-## Après confrontation
-
-Je maintiens ou révise mon hypothèse parce que : …
-
-Conséquence pour une décision SI et dépendance concernée : …
-
-
-## Décision et accompagnement
-
-- Hypothèse avant intervention et résultat attendu :
-- Test effectué, observation et décision retenue (ou révisée) :
-- Aide déterminante reçue d’un pair ou du formateur, ou « aucune » :
-- Ce que j’ai / nous avons ensuite décidé et vérifié :
-- Incertitude à discuter à la restitution :
+- Une observation ou un calcul dont je suis responsable :
+- Ma décision finale et la pièce qui l’étaye :
+- L’objection de mon camarade, reformulée sans la déformer :
+- Ce que j’ai changé ou défendu et pourquoi :
+- Risque restant et condition de réexamen :
+- Aide déterminante reçue, puis vérification faite par moi-même (ou « aucune ») :

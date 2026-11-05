@@ -1,64 +1,48 @@
-# M02 — Une route visible signifie-t-elle un service disponible ?
+# M02 — Décider face à une rupture internationale de service
 
-**90 minutes · Autonomie complète · Analyse BGP et mesures · Formatif.** Suivre le [guide commun](../../docs/DEMARRER_AUTONOMIE.md). Aucun cours oral, script ou site externe n’est nécessaire pour terminer. Les JSON et CSV sont lisibles directement dans GitHub ou avec une copie locale.
+**90 minutes · 2 étudiants · Étude de cas de management SI · Formatif.** Le formateur est absent : suivre le guide autonome, sans attendre une validation. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
 
 ## Mission
 
-Asteria cherche si une observation de routage suffit à expliquer une interruption de service. Distinguez route observée, accès depuis une sonde et disponibilité applicative. Votre analyse doit préciser le périmètre et proposer une surveillance utile.
+Le support d’un fournisseur devient incertain à l’international. Proposez une réponse pour les trente prochains jours, sans traiter une rumeur comme une panne certaine ni attendre une information parfaite.
 
-Le module utilise une collecte RIPE réelle datée et deux CSV simulés : [présentation des données](donnees/README.md). Ne leur attribuez pas le même incident ou la même période. Vous pouvez terminer M02 même si le diagnostic M01 reste incertain : toutes les ressources sont fournies ici.
+## Ouvrir les supports dans cet ordre
 
-B est rapporteur. A commence par les sondes HTTP, B par le JSON RIPE, C par le CSV de routes ; chacun relit au moins une autre source.
+1. [Rôles](ROLES.md) : B prend le premier rôle, A le second ; chacun écrit une première position dans son fichier individuel.
+2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
+3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
+4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
 
-## Chronomètre — 90 minutes
+## Chronomètre
 
-| Minutes | Travail autonome |
+| Minutes | Travail du binôme |
 |---|---|
-| 0–5 | Hypothèse individuelle et attribution des tâches |
-| 5–20 | Lecture de [NOTIONS.md](NOTIONS.md) et reformulation croisée |
-| 20–38 | Qualifier la collecte réelle : ressource, dates, origine et premier saut |
-| 38–58 | Comparer les deux CSV simulés et construire quatre jalons |
-| 58–70 | Présentations croisées et mise à l’épreuve des hypothèses |
-| 70–83 | Rédiger la synthèse et trois indicateurs |
-| 83–90 | [Auto-vérification](AUTO_VERIFICATION.md), trace individuelle et enregistrement |
+| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
+| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
+| 20–40 | Préparer au moins deux options et confronter les arguments |
+| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
+| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
+| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
+| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
 
-## 1. Hypothèse et lecture
+## Travaux à réaliser
 
-Avant les notions, chacun écrit : « Une route disparaît chez un observateur : puis-je affirmer que tous les utilisateurs ont perdu le service ? Quelle information manque ? » Ne corrigez pas votre réponse avant de l’avoir conservée.
+1. Qualifier les informations P1–P4 dans un tableau confirmé / déclaré / rumeur / inconnu et écrire deux scénarios distincts.
+2. Construire deux combinaisons respectant 12 k€, avec leurs limites et une recommandation initiale.
+3. Réviser après l’événement ; définir trois seuils observables, responsables, délais et conditions de sortie du mode dégradé.
 
-Lire les notions puis expliquer à un autre la différence entre ASN d’origine, chemin observé et trajet physique. Utilisez les [aides progressives](AIDE.md) si une colonne ou un champ bloque.
+## Livrables
 
-## 2. Collecte réelle
+- Tableau de qualification des informations et scénarios.
+- Comparaison de deux plans avec somme des coûts et capacité réellement couverte.
+- Décision J0 révisée, trois déclencheurs et retour à la normale.
 
-Ouvrir [ripe_routing_history_reel.json](donnees/ripe_routing_history_reel.json). Retrouver :
+Utiliser [la synthèse du cas](../../rendus/M02/SYNTHESE.md) et les fichiers [A](../../rendus/M02/individuel/A.md) / [B](../../rendus/M02/individuel/B.md). **Rapporteur : B.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
 
-- la date à laquelle le fichier a été collecté ;
-- la ressource et les paramètres demandés dans `source_url` ;
-- la période effectivement couverte dans `response.data` ;
-- un groupe de `by_origin`, son origine/premier saut et une de ses périodes de visibilité.
+## Point de décision
 
-Avec l’option de premier saut, une valeur `origin` peut contenir deux ASN ; les notions expliquent comment lire ce format. N’assimilez pas le nombre de groupes au nombre d’origines distinctes sans examiner ces valeurs. La collecte réelle ne fournit pas à elle seule un incident à diagnostiquer.
+Quel fait précis rendrait votre mesure la plus coûteuse nécessaire ?
 
-La consultation de RIPEstat en ligne et le formatage avec Python sont facultatifs. Si un site ou un outil bloque plus de trois minutes, restez sur le fichier fourni.
+Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
 
-## 3. Exercice simulé
-
-Ouvrir [routes_simulees.csv](donnees/routes_simulees.csv) et [sondes_simulees.csv](donnees/sondes_simulees.csv), dans le navigateur ou un tableur. Les dates, préfixes et ASN de cet exercice sont fictifs ; aucune requête vers ces adresses n’est demandée.
-
-Pour chacun des quatre instants : comparer R1 et R2, calculer `peers_seeing / peers_total`, noter les chemins observés puis relever les résultats des sondes A et B. La fraction obtenue décrit les pairs du collecteur, pas les utilisateurs affectés.
-
-Votre chronologie doit comporter quatre lignes : instant, route selon R1/R2, service selon A/B, conclusion limitée. Cherchez un exemple de différence entre observateurs et un exemple de différence entre routage et application. Le script de l’[aide](AIDE.md) est seulement une calculatrice facultative.
-
-## 4. Discussion à trois
-
-Deux minutes chacun pour présenter une observation et une limite, puis six minutes pour confronter au moins deux explications possibles. Pour chacune, demander une preuve qui pourrait la confirmer ou la rendre moins plausible.
-
-Un opérateur pourrait-il contrôler plusieurs accès apparemment différents ? De quelles données disposer pour décider d’une deuxième liaison ? Une variation de chemin suffit-elle à affirmer une censure ou une opération étatique ? Conservez les conditions et les inconnues dans le rendu.
-
-## 5. Livrables et suite
-
-Compléter [la synthèse M02](../../rendus/M02/SYNTHESE.md) : trois observations sourcées, chronologie de quatre jalons, deux hypothèses et trois indicateurs comportant source, responsable, fréquence, déclencheur et action.
-
-B dépose la synthèse sur `tp/autonomie-b`. Chacun complète son fichier individuel sur sa propre branche, déjà utilisée au M01. Ne fusionnez pas et n’attendez pas d’approbation. En mode local, conserver les fichiers pour remise ultérieure.
-
-Effectuer l’[auto-vérification](AUTO_VERIFICATION.md), consigner les blocages et ouvrir [M03](../M03/README.md), même si une hypothèse reste ouverte. Le formateur discutera vos raisonnements à partir de M04.
+Passer ensuite à [M03](../M03/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.

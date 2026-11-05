@@ -1,15 +1,12 @@
-# M04 — Auto-vérification avant restitution
+# M04 — Avant de rendre
 
-Ce contrôle vérifie la méthode et la présence des preuves ; il ne garantit pas à lui seul la justesse du diagnostic. Ne cocher que ce qui a été réalisé.
+- [ ] Les deux ressources et les prérequis sont respectés.
+- [ ] Le plan révisé tient dans dix jours et remplit encore le mandat.
+- [ ] Chaque report a un décideur, une conséquence et un seuil de réexamen.
+- [ ] Deux options et les pièces qui les soutiennent sont visibles.
+- [ ] La décision initiale est conservée et l’effet de l’événement est expliqué.
+- [ ] La décision finale nomme responsable, preuve attendue, risque accepté et réexamen.
+- [ ] Chacun peut expliquer sa contribution et une objection ; les aides déterminantes sont indiquées.
+- [ ] Le rendu est enregistré et le désaccord éventuel reste visible.
 
-- [ ] Référence et observations après incident sont datées et distinguées.
-- [ ] La carte relie applications, point d’entrée et dépendance partagée.
-- [ ] Un test direct et un parcours utilisateur sont comparés ; un health seul ne vaut pas validation.
-- [ ] La conclusion distingue cause technique démontrée et portée géopolitique à vérifier.
-- [ ] Chacun a une trace personnelle et peut expliquer une preuve sans lire la synthèse.
-- [ ] Les aides déterminantes, les inconnues et les résultats seulement prédits sont identifiés.
-- [ ] Les travaux sont enregistrés ; le rapporteur cite les contributions des autres branches sans attendre leur fusion.
-
-Avant de conclure, répondre : **quelle observation pourrait vous faire changer d’avis ? Quelle dépendance reste hors de portée de votre démonstration ?** Comparer vos réponses puis présenter le désaccord restant au formateur.
-
-Revenir à la [mission](README.md) ou aux [aides](AIDE.md). Une case manquante devient un point à expliquer, pas un résultat à inventer.
+Une case non cochée est une limite à expliquer, pas une raison d’inventer une preuve. L’auto-vérification prépare le retour du formateur ; elle ne remplace pas l’évaluation.
