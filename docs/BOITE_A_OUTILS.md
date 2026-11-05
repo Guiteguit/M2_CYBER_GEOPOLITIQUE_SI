@@ -24,7 +24,7 @@ Ne pas inventer des probabilités ni additionner des conséquences qui se recouv
 
 ## Définir les responsabilités
 
-Pour une décision, nommer une fonction qui tranche, une qui réalise et une qui apporte la preuve. D’autres peuvent être consultées ou informées. Les fonctions peuvent être fictives ; votre binôme prépare la décision sans prétendre que les actions ont déjà été exécutées. Une autorité absente ne délègue pas automatiquement au participant présent.
+Pour une décision, nommer une fonction qui tranche, une qui réalise et une qui apporte la preuve. D’autres peuvent être consultées ou informées. Les fonctions peuvent être fictives ; vous préparez votre décision sans prétendre que les actions ont déjà été exécutées. Une autorité absente ne délègue pas automatiquement au participant présent.
 
 ## Écrire une condition et un indicateur
 

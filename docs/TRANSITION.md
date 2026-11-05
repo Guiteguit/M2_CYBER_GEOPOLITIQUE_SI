@@ -1,7 +1,9 @@
-# Nouvelle version : deux étudiants, décisions de management SI
+# Organisation actuelle : décisions individuelles avec formateur
 
-Le parcours principal remplace les manipulations techniques par dix études de cas de 90 minutes. Il n’utilise plus de scripts, machines de laboratoire, commandes de diagnostic ou données réseau. Les corrections sont dans le dépôt formateur séparé.
+Le parcours management comporte dix cas de 90 minutes. Deux étudiants sont présents, mais chacun analyse et remet son propre travail. Le formateur accompagne désormais aussi M01–M03. Il n’y a plus de rapporteur, de rôles répartis entre élèves ni de note de groupe.
 
-Les anciens contenus sont conservés dans l’historique et dans la branche `archive/parcours-technique-2026-11-05`. Les anciennes branches de travail ne sont pas modifiées. Ne pas les fusionner dans la nouvelle version : créer `cas/a` et `cas/b` depuis le `main` actuel, ou des noms distincts convenus si ces noms existent déjà.
+Les dossiers, budgets et événements métier restent ceux des cas de management ; la première version technique demeure dans la branche d’archive déjà créée et dans l’historique. Aucune ancienne branche ou remise n’est réécrite par cette adaptation.
 
-M01–M03 restent sans formateur ; M04–M10 restent accompagnés. La durée totale est 15 heures. Le nouveau barème mesure les compétences de management et doit être annoncé avant M04 selon les règles de l’établissement. Aucun ancien rendu technique n’est noté comme une absence de contribution à ce nouveau parcours.
+M01 a déjà été travaillé. Le conserver et ne compléter que les explications personnelles manquantes. Les nouveaux fichiers `DECISION_A.md` et `DECISION_B.md` servent à la suite. Les anciens `SYNTHESE.md`, `individuel/A.md`, `individuel/B.md` et bilan restent conservés comme traces et ne sont plus des livrables à remplir. Suivre [la reprise](REPRISE_M01_M03.md) et [la remise](PARTICIPER.md).
+
+Le barème reste sur 20 mais toutes les composantes sont individuelles. Les modalités doivent être annoncées avant les activités évaluées, sans appliquer une pénalité rétroactive au travail M01.

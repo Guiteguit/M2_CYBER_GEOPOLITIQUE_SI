@@ -1,29 +1,22 @@
-# Travailler à deux : décider et discuter
+# Travailler seul, avec un formateur disponible
 
-## Une méthode en six temps
+Vous êtes deux dans la salle, mais chacun conduit son propre cas et remet son propre dossier. Vous disposez des mêmes pièces et des mêmes critères. A/B identifie votre travail ; aucune répartition finance/SI, acheteur/fournisseur ou rapporteur n’est imposée entre vous.
 
-1. Lire le mandat ; chacun écrit une première décision et sa raison avant l’échange.
-2. Lire les notions et les pièces. Séparer fait du cas, déclaration d’un acteur, hypothèse et information manquante.
-3. Préparer au moins deux options. Vérifier les contraintes obligatoires avant de comparer leurs avantages.
-4. Confronter les deux rôles : chacun expose une position ; l’autre la reformule puis formule une objection avec une pièce.
-5. À la minute 45, ouvrir l’événement. Conserver la décision initiale, puis écrire ce qui change et ce qui reste défendable.
-6. Consigner décision, responsable, risque accepté, condition de réexamen et preuve attendue. Chaque personne termine sa trace individuelle.
+## Votre cycle de décision
 
-## Rôles et contributions
+1. Écrire votre position initiale avant l’aide du formateur.
+2. Lire les notions et qualifier les pièces : fait du cas, déclaration, hypothèse ou information manquante.
+3. Construire au moins deux options ; vérifier leurs contraintes avec les mêmes unités et la même période.
+4. Examiner votre option préférée sous les deux angles de `ROLES.md`. Écrire vous-même une objection sérieuse et y répondre avec une pièce ou un calcul.
+5. À la minute 45, lire l’événement. Conserver le premier choix, puis expliquer pourquoi vous le modifiez ou le maintenez.
+6. Consigner décision, responsable fictif, preuve attendue, risque accepté et condition de réexamen. Préparer votre explication au formateur.
 
-Les deux rôles de chaque module sont dans `ROLES.md`. A prend le premier rôle aux modules impairs, B aux modules pairs ; l’autre prend le second. M07 et M10 demandent en plus une inversion en cours de cas. Les deux rôles sont visibles pour comprendre le mandat ; il ne s’agit pas d’informations secrètes.
+## Une contradiction sans binôme obligatoire
 
-Le rapporteur est **A aux modules impairs et B aux modules pairs**. Il consigne la synthèse, mais ne choisit pas seul et ne dispense personne de rédiger sa position initiale. Les fonctions fictives peuvent être plus nombreuses que vous : vous leur attribuez des responsabilités sans prétendre qu’elles ont déjà réalisé les actions.
+Vous n’avez pas besoin d’attendre la réponse de l’autre étudiant. Un désaccord peut être une tension entre deux intérêts dans votre propre analyse : maîtrise du coût et continuité, rapidité et autorisation, promesse et preuve. Le formateur peut jouer le décideur, fournisseur ou sponsor. Un échange entre étudiants est facultatif, après les positions individuelles et sans note commune ni rédaction partagée.
 
-## Un échange court, exigeant et respectueux
+## Un seul dossier personnel par module
 
-Chacun dispose de deux minutes pour exposer son choix, puis l’autre le reformule en une phrase avant de contester. Citer la pièce ou le calcul qui change la conclusion. La personne qui parle le plus n’a pas automatiquement raison. Si un désaccord reste après cinq minutes sans élément nouveau, conserver les deux positions et demander quelle preuve ou quel décideur pourrait trancher. Une synthèse peut retenir un choix majoritairement défendu par l’un et l’objection maintenue par l’autre.
+Compléter votre `DECISION_A.md` ou `DECISION_B.md`. Les tableaux et calculs utiles font partie de ce dossier ; aucune seconde synthèse n’est exigée. Une à deux pages ou leur équivalent texte suffisent ; rester concis sans masquer les calculs. Les aides déterminantes et la vérification faite ensuite sont indiquées.
 
-## Une décision utile
-
-Utiliser la trame : « Nous retenons… pour répondre à… d’après P… ; nous renonçons à… ; nous acceptons provisoirement… ; la fonction… décide/exécute/vérifie ; nous réexaminerons si… ». Ne pas écrire « le fournisseur garantit » lorsqu’une pièce ne contient qu’une promesse commerciale.
-
-Une auto-vérification contrôle la cohérence du rendu ; elle ne donne pas une réponse unique. Un calcul peut être vérifiable tandis que l’arbitrage reste ouvert. Les activités évaluent aussi votre capacité à expliquer une limite et à réviser votre position.
-
-
-Les [tableaux de la boîte à outils](BOITE_A_OUTILS.md) peuvent aider à qualifier les pièces, comparer les options et préciser les responsabilités. Ils sont facultatifs : garder seulement ce qui aide à décider.
+Les [tableaux de décision](BOITE_A_OUTILS.md) sont facultatifs. Une information manquante devient une question et une condition, pas une certitude inventée. Une autre décision que celle du formateur peut être recevable si elle respecte le mandat et reconnaît ses limites.

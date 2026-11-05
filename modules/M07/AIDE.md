@@ -1,21 +1,21 @@
-# M07 — Aides progressives
+# M07 — Aides pour l’analyse individuelle
 
-## Niveau 1 : revenir au mandat
+## 1. Revenir à la décision
 
-Écrire en une phrase la décision demandée. Relever les contraintes obligatoires, les moyens et les inconnues dans [le dossier](DOSSIER.md). Séparer les déclarations des acteurs des capacités réellement établies. Relire les [notions](NOTIONS.md) sans chercher une réponse unique.
+Reformuler le mandat en une phrase. Lire [le dossier](DOSSIER.md) et distinguer faits, déclarations, hypothèses et inconnues. Relever les contraintes obligatoires et les moyens. Les [notions](NOTIONS.md) expliquent les termes ; une seule personne peut analyser tous les éléments.
 
-## Niveau 2 : comparer avec les mêmes critères
+## 2. Vérifier votre comparaison
 
-Mettre les options sur une même période et dans un même périmètre. Si des coûts ou charges sont fournis, montrer les additions et vérifier chaque ressource séparément. Une information absente devient une question ou une condition. Reprendre les exigences suivantes :
+Utiliser la même période et les mêmes unités pour les options. Montrer les calculs lorsque des montants ou charges sont fournis. Une inconnue devient une question, pas une note arbitraire. Vérifier en particulier :
 
 - Le minimum E+S et le plafond de 46 k€ sont vérifiés.
 - L’accusé de réception n’est pas présenté comme un rétablissement.
 - L’accord distingue engagements, preuves à obtenir, refus et validation restante.
 
-## Niveau 3 : préparer la discussion
+## 3. Construire votre propre objection
 
 Quel engagement concret reste utile si le fournisseur a payé son avoir mais que votre activité ne reprend pas ?
 
-Faire reformuler votre position par l’autre, puis demander une objection fondée sur une pièce. Conserver le premier choix et l’effet de l’événement. Écrire une conclusion conditionnelle si la preuve manque : décideur, responsable de vérification, échéance et alternative.
+Formuler l’argument le plus sérieux contre votre choix et y répondre par une pièce, une alternative ou une condition de validation. Le formateur peut jouer l’interlocuteur. Après trois à cinq minutes sans progrès, lui présenter objectif, option, pièce/calcul et besoin. Après son indice, poursuivre vous-même la vérification. S’il est occupé avec l’autre étudiant, consigner la question puis avancer sur une autre partie.
 
-Avec le formateur, après trois à cinq minutes sans progrès, présenter votre objectif, option, pièce ou calcul et besoin. Après son indice, vous reprenez la décision et la vérification. Si GitHub bloque, travailler dans un document local ; la mise en forme ne doit pas consommer la séance. Ne pas contacter de destinataire réel.
+La [reprise M01–M03](../../docs/REPRISE_M01_M03.md) explique comment conserver M01 déjà travaillé. Si GitHub bloque, un document local suffit ; aucune validation du camarade, fusion ou remise commune n’est nécessaire.

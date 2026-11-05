@@ -1,48 +1,47 @@
 # M05 — Organiser une continuité métier en mode dégradé
 
-**90 minutes · 2 étudiants · Étude de cas de management SI · Voir les critères annoncés du barème.** Le formateur est présent en soutien : vous conduisez l’analyse et pouvez demander une aide ciblée. Les pièces sont fictives et suffisantes pour travailler ; aucune manipulation technique ni recherche externe n’est demandée.
+**90 minutes · Travail individuel · Deux étudiants, deux décisions indépendantes · Formateur présent.** Vous analysez toutes les pièces et rendez votre propre dossier. A/B désigne seulement votre identité de rendu. Aucune manipulation technique ni recherche externe n’est demandée.
 
 ## Mission
 
 Orion sera indisponible une journée. Organisez les commandes et les expéditions avec une équipe réduite, puis préparez le contrôle du retour à la normale.
 
-## Ouvrir les supports dans cet ordre
+## Supports et consignes
 
-1. [Rôles](ROLES.md) : A prend le premier rôle, B le second ; chacun écrit une première position dans son fichier individuel.
-2. [Notions](NOTIONS.md), puis [dossier de pièces](DOSSIER.md). Citer les identifiants P1, P2… plutôt qu’une opinion sans source.
-3. [Événement](EVENEMENT.md) **à la minute 45**, après avoir enregistré votre décision initiale. Ne pas effacer le premier plan.
-4. [Aides](AIDE.md) si nécessaire et [auto-vérification](AUTO_VERIFICATION.md) avant la remise.
+Lire votre [rôle et les deux angles à examiner](ROLES.md), les [notions](NOTIONS.md), puis le [dossier](DOSSIER.md). Écrire votre position initiale. Ouvrir [l’événement](EVENEMENT.md) à la minute 45, puis conserver et réviser votre premier choix. Utiliser [les aides](AIDE.md) si nécessaire.
 
-## Chronomètre
+## Chronomètre individuel
 
-| Minutes | Travail du binôme |
+| Minutes | Votre travail |
 |---|---|
-| 0–8 | Lire le mandat et les rôles ; écrire chacun sa position initiale |
-| 8–20 | Lire les notions et le dossier ; relever contraintes et inconnues |
-| 20–40 | Préparer au moins deux options et confronter les arguments |
-| 40–45 | Consigner le choix initial, ses calculs et sa principale limite |
-| 45–62 | Ouvrir l’événement, réexaminer les options et réviser la décision |
-| 62–77 | Restituer ou jouer le comité ; chacun défend une position et une objection |
-| 77–90 | Compléter synthèse et traces individuelles, auto-vérifier et enregistrer |
+| 0–8 | Lire le mandat ; écrire une première position personnelle |
+| 8–20 | Lire notions et pièces ; relever contraintes et inconnues |
+| 20–40 | Construire au moins deux options et une objection à votre préférence |
+| 40–45 | Consigner votre choix initial, ses calculs et sa limite principale |
+| 45–62 | Lire l’événement et réviser ou défendre votre décision |
+| 62–77 | Deux passages individuels au formateur ; avancer seul pendant l’autre passage |
+| 77–90 | Finaliser votre dossier, auto-vérifier et enregistrer |
 
-## Travaux à réaliser
+Le créneau 62–77 prévoit six minutes pour A, six pour B et trois pour compléter ; le formateur peut inverser l’ordre. Un passage comprend trois minutes d’explication et trois de questions. Si le formateur est occupé, rédiger votre objection et sa réponse sans attendre. Aucun travail en binôme n’est requis.
+
+## Travaux à réaliser seul
 
 1. Calculer deux plans de charge possibles et définir le service minimum ; vérifier les lots indivisibles.
 2. Concevoir un registre de cinq lignes d’exemple : identifiant temporaire, commande source, action, validation et état de rapprochement.
 3. Réviser après l’événement ; préparer la décision de reprise et une communication client de 120 mots maximum.
 
-## Livrables
+## Livrables dans votre dossier personnel
 
 - Plan de charge avant/après avec lots maintenus et différés.
 - Exemple de registre, responsables et contrôles.
 - Critères de reprise, gestion des écarts et message client.
 
-Utiliser [la synthèse du cas](../../rendus/M05/SYNTHESE.md) et les fichiers [A](../../rendus/M05/individuel/A.md) / [B](../../rendus/M05/individuel/B.md). **Rapporteur : A.** Il consigne la synthèse sur sa branche, cite la contribution de l’autre et ne fusionne rien pour autoriser la suite. Voir [la remise](../../docs/PARTICIPER.md).
+Utiliser votre [DECISION_A.md](../../rendus/M05/DECISION_A.md) ou [DECISION_B.md](../../rendus/M05/DECISION_B.md). Il remplace la nouvelle synthèse et le journal séparé : un seul dossier est demandé. Les anciens fichiers restent conservés et peuvent être cités, notamment pour M01. Voir [la remise](../../docs/PARTICIPER.md).
 
-## Point de décision
+## Objection à examiner personnellement
 
 Qui autorise le retour à la saisie normale, et avec quelle preuve concernant les commandes traitées à la main ?
 
-Si un désaccord persiste, écrire les deux positions et ce qui permettrait de trancher. Les aides reçues sont consignées. Une décision conditionnelle est recevable : préciser qui doit fournir quelle preuve et à quelle échéance.
+Écrire la réponse la plus forte contre votre choix, puis votre réponse avec une pièce, un calcul ou une condition. Le formateur peut porter cette objection à l’oral. Un avis de l’autre étudiant est facultatif et ne conditionne pas votre progression. Les aides déterminantes sont indiquées. Terminer par [l’auto-vérification](AUTO_VERIFICATION.md).
 
-Passer ensuite à [M06](../M06/README.md) au créneau prévu ; une décision incomplète ne bloque pas le module suivant.
+Passer ensuite à [M06](../M06/README.md) au créneau prévu.

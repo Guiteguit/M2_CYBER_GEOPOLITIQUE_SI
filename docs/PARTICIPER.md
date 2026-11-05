@@ -1,21 +1,23 @@
-# Lire et rendre le travail sans difficulté technique
+# Remettre son propre dossier et conserver M01
 
-## Depuis le navigateur
+A et B sont deux identités de rendu. Chacun remet un seul dossier de décision par module : `rendus/Mxx/DECISION_A.md` ou `DECISION_B.md`. Aucune synthèse commune ni contribution de l’autre étudiant n’est nécessaire. Un document local équivalent est recevable selon la modalité annoncée par le formateur. Git n’entre pas dans l’évaluation.
 
-1. Ouvrir le dépôt avec votre compte autorisé. Choisir votre lettre A ou B.
-2. À partir du **main de la nouvelle version management**, créer ou sélectionner votre branche `cas/a` ou `cas/b`. Ne pas réutiliser `tp/autonomie-a`, une ancienne branche technique ou une branche de votre camarade. Si `cas/a` ou `cas/b` existe d’une autre promotion, convenir avec le formateur d’un nom distinct avant de réutiliser des travaux.
-3. Sur votre branche, ouvrir `rendus/Mxx/individuel/A.md` ou `B.md`, modifier et enregistrer. Le fichier comporte une position initiale puis une conclusion : garder les deux.
-4. Le rapporteur complète aussi `rendus/Mxx/SYNTHESE.md` sur **sa propre branche**. A est rapporteur aux modules impairs ; B aux modules pairs. Citer le fichier de l’autre par lien de branche ou de pull request. Ne pas recopier ni remplacer sa contribution.
-5. Après un premier enregistrement, ouvrir une pull request vers `main`, intitulée `Cas management — A` ou B. La compléter au fil des modules ; deux pull requests suffisent. Ne pas fusionner vous-mêmes. Les fusions ne conditionnent ni la synthèse ni le passage à la suite.
+## Consignes et travaux existants
 
-La syntaxe Markdown peut rester simple. Un tableau peut être remplacé par des lignes explicites si sa mise en forme ralentit. Aucun diaporama, code, capture ou outil de calcul spécifique n’est imposé. Une calculatrice suffit ; rendre les opérations visibles pour les coûts.
+Les missions actualisées sont sur le `main` du dépôt. Une ancienne branche peut afficher les consignes précédentes : ouvrir les missions depuis `main` tant que la branche n’a pas reçu la mise à jour.
 
-## Si GitHub bloque
+Si vous avez déjà commencé M01 sur `cas/a`, `cas/b` ou dans un document local, **garder ce travail intact**. Ne pas supprimer la branche, remplacer ses fichiers ou tenter une fusion forcée. Pour M01, votre nouveau dossier peut simplement pointer vers le rendu existant et compléter les trois explications demandées dans [la reprise](REPRISE_M01_M03.md).
 
-Après trois minutes, conserver la position individuelle et la synthèse dans des documents locaux nommés `Mxx_A`, `Mxx_B`, `Mxx_SYNTHESE`. Utiliser le mode de remise annoncé par l’établissement. Les messages de crise et négociations restent dans vos rendus : ne contacter aucun fournisseur ou destinataire réel.
+## Depuis le navigateur : chemin simple après la mise à jour
 
-## Contributions et corrections
+1. Lire la mission actualisée sur `main`.
+2. Créer une nouvelle branche personnelle `cas-solo/a` ou `cas-solo/b` depuis ce `main`. Si ce nom est déjà pris, demander un nom distinct au formateur ; ne pas écraser une branche existante.
+3. Sur cette branche, ouvrir et compléter uniquement votre `DECISION_A.md` ou `DECISION_B.md` pour le module. Enregistrer avec un message qui indique le module et votre lettre.
+4. Ouvrir une pull request de votre branche vers `main`, intitulée `Cas individuels — A` ou B. La compléter au fil des modules, sans fusion obligatoire pour continuer. Ne pas ajouter le dossier de l’autre.
+5. Le formateur relit et intègre ultérieurement. Les anciens fichiers `SYNTHESE.md` et `individuel/A.md`/`B.md` restent des traces antérieures, sans nouvelle obligation de les remplir.
 
-Les notes nominatives et les corrections restent hors de ce dépôt partagé. Les rendus du groupe sont visibles aux collaborateurs du dépôt. Conserver seulement les données fictives du cas. Le formateur relit les différences avant fusion et n’évalue pas le nombre de commits.
+Pour citer un travail ancien, mettre son URL avec la branche ou le nom du document remis. Il n’est pas nécessaire de recopier son contenu. Les messages de crise restent des simulations sans envoi réel.
 
-Pour les utilisateurs déjà habitués à Git, appliquer la même règle depuis leur outil : une branche neuve par personne, fichiers propres, pas de fusion ni réécriture forcée pour débloquer la séance. L’utilisation de Git n’entre pas dans le barème.
+## Si un accès bloque
+
+Après trois minutes, enregistrer votre décision dans un document `Mxx_A` ou `Mxx_B`, avec les rubriques de la trame. Demander une aide au formateur et continuer le cas. Les corrections et notes nominatives restent dans l’espace formateur. Le dépôt étudiant partagé ne constitue pas un espace privé entre les deux élèves.

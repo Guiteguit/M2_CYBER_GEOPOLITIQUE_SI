@@ -8,6 +8,6 @@
 
 **P4, 9 h 15 — Direction commerciale.** Demande de dire aux clients « tout revient avant midi ». Le responsable production veut arrêter toute la journée par prudence. Le directeur de crise peut suspendre une activité ; les achats exceptionnels supérieurs à 10 k€ exigent la DG. La DSI ne dispose d’aucun élément permettant de promettre midi.
 
-**P5, 9 h 25 — Ressources de cellule.** Fonctions disponibles : direction de crise, SI, logistique, communication, relation fournisseur. Vous êtes deux à préparer le plan, mais pouvez attribuer des actions aux fonctions disponibles. Une instruction donnée à une fonction n’est pas une preuve d’exécution. Fixer au maximum cinq décisions pour les deux prochaines heures.
+**P5, 9 h 25 — Ressources de cellule.** Fonctions disponibles : direction de crise, SI, logistique, communication, relation fournisseur. Vous préparez seul votre plan et pouvez attribuer des actions aux fonctions fictives disponibles. Une instruction donnée à une fonction n’est pas une preuve d’exécution. Fixer au maximum cinq décisions pour les deux prochaines heures.
 
 Rédiger un message de 80 à 120 mots par public : équipes, clients, DG. Ne contacter aucune personne réelle ; les messages sont des exercices conservés dans le rendu.
